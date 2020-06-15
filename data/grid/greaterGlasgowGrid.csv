@@ -1,0 +1,273 @@
+regionCode,regionName,council,gridX,gridY
+S02000260,Auchinairn,East Dunbartonshire,14,4
+S02000261,Woodhill East,East Dunbartonshire,15,3
+S02000262,Woodhill West,East Dunbartonshire,14,3
+S02000263,Westerton East,East Dunbartonshire,10,3
+S02000264,Bishopbriggs West and Cadder,East Dunbartonshire,14,2
+S02000265,Westerton West,East Dunbartonshire,9,3
+S02000266,Kessington East,East Dunbartonshire,11,3
+S02000267,Lenzie South,East Dunbartonshire,16,3
+S02000268,Bishopbriggs North and Kenmure,East Dunbartonshire,13,2
+S02000269,Kessington West,East Dunbartonshire,11,2
+S02000270,Lenzie North,East Dunbartonshire,14,1
+S02000271,South Castlehill and Thorn,East Dunbartonshire,8,2
+S02000272,Kilmardinny West,East Dunbartonshire,10,2
+S02000273,Kilmardinny East,East Dunbartonshire,11,1
+S02000274,Rosebank and Waterside,East Dunbartonshire,17,3
+S02000275,Kirkintilloch South,East Dunbartonshire,15,2
+S02000276,North Castlehill and Thorn,East Dunbartonshire,9,2
+S02000277,Hillhead,East Dunbartonshire,16,2
+S02000278,Torrance and Balmore,East Dunbartonshire,13,1
+S02000279,Keystone and Dougalston,East Dunbartonshire,12,1
+S02000280,Harestanes,East Dunbartonshire,16,1
+S02000281,Kirkintilloch West,East Dunbartonshire,15,1
+S02000282,Barloch,East Dunbartonshire,12,0
+S02000283,Twechar and Harestanes East,East Dunbartonshire,17,2
+S02000284,East Clober and Mains Estate,East Dunbartonshire,11,0
+S02000285,West Clober and Mains Estate,East Dunbartonshire,10,1
+S02000286,Milton of Campsie,East Dunbartonshire,14,0
+S02000287,Lennoxtown,East Dunbartonshire,13,0
+S02000310,Eaglesham and Waterfoot,East Renfrewshire,11,18
+S02000311,Mearnskirk and South Kirkhill,East Renfrewshire,6,18
+S02000312,North Kirkhill,East Renfrewshire,9,18
+S02000313,"Mearns Village, Westacres and Greenfarm",East Renfrewshire,7,18
+S02000314,West Neilston and Uplawmoor,East Renfrewshire,5,16
+S02000315,Busby,East Renfrewshire,12,18
+S02000316,Whitecraigs and Broom,East Renfrewshire,8,18
+S02000317,Clarkston and Sheddens,East Renfrewshire,10,18
+S02000318,Crookfur and Fruin,East Renfrewshire,7,17
+S02000319,Williamwood,East Renfrewshire,10,17
+S02000320,Stamperland,East Renfrewshire,11,17
+S02000321,West Arthurlie and North Neilston,East Renfrewshire,6,17
+S02000322,Auchenback,East Renfrewshire,6,16
+S02000323,Lower Whitecraigs and South Giffnock,East Renfrewshire,9,17
+S02000324,South Thornliebank and Woodfarm,East Renfrewshire,8,17
+S02000325,Netherlee,East Renfrewshire,12,17
+S02000326,Merrylee and Braidbar,East Renfrewshire,10,16
+S02000327,North Giffnock and North Thornliebank,East Renfrewshire,9,16
+S02000328,"Dunterlie, East Arthurlie and Dovecothall",East Renfrewshire,6,15
+S02000329,Cross Stobbs,East Renfrewshire,5,15
+S02000584,Carmunnock South,Glasgow City,13,18
+S02000585,Glenwood South,Glasgow City,13,17
+S02000586,Darnley West,Glasgow City,7,16
+S02000587,Darnley East,Glasgow City,8,16
+S02000588,Glenwood North,Glasgow City,14,17
+S02000589,Castlemilk,Glasgow City,13,16
+S02000590,Darnley North,Glasgow City,7,15
+S02000591,Carmunnock North,Glasgow City,12,16
+S02000592,Carnwadric West,Glasgow City,8,15
+S02000593,Muirend and Old Cathcart,Glasgow City,11,16
+S02000594,Carnwadric East,Glasgow City,9,15
+S02000595,Kingspark South,Glasgow City,13,15
+S02000596,Newlands,Glasgow City,10,15
+S02000597,Nitshill,Glasgow City,8,14
+S02000598,Merrylee and Millbrae,Glasgow City,11,15
+S02000599,Cathcart,Glasgow City,12,15
+S02000600,Kingspark North,Glasgow City,13,14
+S02000601,Crookston South,Glasgow City,7,14
+S02000602,Pollokshaws,Glasgow City,9,14
+S02000603,Mount Florida,Glasgow City,12,14
+S02000604,Langside,Glasgow City,11,14
+S02000605,Shawlands East,Glasgow City,10,14
+S02000606,Crookston North,Glasgow City,8,13
+S02000607,Battlefield,Glasgow City,11,13
+S02000608,Pollok South and West,Glasgow City,6,13
+S02000609,Shawlands West,Glasgow City,10,13
+S02000610,Toryglen and Oatlands,Glasgow City,13,12
+S02000611,Shettleston South,Glasgow City,15,12
+S02000612,Maxwell Park,Glasgow City,9,13
+S02000613,Carmyle and Mount Vernon South,Glasgow City,16,12
+S02000614,Strathbungo,Glasgow City,11,12
+S02000615,Govanhill East and Aikenhead,Glasgow City,12,13
+S02000616,Govanhill West,Glasgow City,12,12
+S02000617,Pollok North and East,Glasgow City,7,13
+S02000618,Baillieston East,Glasgow City,18,11
+S02000619,Dalmarnock,Glasgow City,14,11
+S02000620,Braidfauld,Glasgow City,15,11
+S02000621,Mosspark,Glasgow City,9,12
+S02000622,Pollokshields East,Glasgow City,11,11
+S02000623,Mount Vernon North and Sandyhills,Glasgow City,17,12
+S02000624,Pollokshields West,Glasgow City,10,12
+S02000625,Cardonald South and East,Glasgow City,8,12
+S02000626,Baillieston West,Glasgow City,17,11
+S02000627,Cardonald West and Central,Glasgow City,7,12
+S02000628,Gorbals and Hutchesontown,Glasgow City,12,11
+S02000629,Parkhead East and Braidfauld North,Glasgow City,15,10
+S02000630,Tollcross,Glasgow City,16,11
+S02000631,Kingston West and Dumbreck,Glasgow City,10,11
+S02000632,Shettleston North,Glasgow City,16,10
+S02000633,Parkhead West and Barrowfield,Glasgow City,14,10
+S02000634,Laurieston and Tradeston,Glasgow City,12,10
+S02000635,"Calton, Galllowgate and Bridgeton",Glasgow City,13,11
+S02000636,Garrowhill West,Glasgow City,17,10
+S02000637,Cardonald North,Glasgow City,7,11
+S02000638,Craigton,Glasgow City,8,11
+S02000639,Hillington,Glasgow City,6,11
+S02000640,Greenfield,Glasgow City,16,9
+S02000641,Penilee,Glasgow City,6,10
+S02000642,Kinning Park and Festival Park,Glasgow City,9,10
+S02000643,Old Shettleston and Parkhead North,Glasgow City,15,9
+S02000644,Ibrox East and Cessnock,Glasgow City,9,11
+S02000645,Garrowhill East and Swinton,Glasgow City,18,10
+S02000646,Barlanark,Glasgow City,17,9
+S02000647,Gallowgate North and Bellgrove,Glasgow City,13,10
+S02000648,Carntyne West and Haghill,Glasgow City,14,9
+S02000649,Ibrox,Glasgow City,8,10
+S02000650,Dennistoun,Glasgow City,13,8
+S02000651,Anderston,Glasgow City,11,10
+S02000652,North Barlanark and Easterhouse South,Glasgow City,17,8
+S02000653,Easterhouse East,Glasgow City,18,9
+S02000654,"Cranhill, Lightburn and Queenslie South",Glasgow City,16,8
+S02000655,City Centre West,Glasgow City,12,9
+S02000656,Govan and Linthouse,Glasgow City,7,10
+S02000657,Carntyne,Glasgow City,15,8
+S02000658,City Centre East,Glasgow City,13,9
+S02000659,Dennistoun North and Alexandra Parade,Glasgow City,14,8
+S02000660,Drumoyne and Shieldhall,Glasgow City,6,9
+S02000661,Finnieston and Kelvinhaugh,Glasgow City,11,9
+S02000662,Central Easterhouse,Glasgow City,18,8
+S02000663,Craigend and Ruchazie,Glasgow City,17,7
+S02000664,Hillhead,Glasgow City,10,9
+S02000665,Woodlands,Glasgow City,11,8
+S02000666,"Roystonhill, Blochairn, and Provanmill",Glasgow City,15,7
+S02000667,Riddrie and Hogganfield,Glasgow City,16,7
+S02000668,Glasgow Harbour and  Partick South,Glasgow City,9,8
+S02000669,Woodside,Glasgow City,12,8
+S02000670,Sighthill,Glasgow City,14,7
+S02000671,Partick,Glasgow City,10,8
+S02000672,Kelvingrove and University,Glasgow City,11,7
+S02000673,Whiteinch,Glasgow City,8,8
+S02000674,"Garthamlock, Auchinlea and Gartloch",Glasgow City,17,6
+S02000675,Firhill,Glasgow City,12,7
+S02000676,Cowlairs and Port Dundas,Glasgow City,13,7
+S02000677,Partickhill and Hyndland,Glasgow City,10,7
+S02000678,Blackhill and Barmulloch East,Glasgow City,15,6
+S02000679,Broomhill,Glasgow City,9,7
+S02000680,Petershill,Glasgow City,14,6
+S02000681,Dowanhill,Glasgow City,10,6
+S02000682,Victoria Park,Glasgow City,8,7
+S02000683,North Kelvin,Glasgow City,11,6
+S02000684,Scotstoun South and West,Glasgow City,6,7
+S02000685,Keppochhill,Glasgow City,12,6
+S02000686,Scotstoun North and East,Glasgow City,7,7
+S02000687,Barmulloch,Glasgow City,15,5
+S02000688,Ruchill,Glasgow City,12,5
+S02000689,Kelvinside and Jordanhill,Glasgow City,9,6
+S02000690,Kelvindale,Glasgow City,10,5
+S02000691,Springburn,Glasgow City,14,5
+S02000692,Possil Park,Glasgow City,13,6
+S02000693,Wyndford,Glasgow City,11,5
+S02000694,Springburn East and Cowlairs,Glasgow City,13,5
+S02000695,Robroyston and Millerston,Glasgow City,16,6
+S02000696,Yoker South,Glasgow City,6,6
+S02000697,Balornock,Glasgow City,15,4
+S02000698,Knightswood Park East,Glasgow City,8,6
+S02000699,Knightswood East,Glasgow City,7,6
+S02000700,Maryhill West,Glasgow City,11,4
+S02000701,Milton West,Glasgow City,13,4
+S02000702,Anniesland East,Glasgow City,10,4
+S02000703,Knightswood West,Glasgow City,7,5
+S02000704,Maryhill East,Glasgow City,12,4
+S02000705,Anniesland West,Glasgow City,9,5
+S02000706,Knightswood Park West,Glasgow City,8,5
+S02000707,Yoker North,Glasgow City,6,5
+S02000708,Milton East,Glasgow City,13,3
+S02000709,Blairdardie East,Glasgow City,9,4
+S02000710,Summerston North,Glasgow City,12,3
+S02000711,Blairdardie West,Glasgow City,7,4
+S02000712,Drumchapel South,Glasgow City,8,4
+S02000713,Summerston Central and West,Glasgow City,12,2
+S02000714,Drumry West,Glasgow City,7,3
+S02000715,Drumchapel North,Glasgow City,8,3
+S02000716,Drumry East,Glasgow City,7,2
+S02000771,Kilmacolm Central,Inverclyde,1,8
+S02000772,"Kilmacolm, Quarriers, Greenock Upper East/Central",Inverclyde,1,9
+S02000773,Inverkip and Wemyss Bay,Inverclyde,0,8
+S02000774,Port Glasgow Upper East,Inverclyde,1,7
+S02000775,"Port Glasgow Mid, East and Central",Inverclyde,1,6
+S02000776,"Port Glasgow Upper, West and Central",Inverclyde,1,5
+S02000777,"West Braeside, East Inverkip and West Gourock",Inverclyde,0,7
+S02000778,Greenock East,Inverclyde,1,4
+S02000779,"Bow Farm, Barrs Cottage, Cowdenknowes and Overton",Inverclyde,0,6
+S02000780,Greenock Upper Central,Inverclyde,0,5
+S02000781,Greenock Town Centre and East Central,Inverclyde,1,3
+S02000782,"Braeside, Branchton, Lower Larkfield and Ravenscraig",Inverclyde,0,4
+S02000783,"Lower Bow & Larkfield, Fancy Farm, Mallard Bowl",Inverclyde,0,3
+S02000784,Greenock West and Central,Inverclyde,1,2
+S02000785,"Gourock Central, Upper East and IRH",Inverclyde,0,2
+S02000786,Gourock Upper and West Central & Upper Larkfield,Inverclyde,0,1
+S02000787,"Gourock East, Greenock West and Lyle Road",Inverclyde,1,1
+S02000923,Stepps,North Lanarkshire,16,5
+S02000925,Chryston and Muirhead,North Lanarkshire,16,4
+S02000926,Moodiesburn West,North Lanarkshire,17,4
+S02000927,Moodiesburn East,North Lanarkshire,18,4
+S02000983,Lochwinnoch,Renfrewshire,2,13
+S02000984,Renfrewshire Rural South & Howwood,Renfrewshire,1,12
+S02000985,Paisley Glenburn West,Renfrewshire,4,14
+S02000986,Paisley Glenburn East,Renfrewshire,5,14
+S02000987,Paisley Foxbar,Renfrewshire,3,14
+S02000988,Johnstone South West,Renfrewshire,2,12
+S02000989,Paisley Dykebar,Renfrewshire,6,14
+S02000990,Paisley South West,Renfrewshire,4,13
+S02000991,Paisley South East,Renfrewshire,5,13
+S02000992,Johnstone South East,Renfrewshire,3,13
+S02000993,Paisley South,Renfrewshire,4,12
+S02000994,Johnstone North West,Renfrewshire,1,11
+S02000995,Paisley West,Renfrewshire,3,12
+S02000996,Kilbarchan,Renfrewshire,0,11
+S02000997,Paisley East,Renfrewshire,5,12
+S02000998,Johnstone North East,Renfrewshire,2,11
+S02000999,Elderslie and Phoenix,Renfrewshire,2,10
+S02001000,Paisley Central,Renfrewshire,4,11
+S02001001,Paisley North West,Renfrewshire,3,11
+S02001002,Paisley Ralston,Renfrewshire,6,12
+S02001003,Paisley Ferguslie,Renfrewshire,3,10
+S02001004,Paisley North East,Renfrewshire,5,11
+S02001005,Linwood South,Renfrewshire,3,9
+S02001006,Linwood North,Renfrewshire,1,10
+S02001007,Paisley Gallowhill and Hillington,Renfrewshire,5,10
+S02001008,Bridge of Weir,Renfrewshire,0,10
+S02001009,Houston South,Renfrewshire,2,9
+S02001010,Paisley North,Renfrewshire,4,10
+S02001011,Renfrew South,Renfrewshire,4,9
+S02001012,Houston North,Renfrewshire,2,8
+S02001013,Renfrew East,Renfrewshire,5,9
+S02001014,Renfrew West,Renfrewshire,3,8
+S02001015,Renfrewshire Rural North and Langbank,Renfrewshire,4,7
+S02001016,Renfrew North,Renfrewshire,4,8
+S02001017,Erskine East and Inchinnan,Renfrewshire,2,7
+S02001018,Erskine Central,Renfrewshire,3,7
+S02001019,Erskine West,Renfrewshire,3,6
+S02001020,Bishopton,Renfrewshire,2,6
+S02001146,Fernhill and Cathkin,South Lanarkshire,15,17
+S02001148,Whitlawburn and Greenlees,South Lanarkshire,17,17
+S02001149,Vicarland and Cairns,South Lanarkshire,17,16
+S02001150,Burnside and Springhall,South Lanarkshire,16,17
+S02001152,Spittal,South Lanarkshire,14,16
+S02001153,Cambuslang Central,South Lanarkshire,16,16
+S02001154,High Crosshill,South Lanarkshire,15,16
+S02001156,"Halfway, Hallside and Drumsagard",South Lanarkshire,17,15
+S02001157,Westburn and Newton,South Lanarkshire,16,15
+S02001158,Bankhead South,South Lanarkshire,14,15
+S02001159,"Burgh, Eastfield and Silverbank",South Lanarkshire,15,15
+S02001160,Burnhill and Bankhead North,South Lanarkshire,14,14
+S02001161,Shawfield and Clincarthill,South Lanarkshire,13,13
+S02001162,Farme Cross and Gallowflat North,South Lanarkshire,15,14
+S02001184,IZ One,West Dunbartonshire,5,5
+S02001185,IZ Two,West Dunbartonshire,5,4
+S02001186,IZ Three,West Dunbartonshire,6,4
+S02001187,IZ Four,West Dunbartonshire,5,3
+S02001188,IZ Five,West Dunbartonshire,5,2
+S02001189,IZ Six,West Dunbartonshire,6,3
+S02001190,IZ Seven,West Dunbartonshire,4,4
+S02001191,IZ Eight,West Dunbartonshire,6,2
+S02001192,IZ Nine,West Dunbartonshire,3,4
+S02001193,IZ Ten,West Dunbartonshire,5,1
+S02001194,IZ Eleven,West Dunbartonshire,4,3
+S02001195,IZ Twelve,West Dunbartonshire,3,3
+S02001196,IZ Thirteen,West Dunbartonshire,4,2
+S02001197,IZ Fourteen,West Dunbartonshire,4,1
+S02001198,IZ Fifteen,West Dunbartonshire,3,2
+S02001199,IZ Sixteen,West Dunbartonshire,5,0
+S02001200,IZ Seventeen,West Dunbartonshire,3,1
+S02001201,IZ Eighteen,West Dunbartonshire,4,0

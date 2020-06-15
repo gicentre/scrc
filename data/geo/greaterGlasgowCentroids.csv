@@ -1,0 +1,273 @@
+IZ_CODE,IZ_NAME,CouncilArea,NRSCouncil,cx,cy
+S02000260,Auchinairn,S12000045,East Dunbartonshire,261644,669646
+S02000261,Woodhill East,S12000045,East Dunbartonshire,262949,670041
+S02000262,Woodhill West,S12000045,East Dunbartonshire,262130,670391
+S02000263,Westerton East,S12000045,East Dunbartonshire,254577,670587
+S02000264,Bishopbriggs West and Cadder,S12000045,East Dunbartonshire,261250,670929
+S02000265,Westerton West,S12000045,East Dunbartonshire,253768,670975
+S02000266,Kessington East,S12000045,East Dunbartonshire,255891,671136
+S02000267,Lenzie South,S12000045,East Dunbartonshire,266134,671487
+S02000268,Bishopbriggs North and Kenmure,S12000045,East Dunbartonshire,260220,671667
+S02000269,Kessington West,S12000045,East Dunbartonshire,255040,671692
+S02000270,Lenzie North,S12000045,East Dunbartonshire,263833,672281
+S02000271,South Castlehill and Thorn,S12000045,East Dunbartonshire,252895,672372
+S02000272,Kilmardinny West,S12000045,East Dunbartonshire,254284,672745
+S02000273,Kilmardinny East,S12000045,East Dunbartonshire,255098,672942
+S02000274,Rosebank and Waterside,S12000045,East Dunbartonshire,268800,672936
+S02000275,Kirkintilloch South,S12000045,East Dunbartonshire,266076,672938
+S02000276,North Castlehill and Thorn,S12000045,East Dunbartonshire,253533,673599
+S02000277,Hillhead,S12000045,East Dunbartonshire,266399,673815
+S02000278,Torrance and Balmore,S12000045,East Dunbartonshire,260775,674427
+S02000279,Keystone and Dougalston,S12000045,East Dunbartonshire,257266,674428
+S02000280,Harestanes,S12000045,East Dunbartonshire,266820,674509
+S02000281,Kirkintilloch West,S12000045,East Dunbartonshire,265624,674637
+S02000282,Barloch,S12000045,East Dunbartonshire,255795,674939
+S02000283,Twechar and Harestanes East,S12000045,East Dunbartonshire,270039,675354
+S02000284,East Clober and Mains Estate,S12000045,East Dunbartonshire,254925,675696
+S02000285,West Clober and Mains Estate,S12000045,East Dunbartonshire,252147,676134
+S02000286,Milton of Campsie,S12000045,East Dunbartonshire,266558,677104
+S02000287,Lennoxtown,S12000045,East Dunbartonshire,261899,679622
+S02000310,Eaglesham and Waterfoot,S12000011,East Renfrewshire,256396,649609
+S02000311,Mearnskirk and South Kirkhill,S12000011,East Renfrewshire,250912,652900
+S02000312,North Kirkhill,S12000011,East Renfrewshire,256171,655700
+S02000313,"Mearns Village, Westacres and Greenfarm",S12000011,East Renfrewshire,253095,655990
+S02000314,West Neilston and Uplawmoor,S12000011,East Renfrewshire,245536,656045
+S02000315,Busby,S12000011,East Renfrewshire,258193,656392
+S02000316,Whitecraigs and Broom,S12000011,East Renfrewshire,254963,656537
+S02000317,Clarkston and Sheddens,S12000011,East Renfrewshire,256940,657042
+S02000318,Crookfur and Fruin,S12000011,East Renfrewshire,252833,657058
+S02000319,Williamwood,S12000011,East Renfrewshire,256278,657569
+S02000320,Stamperland,S12000011,East Renfrewshire,257603,657882
+S02000321,West Arthurlie and North Neilston,S12000011,East Renfrewshire,249451,658075
+S02000322,Auchenback,S12000011,East Renfrewshire,251165,658175
+S02000323,Lower Whitecraigs and South Giffnock,S12000011,East Renfrewshire,255986,658205
+S02000324,South Thornliebank and Woodfarm,S12000011,East Renfrewshire,255180,659013
+S02000325,Netherlee,S12000011,East Renfrewshire,257778,659032
+S02000326,Merrylee and Braidbar,S12000011,East Renfrewshire,256833,659170
+S02000327,North Giffnock and North Thornliebank,S12000011,East Renfrewshire,255918,659463
+S02000328,"Dunterlie, East Arthurlie and Dovecothall",S12000011,East Renfrewshire,250699,659843
+S02000329,Cross Stobbs,S12000011,East Renfrewshire,249771,659876
+S02000584,Carmunnock South,S12000046,Glasgow City,259435,658056
+S02000585,Glenwood South,S12000046,Glasgow City,260306,658737
+S02000586,Darnley West,S12000046,Glasgow City,252432,659031
+S02000587,Darnley East,S12000046,Glasgow City,254083,659136
+S02000588,Glenwood North,S12000046,Glasgow City,260871,659461
+S02000589,Castlemilk,S12000046,Glasgow City,259910,659547
+S02000590,Darnley North,S12000046,Glasgow City,253216,659792
+S02000591,Carmunnock North,S12000046,Glasgow City,258921,659858
+S02000592,Carnwadric West,S12000046,Glasgow City,254738,660060
+S02000593,Muirend and Old Cathcart,S12000046,Glasgow City,257799,660057
+S02000594,Carnwadric East,S12000046,Glasgow City,255602,660219
+S02000595,Kingspark South,S12000046,Glasgow City,259809,660338
+S02000596,Newlands,S12000046,Glasgow City,256577,660508
+S02000597,Nitshill,S12000046,Glasgow City,252997,660666
+S02000598,Merrylee and Millbrae,S12000046,Glasgow City,257605,660792
+S02000599,Cathcart,S12000046,Glasgow City,258564,660755
+S02000600,Kingspark North,S12000046,Glasgow City,259531,661023
+S02000601,Crookston South,S12000046,Glasgow City,252609,661177
+S02000602,Pollokshaws,S12000046,Glasgow City,255052,661232
+S02000603,Mount Florida,S12000046,Glasgow City,258903,661493
+S02000604,Langside,S12000046,Glasgow City,257420,661490
+S02000605,Shawlands East,S12000046,Glasgow City,257328,661888
+S02000606,Crookston North,S12000046,Glasgow City,253313,661947
+S02000607,Battlefield,S12000046,Glasgow City,258247,661944
+S02000608,Pollok South and West,S12000046,Glasgow City,251853,661939
+S02000609,Shawlands West,S12000046,Glasgow City,257096,662059
+S02000610,Toryglen and Oatlands,S12000046,Glasgow City,259879,662302
+S02000611,Shettleston South,S12000046,Glasgow City,264321,662334
+S02000612,Maxwell Park,S12000046,Glasgow City,256002,662524
+S02000613,Carmyle and Mount Vernon South,S12000046,Glasgow City,265221,662543
+S02000614,Strathbungo,S12000046,Glasgow City,257789,662624
+S02000615,Govanhill East and Aikenhead,S12000046,Glasgow City,259071,662624
+S02000616,Govanhill West,S12000046,Glasgow City,258498,662732
+S02000617,Pollok North and East,S12000046,Glasgow City,252996,662835
+S02000618,Baillieston East,S12000046,Glasgow City,267739,662948
+S02000619,Dalmarnock,S12000046,Glasgow City,261312,663049
+S02000620,Braidfauld,S12000046,Glasgow City,263150,663045
+S02000621,Mosspark,S12000046,Glasgow City,254508,663178
+S02000622,Pollokshields East,S12000046,Glasgow City,258002,663259
+S02000623,Mount Vernon North and Sandyhills,S12000046,Glasgow City,266185,663294
+S02000624,Pollokshields West,S12000046,Glasgow City,256819,663485
+S02000625,Cardonald South and East,S12000046,Glasgow City,253637,663557
+S02000626,Baillieston West,S12000046,Glasgow City,267245,663531
+S02000627,Cardonald West and Central,S12000046,Glasgow City,252374,663591
+S02000628,Gorbals and Hutchesontown,S12000046,Glasgow City,259357,663666
+S02000629,Parkhead East and Braidfauld North,S12000046,Glasgow City,263387,663769
+S02000630,Tollcross,S12000046,Glasgow City,264095,663964
+S02000631,Kingston West and Dumbreck,S12000046,Glasgow City,256410,663976
+S02000632,Shettleston North,S12000046,Glasgow City,264965,664024
+S02000633,Parkhead West and Barrowfield,S12000046,Glasgow City,261719,664027
+S02000634,Laurieston and Tradeston,S12000046,Glasgow City,258359,664097
+S02000635,"Calton, Galllowgate and Bridgeton",S12000046,Glasgow City,260194,664140
+S02000636,Garrowhill West,S12000046,Glasgow City,266833,664184
+S02000637,Cardonald North,S12000046,Glasgow City,253175,664255
+S02000638,Craigton,S12000046,Glasgow City,254335,664363
+S02000639,Hillington,S12000046,Glasgow City,252476,664507
+S02000640,Greenfield,S12000046,Glasgow City,264844,664630
+S02000641,Penilee,S12000046,Glasgow City,251708,664594
+S02000642,Kinning Park and Festival Park,S12000046,Glasgow City,257008,664645
+S02000643,Old Shettleston and Parkhead North,S12000046,Glasgow City,263280,664708
+S02000644,Ibrox East and Cessnock,S12000046,Glasgow City,256252,664733
+S02000645,Garrowhill East and Swinton,S12000046,Glasgow City,268229,664739
+S02000646,Barlanark,S12000046,Glasgow City,266160,664797
+S02000647,Gallowgate North and Bellgrove,S12000046,Glasgow City,260526,664969
+S02000648,Carntyne West and Haghill,S12000046,Glasgow City,262062,664987
+S02000649,Ibrox,S12000046,Glasgow City,255706,665086
+S02000650,Dennistoun,S12000046,Glasgow City,260873,665297
+S02000651,Anderston,S12000046,Glasgow City,257702,665447
+S02000652,North Barlanark and Easterhouse South,S12000046,Glasgow City,266898,665453
+S02000653,Easterhouse East,S12000046,Glasgow City,269262,665474
+S02000654,"Cranhill, Lightburn and Queenslie South",S12000046,Glasgow City,264511,665499
+S02000655,City Centre West,S12000046,Glasgow City,258555,665517
+S02000656,Govan and Linthouse,S12000046,Glasgow City,254856,665518
+S02000657,Carntyne,S12000046,Glasgow City,263189,665603
+S02000658,City Centre East,S12000046,Glasgow City,259608,665703
+S02000659,Dennistoun North and Alexandra Parade,S12000046,Glasgow City,261674,665721
+S02000660,Drumoyne and Shieldhall,S12000046,Glasgow City,253162,665771
+S02000661,Finnieston and Kelvinhaugh,S12000046,Glasgow City,256780,665775
+S02000662,Central Easterhouse,S12000046,Glasgow City,268078,665910
+S02000663,Craigend and Ruchazie,S12000046,Glasgow City,265403,666386
+S02000664,Hillhead,S12000046,Glasgow City,256302,666423
+S02000665,Woodlands,S12000046,Glasgow City,257702,666430
+S02000666,"Roystonhill, Blochairn, and Provanmill",S12000046,Glasgow City,261621,666486
+S02000667,Riddrie and Hogganfield,S12000046,Glasgow City,263775,666525
+S02000668,Glasgow Harbour and  Partick South,S12000046,Glasgow City,254921,666566
+S02000669,Woodside,S12000046,Glasgow City,258473,666733
+S02000670,Sighthill,S12000046,Glasgow City,260988,666842
+S02000671,Partick,S12000046,Glasgow City,255292,666857
+S02000672,Kelvingrove and University,S12000046,Glasgow City,256803,666870
+S02000673,Whiteinch,S12000046,Glasgow City,253953,666774
+S02000674,"Garthamlock, Auchinlea and Gartloch",S12000046,Glasgow City,267638,667004
+S02000675,Firhill,S12000046,Glasgow City,257960,667135
+S02000676,Cowlairs and Port Dundas,S12000046,Glasgow City,259701,667186
+S02000677,Partickhill and Hyndland,S12000046,Glasgow City,255564,667222
+S02000678,Blackhill and Barmulloch East,S12000046,Glasgow City,262979,667377
+S02000679,Broomhill,S12000046,Glasgow City,254798,667414
+S02000680,Petershill,S12000046,Glasgow City,261138,667453
+S02000681,Dowanhill,S12000046,Glasgow City,256303,667409
+S02000682,Victoria Park,S12000046,Glasgow City,254127,667441
+S02000683,North Kelvin,S12000046,Glasgow City,257161,667480
+S02000684,Scotstoun South and West,S12000046,Glasgow City,252715,667672
+S02000685,Keppochhill,S12000046,Glasgow City,258544,667669
+S02000686,Scotstoun North and East,S12000046,Glasgow City,253340,667809
+S02000687,Barmulloch,S12000046,Glasgow City,262049,667935
+S02000688,Ruchill,S12000046,Glasgow City,257483,668135
+S02000689,Kelvinside and Jordanhill,S12000046,Glasgow City,254606,668200
+S02000690,Kelvindale,S12000046,Glasgow City,256036,668371
+S02000691,Springburn,S12000046,Glasgow City,261070,668451
+S02000692,Possil Park,S12000046,Glasgow City,258966,668510
+S02000693,Wyndford,S12000046,Glasgow City,256734,668547
+S02000694,Springburn East and Cowlairs,S12000046,Glasgow City,260364,668589
+S02000695,Robroyston and Millerston,S12000046,Glasgow City,263789,668578
+S02000696,Yoker South,S12000046,Glasgow City,251442,668644
+S02000697,Balornock,S12000046,Glasgow City,262129,668854
+S02000698,Knightswood Park East,S12000046,Glasgow City,253373,668872
+S02000699,Knightswood East,S12000046,Glasgow City,252488,668849
+S02000700,Maryhill West,S12000046,Glasgow City,256601,669161
+S02000701,Milton West,S12000046,Glasgow City,258877,669223
+S02000702,Anniesland East,S12000046,Glasgow City,255366,669271
+S02000703,Knightswood West,S12000046,Glasgow City,251958,669292
+S02000704,Maryhill East,S12000046,Glasgow City,257504,669311
+S02000705,Anniesland West,S12000046,Glasgow City,254197,669340
+S02000706,Knightswood Park West,S12000046,Glasgow City,252812,669397
+S02000707,Yoker North,S12000046,Glasgow City,251522,669526
+S02000708,Milton East,S12000046,Glasgow City,259810,669589
+S02000709,Blairdardie East,S12000046,Glasgow City,253585,670091
+S02000710,Summerston North,S12000046,Glasgow City,256179,670076
+S02000711,Blairdardie West,S12000046,Glasgow City,252145,670272
+S02000712,Drumchapel South,S12000046,Glasgow City,252555,670841
+S02000713,Summerston Central and West,S12000046,Glasgow City,257832,671158
+S02000714,Drumry West,S12000046,Glasgow City,251274,671235
+S02000715,Drumchapel North,S12000046,Glasgow City,252710,671641
+S02000716,Drumry East,S12000046,Glasgow City,251818,671811
+S02000771,Kilmacolm Central,S12000018,Inverclyde,235855,669694
+S02000772,"Kilmacolm, Quarriers, Greenock Upper East/Central",S12000018,Inverclyde,230080,669767
+S02000773,Inverkip and Wemyss Bay,S12000018,Inverclyde,221252,670561
+S02000774,Port Glasgow Upper East,S12000018,Inverclyde,234113,672974
+S02000775,"Port Glasgow Mid, East and Central",S12000018,Inverclyde,234836,673467
+S02000776,"Port Glasgow Upper, West and Central",S12000018,Inverclyde,232044,674272
+S02000777,"West Braeside, East Inverkip and West Gourock",S12000018,Inverclyde,221918,674684
+S02000778,Greenock East,S12000018,Inverclyde,229908,675091
+S02000779,"Bow Farm, Barrs Cottage, Cowdenknowes and Overton",S12000018,Inverclyde,226443,675464
+S02000780,Greenock Upper Central,S12000018,Inverclyde,227577,675694
+S02000781,Greenock Town Centre and East Central,S12000018,Inverclyde,228492,675669
+S02000782,"Braeside, Branchton, Lower Larkfield and Ravenscraig",S12000018,Inverclyde,223876,675905
+S02000783,"Lower Bow & Larkfield, Fancy Farm, Mallard Bowl",S12000018,Inverclyde,225612,676083
+S02000784,Greenock West and Central,S12000018,Inverclyde,227076,676564
+S02000785,"Gourock Central, Upper East and IRH",S12000018,Inverclyde,224658,676681
+S02000786,Gourock Upper and West Central & Upper Larkfield,S12000018,Inverclyde,223674,677091
+S02000787,"Gourock East, Greenock West and Lyle Road",S12000018,Inverclyde,226075,677232
+S02000923,Stepps,S12000044,North Lanarkshire,265616,669683
+S02000925,Chryston and Muirhead,S12000044,North Lanarkshire,268423,670489
+S02000926,Moodiesburn West,S12000044,North Lanarkshire,269529,670635
+S02000927,Moodiesburn East,S12000044,North Lanarkshire,270778,671433
+S02000983,Lochwinnoch,S12000038,Renfrewshire,235306,658973
+S02000984,Renfrewshire Rural South & Howwood,S12000038,Renfrewshire,236582,660176
+S02000985,Paisley Glenburn West,S12000038,Renfrewshire,247261,661309
+S02000986,Paisley Glenburn East,S12000038,Renfrewshire,248011,661554
+S02000987,Paisley Foxbar,S12000038,Renfrewshire,245471,661554
+S02000988,Johnstone South West,S12000038,Renfrewshire,241545,661620
+S02000989,Paisley Dykebar,S12000038,Renfrewshire,250032,661778
+S02000990,Paisley South West,S12000038,Renfrewshire,246653,662119
+S02000991,Paisley South East,S12000038,Renfrewshire,248726,662294
+S02000992,Johnstone South East,S12000038,Renfrewshire,243176,662423
+S02000993,Paisley South,S12000038,Renfrewshire,247663,662638
+S02000994,Johnstone North West,S12000038,Renfrewshire,241948,662707
+S02000995,Paisley West,S12000038,Renfrewshire,246188,662883
+S02000996,Kilbarchan,S12000038,Renfrewshire,240562,663044
+S02000997,Paisley East,S12000038,Renfrewshire,249576,663068
+S02000998,Johnstone North East,S12000038,Renfrewshire,243802,663482
+S02000999,Elderslie and Phoenix,S12000038,Renfrewshire,244830,663516
+S02001000,Paisley Central,S12000038,Renfrewshire,248350,663679
+S02001001,Paisley North West,S12000038,Renfrewshire,246849,663698
+S02001002,Paisley Ralston,S12000038,Renfrewshire,250912,664036
+S02001003,Paisley Ferguslie,S12000038,Renfrewshire,246649,664328
+S02001004,Paisley North East,S12000038,Renfrewshire,249760,664364
+S02001005,Linwood South,S12000038,Renfrewshire,243919,664466
+S02001006,Linwood North,S12000038,Renfrewshire,243197,664819
+S02001007,Paisley Gallowhill and Hillington,S12000038,Renfrewshire,250440,665479
+S02001008,Bridge of Weir,S12000038,Renfrewshire,238671,665496
+S02001009,Houston South,S12000038,Renfrewshire,241775,665880
+S02001010,Paisley North,S12000038,Renfrewshire,247869,666124
+S02001011,Renfrew South,S12000038,Renfrewshire,250130,666256
+S02001012,Houston North,S12000038,Renfrewshire,241185,666220
+S02001013,Renfrew East,S12000038,Renfrewshire,251023,666760
+S02001014,Renfrew West,S12000038,Renfrewshire,249521,666819
+S02001015,Renfrewshire Rural North and Langbank,S12000038,Renfrewshire,240940,667574
+S02001016,Renfrew North,S12000038,Renfrewshire,250786,667943
+S02001017,Erskine East and Inchinnan,S12000038,Renfrewshire,247927,669533
+S02001018,Erskine Central,S12000038,Renfrewshire,246896,669703
+S02001019,Erskine West,S12000038,Renfrewshire,245854,670695
+S02001020,Bishopton,S12000038,Renfrewshire,243700,671121
+S02001146,Fernhill and Cathkin,S12000029,South Lanarkshire,262255,659132
+S02001148,Whitlawburn and Greenlees,S12000029,South Lanarkshire,264005,659485
+S02001149,Vicarland and Cairns,S12000029,South Lanarkshire,265351,659625
+S02001150,Burnside and Springhall,S12000029,South Lanarkshire,262489,659731
+S02001152,Spittal,S12000029,South Lanarkshire,261194,660144
+S02001153,Cambuslang Central,S12000029,South Lanarkshire,264006,660305
+S02001154,High Crosshill,S12000029,South Lanarkshire,262440,660378
+S02001156,"Halfway, Hallside and Drumsagard",S12000029,South Lanarkshire,266668,660552
+S02001157,Westburn and Newton,S12000029,South Lanarkshire,265337,660573
+S02001158,Bankhead South,S12000029,South Lanarkshire,260628,660840
+S02001159,"Burgh, Eastfield and Silverbank",S12000029,South Lanarkshire,262715,660950
+S02001160,Burnhill and Bankhead North,S12000029,South Lanarkshire,260735,661470
+S02001161,Shawfield and Clincarthill,S12000029,South Lanarkshire,261065,661814
+S02001162,Farme Cross and Gallowflat North,S12000029,South Lanarkshire,262654,661859
+S02001184,IZ One,S12000039,West Dunbartonshire,250658,669575
+S02001185,IZ Two,S12000039,West Dunbartonshire,249095,670606
+S02001186,IZ Three,S12000039,West Dunbartonshire,250603,670774
+S02001187,IZ Four,S12000039,West Dunbartonshire,249401,671581
+S02001188,IZ Five,S12000039,West Dunbartonshire,248243,671966
+S02001189,IZ Six,S12000039,West Dunbartonshire,249988,672187
+S02001190,IZ Seven,S12000039,West Dunbartonshire,246844,672553
+S02001191,IZ Eight,S12000039,West Dunbartonshire,250583,672908
+S02001192,IZ Nine,S12000039,West Dunbartonshire,240539,675215
+S02001193,IZ Ten,S12000039,West Dunbartonshire,248504,675440
+S02001194,IZ Eleven,S12000039,West Dunbartonshire,243893,675476
+S02001195,IZ Twelve,S12000039,West Dunbartonshire,238466,675509
+S02001196,IZ Thirteen,S12000039,West Dunbartonshire,240786,676301
+S02001197,IZ Fourteen,S12000039,West Dunbartonshire,239865,678129
+S02001198,IZ Fifteen,S12000039,West Dunbartonshire,238185,678372
+S02001199,IZ Sixteen,S12000039,West Dunbartonshire,243815,679919
+S02001200,IZ Seventeen,S12000039,West Dunbartonshire,237206,681584
+S02001201,IZ Eighteen,S12000039,West Dunbartonshire,241891,685122
