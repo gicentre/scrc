@@ -46,8 +46,7 @@ let vlLaMap = {
   },
 };
 
-
-/ -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 // Reference each of the specs with an ID that can be used in the main HTML.
 // If a new spec is added above, add its name along with a corresponding DOM id.
 
