@@ -21,9 +21,9 @@ But this has many problems such as long distance flows (e.g. to/from Shetlands) 
 
 If we standardise the area allocated to each LA and arrange them into a regular grid, we open up some interesting design options. Assigning each LA to a grid cell with a position that preserves the most important geography [is challenging](https://openaccess.city.ac.uk/id/eprint/15167/), but the example below attempts to keep island LAs separate, while preserving key topological and geographic relationships.
 
-| Gridmap                                 | Geomap                               |
-| --------------------------------------- | ------------------------------------ |
-| <div class="wide" id="laGridMap"></div> | <div class="wide" id="laMap2"></div> |
+<div class="wide" id="laGridMap"></div>
+
+<div class="wide" id="laMap2"></div>
 
 <!-- Script containing the vis specs used above. Must be at end of document. -->
 <script src="js/allScotlandVisSpecs.js"></script>
