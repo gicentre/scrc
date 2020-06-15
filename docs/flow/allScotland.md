@@ -25,5 +25,39 @@ If we standardise the area allocated to each LA and arrange them into a regular 
 
 <div class="wide" id="laMap2"></div>
 
+### 2.2 Flows over grid maps
+
+Here we attempt to show conventional flow lines where thickness encodes magnitude of flow for the four different work categories. Main problems are co-linear flows (because of grid layout) and failure to show within flow magnitude. But they do have the advantage of a relatively intuitive representation.
+
+<div class="wide" id="laGridFlowMap1"></div>
+
+<div class="wide" id="laGridFlowMap2"></div>
+
+<div class="wide" id="laGridFlowMap3"></div>
+
+<div class="wide" id="laGridFlowMap4"></div>
+
+#### Difference flow maps
+
+We can colour encode by difference between work categories. For example, the difference between 'likely operating' jobs and 'office closed' jobs, helping to explore the impact of different work classifications used by the models. In the examples below, line thickness is proportional to the 'likelyOperating' flows, coloured according to how different are each of the other job categories.
+
+<div class="wide" id="laGridFlowMap1"></div>
+
+<div class="wide" id="laGridFlowMap2"></div>
+
+<div class="wide" id="laGridFlowMap3"></div>
+
+A problem with these maps is that they show flows in both directions between each pair of LAs. It is not possible to detect which direction each line represents.
+
+One possibility is to slightly offset origin from destination locations such that lines the represent outward movement are shifted NW and inward movement SE. For example it now becomes clearer that the slightly downward sloping thick line between Aberdeenshire and Aberdeen City indicates a flow into the city.
+
+<div class="wide" id="laGridFlowMap1a"></div>
+
+<div class="wide" id="laGridFlowMap2a"></div>
+
+<div class="wide" id="laGridFlowMap3a"></div>
+
+Comparing Glasgow and Edinburgh when looking at how 'other Closed' jobs differ from 'likely operating', we can see that all major inflows into Edinburgh are lower (blue) and the outflows to Midlothian and East Lothian have slightly increased (yellow), albeit with smaller numbers of normal flows. In contrast in Glasgow we see an increased inflow from East Renfrewshire (thick orange) as well as decreased inflows from most other neighbouring regions.
+
 <!-- Script containing the vis specs used above. Must be at end of document. -->
 <script src="js/allScotlandVisSpecs.js"></script>
