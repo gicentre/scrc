@@ -1,0 +1,33 @@
+---
+---
+
+// Headers
+$header-bg-color-secondary: #254c82;
+$header-bg-color: #8f4e1d;
+
+// Text
+$section-headings-color: #3a200c;
+
+.main-content {
+  font-family: Merriweather, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.wide {
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Fjalla+One&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap");
+
+@import "{{ site.theme }}";
