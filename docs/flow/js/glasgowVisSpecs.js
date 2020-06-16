@@ -176,7 +176,7 @@ let vlGgFlowMap = {
               input: "range",
               name: "Min flow (people): ",
               min: 3,
-              max: 160,
+              max: 158,
               step: 1,
             },
           },
@@ -264,12 +264,12 @@ let vlGgFlowMap = {
           field: "dY",
         },
         strokeWidth: {
-          field: "likelyOperating",
+          field: "total",
           type: "quantitative",
           scale: {
             type: "linear",
             domain: [0, 160],
-            range: [0.2, 20],
+            range: [0.2, 10],
           },
           legend: null,
         },

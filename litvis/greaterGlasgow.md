@@ -182,7 +182,7 @@ ggFlowMap =
                 << select "flowSlider"
                     seSingle
                     [ seInit [ ( "minFlow", num 10 ) ]
-                    , seBind [ iRange "minFlow" [ inName "Min flow (people): ", inMin 3, inMax 160, inStep 1 ] ]
+                    , seBind [ iRange "minFlow" [ inName "Min flow (people): ", inMin 3, inMax 158, inStep 1 ] ]
                     ]
 
         odTrans =
@@ -217,9 +217,9 @@ ggFlowMap =
                 << position X2 [ pName "dX" ]
                 << position Y2 [ pName "dY" ]
                 << strokeWidth
-                    [ mName "likelyOperating"
+                    [ mName "total"
                     , mQuant
-                    , mScale [ scType scLinear, scDomain (doNums [ 0, 160 ]), scRange (raNums [ 0.2, 20 ]) ]
+                    , mScale [ scType scLinear, scDomain (doNums [ 0, 160 ]), scRange (raNums [ 0.2, 10 ]) ]
                     , mLegend []
                     ]
 
