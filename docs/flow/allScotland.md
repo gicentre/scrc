@@ -217,7 +217,13 @@ When we re-arrange to show _incoming_ flows it is clear that the big differences
 
 ##### Consider the pairs of OD Maps showing differences in flows.<br/>Record some reactions!<br/>What can you see?<br/>What does this lead you to think about these flows of workers in particular roles?
 
-We see clear spatial structure in both strength of flow and differences between different job categories (_hover mouse over cells to see values_). Most dominant is the much higher number of flows within LAs. This suggests that we need to consider these data art higher resolution. To explore what is happening at a local scale we can consider just the [Glasgow and Clyde region](glasgow.md).
+We see clear spatial structure in both strength of flow and differences between different job categories (_hover mouse over cells to see values_). Most dominant is the much higher number of flows within LAs. This suggests that we need to consider these data at higher resolution. To explore what is happening at a local scale we can focus in on the [Glasgow and Clyde region](glasgow.md).
+
+---
+
+**Jo WOOD**<br/>
+**Jason DYKES**<br/>
+_16/06/2020_
 
 <!-- Script containing the vis specs used above. Must be at end of document. -->
 <script src="js/allScotlandVisSpecs.js"></script>
