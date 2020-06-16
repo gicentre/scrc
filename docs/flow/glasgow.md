@@ -19,5 +19,7 @@ The challenge here is that we have many more regions (MSOAs) that we need to con
 
 Overlaying flow lines on the conventional geography leads to a 'hairball' with longer flows dominating the view hiding shorter flows. For assessing the travel pattern models, this is problematic. We can ameliorate this to some extend by filtering by length or volume of flow:
 
+<div class="wide" id="ggFlowMap"></div>
+
 <!-- Script containing the vis specs used above. Must be at end of document. -->
 <script src="js/glasgowVisSpecs.js"></script>
