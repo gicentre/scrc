@@ -24,9 +24,11 @@ But this has many problems such as:
 * long distance flows (e.g. to/from Shetlands) having a disproportionate saliency;
 * over-plotting making (short) local flows hard to discriminate;
 * direction of flow not being encoded;
-* smaller regions of high population leading to crowded view of flows.
+* smaller regions of high population lead to a crowded view of flows;
 
-Try to answer the following ...
+To help understand the graphics, and get a sense of the flows, we'll be asking a few questions as we go along. Please take the time to try to answer them - you'll get more from the graphics if you do so. We hope you'll think about answers and record them. We'd be pleased to hear responses and reactions to the graphics and the data.
+
+For starters, try to use the flow map to answer the following questions.
 
 ###### EXPERIMENT
 
@@ -96,7 +98,7 @@ Note the orange lines that show the significance of the flows between Falkirk, F
 
 ###### EXPERIMENT
 
-##### Can you describe the differences between the flows of those in '_otherClosed_' and '_likelyOperating_' roles shown here?
+##### Can you describe the differences between the flows of those in<br/>'_otherClosed_' and '_likelyOperating_' roles shown here?
 
 
 ###### EXPOSE
@@ -114,7 +116,7 @@ One possibility is to slightly offset origin from destination locations such tha
 
 <div class="wide" id="laGridDiffFlowMap2a"></div>
 
-##### We have seen that the numbers of workers in '_officeClosed_' roles moving between Edinburgh and Falkirk, Fife and West Lothian are comparable to or higher than those in '_likelyOperating_' roles - but are these people commuting to or from Edinburgh?
+##### We have seen that the numbers of workers in '_officeClosed_' roles moving between Edinburgh and Falkirk, Fife and West Lothian are comparable to, or higher than, those in '_likelyOperating_' roles - but are these people commuting to Edinburgh or from Edinburgh?
 
 <div class="wide" id="laGridDiffFlowMap3a"></div>
 
@@ -213,7 +215,7 @@ When we re-arrange to show _incoming_ flows it is clear that the big differences
 
 ###### EXPLORE
 
-##### Consider the pairs of OD Maps showing differences in flows, and record some reactions.<br/>What can you see?<br/>What does this lead you to think about these flows of workers in particular roles?
+##### Consider the pairs of OD Maps showing differences in flows.<br/>Record some reactions!<br/>What can you see?<br/>What does this lead you to think about these flows of workers in particular roles?
 
 We see clear spatial structure in both strength of flow and differences between different job categories (_hover mouse over cells to see values_). Most dominant is the much higher number of flows within LAs. This suggests that we need to consider these data art higher resolution. To explore what is happening at a local scale we can consider just the [Glasgow and Clyde region](glasgow.md).
 
