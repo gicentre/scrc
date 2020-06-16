@@ -39,7 +39,7 @@ The 21 _WICID_ employment sectors are combined into 4 categories:
 
 |Name|Explanation|
 |-:|:--|
-|**LikelyOperating**|_Industries in which workers are in key roles and so probably travelling under lockdown _|
+|**LikelyOperating**|_Industries in which workers are in key roles and so probably travelling under lockdown_|
 |**OtherMiddle**|_Those employed in industries less likely to be working under lockdown, but who may begin working as lockdown loosens. Based on Scottish ordering of when people in particular roles are able to work._|
 |**OfficeClosed**|_Those working in offices who are unlikely to be travelling during lockdown_|
 |**OtherClosed**|others in employment categories who are unlikely to be travelling during lockdown, including the retail, real estate, cultural and hospitality sectors.|

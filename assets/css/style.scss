@@ -28,6 +28,35 @@ h6 {
   text-align: center;
 }
 
+// DExD stuff
+$showDEXDquestion: block
+$showDEXDtype: none
+
+.dexd, h5, h6 {
+  font-family: Avenir; font-size:0.8em;
+}
+
+h6 {
+  // -- DExD Type Label
+  padding:0.5em; margin:0.5em; margin-left:1em;
+  font-weight:normal;
+  border:#e0e0e0 solid 1px;
+  background-color:#f0f8e0;
+  float:right;
+  display:$showDEXDtype;
+}
+
+h5 {
+  // -- DExD Question / Annotation
+  font-family:"Palatino";
+  color:"#82744D";
+  font-style:"italic";
+  padding:3px; margin:3px; padding-right:1em;
+  text-align:right;
+  border:none;
+  display:$showDEXDquestion;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Fjalla+One&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap");
 
 @import "{{ site.theme }}";
