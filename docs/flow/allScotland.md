@@ -59,5 +59,19 @@ One possibility is to slightly offset origin from destination locations such tha
 
 Comparing Glasgow and Edinburgh when looking at how 'other Closed' jobs differ from 'likely operating', we can see that all major inflows into Edinburgh are lower (blue) and the outflows to Midlothian and East Lothian have slightly increased (yellow), albeit with smaller numbers of normal flows. In contrast in Glasgow we see an increased inflow from East Renfrewshire (thick orange) as well as decreased inflows from most other neighbouring regions.
 
+## 3. OD Matrices
+
+As an alternative, we could lose geography and show flows as an OD matrix. Here we use colour to show magnitude of the flow (on a log scale) and alphabetic position to indicate LA.
+
+<div class="wide" id="laODMatrix1"></div>
+
+<div class="wide" id="laODMatrix2"></div>
+
+<div class="wide" id="laODMatrix3"></div>
+
+<div class="wide" id="laODMatrix4"></div>
+
+There are a number of problems with this form of representation. Using colour encoding for a strongly skewed distribution is hard to interpret, with or without a log scale. Position of a cell in the matrix is determined by a somewhat arbitrary alphabetic ordering, so spotting and interpreting geographic clusters is challenging. We therefore turn to an alternative arrangement of the matrix cells that preserve geographic patterns.
+
 <!-- Script containing the vis specs used above. Must be at end of document. -->
 <script src="js/allScotlandVisSpecs.js"></script>

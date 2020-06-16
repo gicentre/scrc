@@ -2532,6 +2532,366 @@ let vlLaGridDiffFlowMap3a = {
   ],
 };
 
+let vlLaODMatrix1 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+  },
+  background: "#f9f9fc",
+  title: {
+    text: "likelyOperating",
+    fontSize: 18,
+  },
+  width: 400,
+  height: 400,
+  data: {
+    url: "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "source",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/geo/scotLACentroids.csv",
+        },
+        key: "lad17cd",
+        fields: ["lad17nm"],
+      },
+      as: ["srcName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/geo/scotLACentroids.csv",
+        },
+        key: "lad17cd",
+        fields: ["lad17nm"],
+      },
+      as: ["dstName"],
+    },
+  ],
+  encoding: {
+    x: {
+      field: "srcName",
+      type: "ordinal",
+      title: "Origin",
+    },
+    y: {
+      field: "dstName",
+      type: "ordinal",
+      title: "Destination",
+    },
+    color: {
+      field: "likelyOperating",
+      type: "quantitative",
+      scale: {
+        type: "symlog",
+        domain: [0, 60000],
+        scheme: "yelloworangebrown",
+      },
+      legend: {
+        tickCount: 5,
+        gradientLength: 400,
+        title: null,
+      },
+    },
+    tooltip: [
+      {
+        field: "srcName",
+        type: "nominal",
+        title: "origin",
+      },
+      {
+        field: "dstName",
+        type: "nominal",
+        title: "destination",
+      },
+      {
+        field: "likelyOperating",
+        type: "nominal",
+      },
+    ],
+  },
+  mark: {
+    type: "rect",
+    stroke: "white",
+    strokeWidth: 2,
+  },
+};
+
+let vlLaODMatrix2 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+  },
+  background: "#f9f9fc",
+  title: {
+    text: "otherMiddle",
+    fontSize: 18,
+  },
+  width: 400,
+  height: 400,
+  data: {
+    url: "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "source",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/geo/scotLACentroids.csv",
+        },
+        key: "lad17cd",
+        fields: ["lad17nm"],
+      },
+      as: ["srcName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/geo/scotLACentroids.csv",
+        },
+        key: "lad17cd",
+        fields: ["lad17nm"],
+      },
+      as: ["dstName"],
+    },
+  ],
+  encoding: {
+    x: {
+      field: "srcName",
+      type: "ordinal",
+      title: "Origin",
+    },
+    y: {
+      field: "dstName",
+      type: "ordinal",
+      title: "Destination",
+    },
+    color: {
+      field: "otherMiddle",
+      type: "quantitative",
+      scale: {
+        type: "symlog",
+        domain: [0, 60000],
+        scheme: "yelloworangebrown",
+      },
+      legend: {
+        tickCount: 5,
+        gradientLength: 400,
+        title: null,
+      },
+    },
+    tooltip: [
+      {
+        field: "srcName",
+        type: "nominal",
+        title: "origin",
+      },
+      {
+        field: "dstName",
+        type: "nominal",
+        title: "destination",
+      },
+      {
+        field: "otherMiddle",
+        type: "nominal",
+      },
+    ],
+  },
+  mark: {
+    type: "rect",
+    stroke: "white",
+    strokeWidth: 2,
+  },
+};
+
+let vlLaODMatrix3 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+  },
+  background: "#f9f9fc",
+  title: {
+    text: "officeClosed",
+    fontSize: 18,
+  },
+  width: 400,
+  height: 400,
+  data: {
+    url: "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "source",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/geo/scotLACentroids.csv",
+        },
+        key: "lad17cd",
+        fields: ["lad17nm"],
+      },
+      as: ["srcName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/geo/scotLACentroids.csv",
+        },
+        key: "lad17cd",
+        fields: ["lad17nm"],
+      },
+      as: ["dstName"],
+    },
+  ],
+  encoding: {
+    x: {
+      field: "srcName",
+      type: "ordinal",
+      title: "Origin",
+    },
+    y: {
+      field: "dstName",
+      type: "ordinal",
+      title: "Destination",
+    },
+    color: {
+      field: "officeClosed",
+      type: "quantitative",
+      scale: {
+        type: "symlog",
+        domain: [0, 60000],
+        scheme: "yelloworangebrown",
+      },
+      legend: {
+        tickCount: 5,
+        gradientLength: 400,
+        title: null,
+      },
+    },
+    tooltip: [
+      {
+        field: "srcName",
+        type: "nominal",
+        title: "origin",
+      },
+      {
+        field: "dstName",
+        type: "nominal",
+        title: "destination",
+      },
+      {
+        field: "officeClosed",
+        type: "nominal",
+      },
+    ],
+  },
+  mark: {
+    type: "rect",
+    stroke: "white",
+    strokeWidth: 2,
+  },
+};
+
+let vlLaODMatrix4 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+  },
+  background: "#f9f9fc",
+  title: {
+    text: "otherClosed",
+    fontSize: 18,
+  },
+  width: 400,
+  height: 400,
+  data: {
+    url: "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "source",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/geo/scotLACentroids.csv",
+        },
+        key: "lad17cd",
+        fields: ["lad17nm"],
+      },
+      as: ["srcName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/geo/scotLACentroids.csv",
+        },
+        key: "lad17cd",
+        fields: ["lad17nm"],
+      },
+      as: ["dstName"],
+    },
+  ],
+  encoding: {
+    x: {
+      field: "srcName",
+      type: "ordinal",
+      title: "Origin",
+    },
+    y: {
+      field: "dstName",
+      type: "ordinal",
+      title: "Destination",
+    },
+    color: {
+      field: "otherClosed",
+      type: "quantitative",
+      scale: {
+        type: "symlog",
+        domain: [0, 60000],
+        scheme: "yelloworangebrown",
+      },
+      legend: {
+        tickCount: 5,
+        gradientLength: 400,
+        title: null,
+      },
+    },
+    tooltip: [
+      {
+        field: "srcName",
+        type: "nominal",
+        title: "origin",
+      },
+      {
+        field: "dstName",
+        type: "nominal",
+        title: "destination",
+      },
+      {
+        field: "otherClosed",
+        type: "nominal",
+      },
+    ],
+  },
+  mark: {
+    type: "rect",
+    stroke: "white",
+    strokeWidth: 2,
+  },
+};
+
 // -----------------------------------------------------------------------------
 // Reference each of the specs with an ID that can be used in the main HTML.
 // If a new spec is added above, add its name along with a corresponding DOM id.
@@ -2554,3 +2914,8 @@ vegaEmbed("#laGridDiffFlowMap3", vlLaGridDiffFlowMap3).catch(console.error);
 vegaEmbed("#laGridDiffFlowMap1a", vlLaGridDiffFlowMap1a).catch(console.error);
 vegaEmbed("#laGridDiffFlowMap2a", vlLaGridDiffFlowMap2a).catch(console.error);
 vegaEmbed("#laGridDiffFlowMap3a", vlLaGridDiffFlowMap3a).catch(console.error);
+
+vegaEmbed("#laODMatrix1", vlLaODMatrix1).catch(console.error);
+vegaEmbed("#laODMatrix2", vlLaODMatrix2).catch(console.error);
+vegaEmbed("#laODMatrix3", vlLaODMatrix3).catch(console.error);
+vegaEmbed("#laODMatrix4", vlLaODMatrix4).catch(console.error);
