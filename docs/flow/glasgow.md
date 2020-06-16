@@ -39,5 +39,11 @@ Note the dominance of City Centre West and the obvious asymmetry of outgoing and
 
 <div class="wide" id="ggODMap4"></div>
 
+**Difference between office closure and likely opening**
+
+<div class="wide" id="ggODMap5"></div>
+
+<div class="wide" id="ggODMap6"></div>
+
 <!-- Script containing the vis specs used above. Must be at end of document. -->
 <script src="js/glasgowVisSpecs.js"></script>
