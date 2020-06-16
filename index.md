@@ -31,7 +31,8 @@ When you are done, we'd like you to ...
 
 What did you see? What did you learn? What works? What doesn't?
 
-There are two documents listed below - read through in turn
+The two documents are **listed below** - read through _in turn_, _interact_ whenever you get the chance.
+
 
 ## The Data
 
