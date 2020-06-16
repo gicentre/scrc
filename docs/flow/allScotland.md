@@ -121,7 +121,7 @@ We can apply the same approach to showing differences between the different job 
 
 <div class="wide" id="laODMap8"></div>
 
-We see clear spatial structure in both strength of flow and differences between different job categories (_hover mose over cells to see values_). Most dominant is the much higher number of flows within LAs. To explore what is happening at a local scale we can consider just the [Glasgow and Clyde region](greaterGlasgow.md).
+We see clear spatial structure in both strength of flow and differences between different job categories (_hover mose over cells to see values_). Most dominant is the much higher number of flows within LAs. To explore what is happening at a local scale we can consider just the [Glasgow and Clyde region](glasgow.md).
 
 <!-- Script containing the vis specs used above. Must be at end of document. -->
 <script src="js/allScotlandVisSpecs.js"></script>
