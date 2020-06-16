@@ -315,7 +315,7 @@ outDiffOC =
     { outLO
         | flowField = "diffOfCl_LiOp"
         , scheme = "redYellowBlue"
-        , schemeRange = ( 1, 0 )
+        , schemeRange = ( 3, -2 )
         , schemeDiverge = True
         , schemeDomain = Just ( -550, 550 )
         , cScale = scLinear

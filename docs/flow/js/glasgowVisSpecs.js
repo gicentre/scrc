@@ -1278,7 +1278,7 @@ let vlGgODMap5 = {
               type: "linear",
               scheme: {
                 name: "redYellowBlue",
-                extent: [1, 0],
+                extent: [3, -2],
               },
             },
             legend: {
@@ -1494,7 +1494,7 @@ let vlGgODMap6 = {
               type: "linear",
               scheme: {
                 name: "redYellowBlue",
-                extent: [1, 0],
+                extent: [3, -2],
               },
             },
             legend: {
