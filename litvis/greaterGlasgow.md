@@ -45,7 +45,7 @@ odData =
 
 ## 1. MSOA regions
 
-In contrast to the [all Scotland visualizations](#allScotland.md), we can examine the home-work flows at a more local scale by considering patterns aggregated at MSOA level, here for the Glasgow and Strathclyde region.
+In contrast to the [all Scotland visualizations](allScotland.md), we can examine the home-work flows at a more local scale by considering patterns aggregated at MSOA level, here for the Glasgow and Strathclyde region.
 
 ```elm {v interactive}
 ggMap : Spec
