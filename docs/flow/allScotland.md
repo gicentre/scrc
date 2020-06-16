@@ -220,7 +220,7 @@ When we re-arrange to show _incoming_ flows it is clear that the big differences
 We see clear spatial structure in both strength of flow and differences between different job categories (_hover mouse over cells to see values_). Most dominant is the much higher number of flows within LAs. This suggests that we need to consider these data at higher resolution. To explore what is happening at a local scale we can focus in on the [Glasgow and Clyde region](glasgow.md).
 
 ---
-[Mapping Workplace Travel](https://gicentre.github.io/scrc/)
+[Mapping Workplace Travel](https://gicentre.github.io/scrc/) - head back to the main document.
 
 ---
 
