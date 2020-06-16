@@ -2892,6 +2892,1554 @@ let vlLaODMatrix4 = {
   },
 };
 
+let vlLaODMap1 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+    header: {
+      labelFontSize: 0,
+      title: null,
+    },
+    facet: {
+      spacing: 5,
+    },
+  },
+  title: {
+    text: "Outgoing flows",
+  },
+  background: "#f9f9fc",
+  data: {
+    url: "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "source",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["oCol", "oRow", "oName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["dCol", "dRow", "dName"],
+    },
+  ],
+  resolve: {
+    scale: {
+      color: "shared",
+    },
+  },
+  facet: {
+    row: {
+      field: "oRow",
+      type: "ordinal",
+    },
+    column: {
+      field: "oCol",
+      type: "ordinal",
+    },
+  },
+  spec: {
+    width: 80,
+    height: 80,
+    layer: [
+      {
+        encoding: {
+          x: {
+            field: "dCol",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "dRow",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+          color: {
+            field: "likelyOperating",
+            type: "quantitative",
+            scale: {
+              type: "symlog",
+              scheme: {
+                name: "yelloworangebrown",
+                extent: [0, 1.2],
+              },
+            },
+            legend: {
+              gradientLength: 96,
+              gradientThickness: 8,
+              titleFontSize: 8,
+              labelFontSize: 8,
+              orient: "top-left",
+              direction: "horizontal",
+              offset: -8,
+            },
+          },
+          tooltip: [
+            {
+              field: "oName",
+              type: "nominal",
+              title: "origin",
+            },
+            {
+              field: "dName",
+              type: "nominal",
+              title: "destination",
+            },
+            {
+              field: "likelyOperating",
+              type: "nominal",
+            },
+          ],
+        },
+        mark: {
+          type: "square",
+          size: 79.01234567901234,
+          opacity: 1,
+        },
+      },
+      {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        encoding: {
+          x: {
+            field: "g79X",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "g79Y",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+        },
+        mark: {
+          type: "square",
+          fill: null,
+          stroke: "black",
+          size: 63.20987654320987,
+          strokeWidth: 0.2,
+        },
+      },
+      {
+        data: {
+          values: [
+            {
+              cCol: 3,
+              cRow: 4,
+            },
+          ],
+        },
+        encoding: {
+          x: {
+            field: "cCol",
+            type: "quantitative",
+          },
+          y: {
+            field: "cRow",
+            type: "quantitative",
+          },
+        },
+        mark: {
+          type: "square",
+          size: 9560.493827160493,
+          fill: null,
+          stroke: "black",
+          strokeWidth: 0.5,
+        },
+      },
+    ],
+  },
+};
+
+let vlLaODMap2 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+    header: {
+      labelFontSize: 0,
+      title: null,
+    },
+    facet: {
+      spacing: 5,
+    },
+  },
+  title: {
+    text: "Incoming flows",
+  },
+  background: "#f9f9fc",
+  data: {
+    url: "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "source",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["oCol", "oRow", "oName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["dCol", "dRow", "dName"],
+    },
+  ],
+  resolve: {
+    scale: {
+      color: "shared",
+    },
+  },
+  facet: {
+    row: {
+      field: "dRow",
+      type: "ordinal",
+    },
+    column: {
+      field: "dCol",
+      type: "ordinal",
+    },
+  },
+  spec: {
+    width: 80,
+    height: 80,
+    layer: [
+      {
+        encoding: {
+          x: {
+            field: "oCol",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "oRow",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+          color: {
+            field: "likelyOperating",
+            type: "quantitative",
+            scale: {
+              type: "symlog",
+              scheme: {
+                name: "yelloworangebrown",
+                extent: [0, 1.2],
+              },
+            },
+            legend: {
+              gradientLength: 96,
+              gradientThickness: 8,
+              titleFontSize: 8,
+              labelFontSize: 8,
+              orient: "top-left",
+              direction: "horizontal",
+              offset: -8,
+            },
+          },
+          tooltip: [
+            {
+              field: "oName",
+              type: "nominal",
+              title: "origin",
+            },
+            {
+              field: "dName",
+              type: "nominal",
+              title: "destination",
+            },
+            {
+              field: "likelyOperating",
+              type: "nominal",
+            },
+          ],
+        },
+        mark: {
+          type: "square",
+          size: 79.01234567901234,
+          opacity: 1,
+        },
+      },
+      {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        encoding: {
+          x: {
+            field: "g79X",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "g79Y",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+        },
+        mark: {
+          type: "square",
+          fill: null,
+          stroke: "black",
+          size: 63.20987654320987,
+          strokeWidth: 0.2,
+        },
+      },
+      {
+        data: {
+          values: [
+            {
+              cCol: 3,
+              cRow: 4,
+            },
+          ],
+        },
+        encoding: {
+          x: {
+            field: "cCol",
+            type: "quantitative",
+          },
+          y: {
+            field: "cRow",
+            type: "quantitative",
+          },
+        },
+        mark: {
+          type: "square",
+          size: 9560.493827160493,
+          fill: null,
+          stroke: "black",
+          strokeWidth: 0.5,
+        },
+      },
+    ],
+  },
+};
+
+let vlLaODMap3 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+    header: {
+      labelFontSize: 0,
+      title: null,
+    },
+    facet: {
+      spacing: 5,
+    },
+  },
+  title: {
+    text: "Outgoing flows",
+  },
+  background: "#f9f9fc",
+  data: {
+    url: "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "source",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["oCol", "oRow", "oName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["dCol", "dRow", "dName"],
+    },
+  ],
+  resolve: {
+    scale: {
+      color: "shared",
+    },
+  },
+  facet: {
+    row: {
+      field: "oRow",
+      type: "ordinal",
+    },
+    column: {
+      field: "oCol",
+      type: "ordinal",
+    },
+  },
+  spec: {
+    width: 80,
+    height: 80,
+    layer: [
+      {
+        encoding: {
+          x: {
+            field: "dCol",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "dRow",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+          color: {
+            field: "diffOtMi_LiOp",
+            type: "quantitative",
+            scale: {
+              domain: [-7000, 7000],
+              domainMid: 0,
+              type: "linear",
+              scheme: {
+                name: "redYellowBlue",
+                extent: [1, 0],
+              },
+            },
+            legend: {
+              gradientLength: 96,
+              gradientThickness: 8,
+              titleFontSize: 8,
+              labelFontSize: 8,
+              orient: "top-left",
+              direction: "horizontal",
+              offset: -8,
+            },
+          },
+          tooltip: [
+            {
+              field: "oName",
+              type: "nominal",
+              title: "origin",
+            },
+            {
+              field: "dName",
+              type: "nominal",
+              title: "destination",
+            },
+            {
+              field: "diffOtMi_LiOp",
+              type: "nominal",
+            },
+          ],
+        },
+        mark: {
+          type: "square",
+          size: 79.01234567901234,
+          opacity: 1,
+        },
+      },
+      {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        encoding: {
+          x: {
+            field: "g79X",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "g79Y",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+        },
+        mark: {
+          type: "square",
+          fill: null,
+          stroke: "black",
+          size: 63.20987654320987,
+          strokeWidth: 0.2,
+        },
+      },
+      {
+        data: {
+          values: [
+            {
+              cCol: 3,
+              cRow: 4,
+            },
+          ],
+        },
+        encoding: {
+          x: {
+            field: "cCol",
+            type: "quantitative",
+          },
+          y: {
+            field: "cRow",
+            type: "quantitative",
+          },
+        },
+        mark: {
+          type: "square",
+          size: 9560.493827160493,
+          fill: null,
+          stroke: "black",
+          strokeWidth: 0.5,
+        },
+      },
+    ],
+  },
+};
+
+let vlLaODMap4 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+    header: {
+      labelFontSize: 0,
+      title: null,
+    },
+    facet: {
+      spacing: 5,
+    },
+  },
+  title: {
+    text: "Incoming flows",
+  },
+  background: "#f9f9fc",
+  data: {
+    url: "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "source",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["oCol", "oRow", "oName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["dCol", "dRow", "dName"],
+    },
+  ],
+  resolve: {
+    scale: {
+      color: "shared",
+    },
+  },
+  facet: {
+    row: {
+      field: "dRow",
+      type: "ordinal",
+    },
+    column: {
+      field: "dCol",
+      type: "ordinal",
+    },
+  },
+  spec: {
+    width: 80,
+    height: 80,
+    layer: [
+      {
+        encoding: {
+          x: {
+            field: "oCol",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "oRow",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+          color: {
+            field: "diffOtMi_LiOp",
+            type: "quantitative",
+            scale: {
+              domain: [-7000, 7000],
+              domainMid: 0,
+              type: "linear",
+              scheme: {
+                name: "redYellowBlue",
+                extent: [1, 0],
+              },
+            },
+            legend: {
+              gradientLength: 96,
+              gradientThickness: 8,
+              titleFontSize: 8,
+              labelFontSize: 8,
+              orient: "top-left",
+              direction: "horizontal",
+              offset: -8,
+            },
+          },
+          tooltip: [
+            {
+              field: "oName",
+              type: "nominal",
+              title: "origin",
+            },
+            {
+              field: "dName",
+              type: "nominal",
+              title: "destination",
+            },
+            {
+              field: "diffOtMi_LiOp",
+              type: "nominal",
+            },
+          ],
+        },
+        mark: {
+          type: "square",
+          size: 79.01234567901234,
+          opacity: 1,
+        },
+      },
+      {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        encoding: {
+          x: {
+            field: "g79X",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "g79Y",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+        },
+        mark: {
+          type: "square",
+          fill: null,
+          stroke: "black",
+          size: 63.20987654320987,
+          strokeWidth: 0.2,
+        },
+      },
+      {
+        data: {
+          values: [
+            {
+              cCol: 3,
+              cRow: 4,
+            },
+          ],
+        },
+        encoding: {
+          x: {
+            field: "cCol",
+            type: "quantitative",
+          },
+          y: {
+            field: "cRow",
+            type: "quantitative",
+          },
+        },
+        mark: {
+          type: "square",
+          size: 9560.493827160493,
+          fill: null,
+          stroke: "black",
+          strokeWidth: 0.5,
+        },
+      },
+    ],
+  },
+};
+
+let vlLaODMap5 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+    header: {
+      labelFontSize: 0,
+      title: null,
+    },
+    facet: {
+      spacing: 5,
+    },
+  },
+  title: {
+    text: "Outgoing flows",
+  },
+  background: "#f9f9fc",
+  data: {
+    url: "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "source",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["oCol", "oRow", "oName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["dCol", "dRow", "dName"],
+    },
+  ],
+  resolve: {
+    scale: {
+      color: "shared",
+    },
+  },
+  facet: {
+    row: {
+      field: "oRow",
+      type: "ordinal",
+    },
+    column: {
+      field: "oCol",
+      type: "ordinal",
+    },
+  },
+  spec: {
+    width: 80,
+    height: 80,
+    layer: [
+      {
+        encoding: {
+          x: {
+            field: "dCol",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "dRow",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+          color: {
+            field: "diffOfCl_LiOp",
+            type: "quantitative",
+            scale: {
+              domain: [-7000, 7000],
+              domainMid: 0,
+              type: "linear",
+              scheme: {
+                name: "redYellowBlue",
+                extent: [1, 0],
+              },
+            },
+            legend: {
+              gradientLength: 96,
+              gradientThickness: 8,
+              titleFontSize: 8,
+              labelFontSize: 8,
+              orient: "top-left",
+              direction: "horizontal",
+              offset: -8,
+            },
+          },
+          tooltip: [
+            {
+              field: "oName",
+              type: "nominal",
+              title: "origin",
+            },
+            {
+              field: "dName",
+              type: "nominal",
+              title: "destination",
+            },
+            {
+              field: "diffOfCl_LiOp",
+              type: "nominal",
+            },
+          ],
+        },
+        mark: {
+          type: "square",
+          size: 79.01234567901234,
+          opacity: 1,
+        },
+      },
+      {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        encoding: {
+          x: {
+            field: "g79X",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "g79Y",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+        },
+        mark: {
+          type: "square",
+          fill: null,
+          stroke: "black",
+          size: 63.20987654320987,
+          strokeWidth: 0.2,
+        },
+      },
+      {
+        data: {
+          values: [
+            {
+              cCol: 3,
+              cRow: 4,
+            },
+          ],
+        },
+        encoding: {
+          x: {
+            field: "cCol",
+            type: "quantitative",
+          },
+          y: {
+            field: "cRow",
+            type: "quantitative",
+          },
+        },
+        mark: {
+          type: "square",
+          size: 9560.493827160493,
+          fill: null,
+          stroke: "black",
+          strokeWidth: 0.5,
+        },
+      },
+    ],
+  },
+};
+
+let vlLaODMap6 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+    header: {
+      labelFontSize: 0,
+      title: null,
+    },
+    facet: {
+      spacing: 5,
+    },
+  },
+  title: {
+    text: "Incoming flows",
+  },
+  background: "#f9f9fc",
+  data: {
+    url: "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "source",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["oCol", "oRow", "oName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["dCol", "dRow", "dName"],
+    },
+  ],
+  resolve: {
+    scale: {
+      color: "shared",
+    },
+  },
+  facet: {
+    row: {
+      field: "dRow",
+      type: "ordinal",
+    },
+    column: {
+      field: "dCol",
+      type: "ordinal",
+    },
+  },
+  spec: {
+    width: 80,
+    height: 80,
+    layer: [
+      {
+        encoding: {
+          x: {
+            field: "oCol",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "oRow",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+          color: {
+            field: "diffOfCl_LiOp",
+            type: "quantitative",
+            scale: {
+              domain: [-7000, 7000],
+              domainMid: 0,
+              type: "linear",
+              scheme: {
+                name: "redYellowBlue",
+                extent: [1, 0],
+              },
+            },
+            legend: {
+              gradientLength: 96,
+              gradientThickness: 8,
+              titleFontSize: 8,
+              labelFontSize: 8,
+              orient: "top-left",
+              direction: "horizontal",
+              offset: -8,
+            },
+          },
+          tooltip: [
+            {
+              field: "oName",
+              type: "nominal",
+              title: "origin",
+            },
+            {
+              field: "dName",
+              type: "nominal",
+              title: "destination",
+            },
+            {
+              field: "diffOfCl_LiOp",
+              type: "nominal",
+            },
+          ],
+        },
+        mark: {
+          type: "square",
+          size: 79.01234567901234,
+          opacity: 1,
+        },
+      },
+      {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        encoding: {
+          x: {
+            field: "g79X",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "g79Y",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+        },
+        mark: {
+          type: "square",
+          fill: null,
+          stroke: "black",
+          size: 63.20987654320987,
+          strokeWidth: 0.2,
+        },
+      },
+      {
+        data: {
+          values: [
+            {
+              cCol: 3,
+              cRow: 4,
+            },
+          ],
+        },
+        encoding: {
+          x: {
+            field: "cCol",
+            type: "quantitative",
+          },
+          y: {
+            field: "cRow",
+            type: "quantitative",
+          },
+        },
+        mark: {
+          type: "square",
+          size: 9560.493827160493,
+          fill: null,
+          stroke: "black",
+          strokeWidth: 0.5,
+        },
+      },
+    ],
+  },
+};
+
+let vlLaODMap7 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+    header: {
+      labelFontSize: 0,
+      title: null,
+    },
+    facet: {
+      spacing: 5,
+    },
+  },
+  title: {
+    text: "Outgoing flows",
+  },
+  background: "#f9f9fc",
+  data: {
+    url: "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "source",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["oCol", "oRow", "oName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["dCol", "dRow", "dName"],
+    },
+  ],
+  resolve: {
+    scale: {
+      color: "shared",
+    },
+  },
+  facet: {
+    row: {
+      field: "oRow",
+      type: "ordinal",
+    },
+    column: {
+      field: "oCol",
+      type: "ordinal",
+    },
+  },
+  spec: {
+    width: 80,
+    height: 80,
+    layer: [
+      {
+        encoding: {
+          x: {
+            field: "dCol",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "dRow",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+          color: {
+            field: "diffOtCl_LiOp",
+            type: "quantitative",
+            scale: {
+              domain: [-7000, 7000],
+              domainMid: 0,
+              type: "linear",
+              scheme: {
+                name: "redYellowBlue",
+                extent: [1, 0],
+              },
+            },
+            legend: {
+              gradientLength: 96,
+              gradientThickness: 8,
+              titleFontSize: 8,
+              labelFontSize: 8,
+              orient: "top-left",
+              direction: "horizontal",
+              offset: -8,
+            },
+          },
+          tooltip: [
+            {
+              field: "oName",
+              type: "nominal",
+              title: "origin",
+            },
+            {
+              field: "dName",
+              type: "nominal",
+              title: "destination",
+            },
+            {
+              field: "diffOtCl_LiOp",
+              type: "nominal",
+            },
+          ],
+        },
+        mark: {
+          type: "square",
+          size: 79.01234567901234,
+          opacity: 1,
+        },
+      },
+      {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        encoding: {
+          x: {
+            field: "g79X",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "g79Y",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+        },
+        mark: {
+          type: "square",
+          fill: null,
+          stroke: "black",
+          size: 63.20987654320987,
+          strokeWidth: 0.2,
+        },
+      },
+      {
+        data: {
+          values: [
+            {
+              cCol: 3,
+              cRow: 4,
+            },
+          ],
+        },
+        encoding: {
+          x: {
+            field: "cCol",
+            type: "quantitative",
+          },
+          y: {
+            field: "cRow",
+            type: "quantitative",
+          },
+        },
+        mark: {
+          type: "square",
+          size: 9560.493827160493,
+          fill: null,
+          stroke: "black",
+          strokeWidth: 0.5,
+        },
+      },
+    ],
+  },
+};
+
+let vlLaODMap8 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+    header: {
+      labelFontSize: 0,
+      title: null,
+    },
+    facet: {
+      spacing: 5,
+    },
+  },
+  title: {
+    text: "Incoming flows",
+  },
+  background: "#f9f9fc",
+  data: {
+    url: "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "source",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["oCol", "oRow", "oName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        key: "regionCode",
+        fields: ["g79X", "g79Y", "regionName"],
+      },
+      as: ["dCol", "dRow", "dName"],
+    },
+  ],
+  resolve: {
+    scale: {
+      color: "shared",
+    },
+  },
+  facet: {
+    row: {
+      field: "dRow",
+      type: "ordinal",
+    },
+    column: {
+      field: "dCol",
+      type: "ordinal",
+    },
+  },
+  spec: {
+    width: 80,
+    height: 80,
+    layer: [
+      {
+        encoding: {
+          x: {
+            field: "oCol",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "oRow",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+          color: {
+            field: "diffOtCl_LiOp",
+            type: "quantitative",
+            scale: {
+              domain: [-7000, 7000],
+              domainMid: 0,
+              type: "linear",
+              scheme: {
+                name: "redYellowBlue",
+                extent: [1, 0],
+              },
+            },
+            legend: {
+              gradientLength: 96,
+              gradientThickness: 8,
+              titleFontSize: 8,
+              labelFontSize: 8,
+              orient: "top-left",
+              direction: "horizontal",
+              offset: -8,
+            },
+          },
+          tooltip: [
+            {
+              field: "oName",
+              type: "nominal",
+              title: "origin",
+            },
+            {
+              field: "dName",
+              type: "nominal",
+              title: "destination",
+            },
+            {
+              field: "diffOtCl_LiOp",
+              type: "nominal",
+            },
+          ],
+        },
+        mark: {
+          type: "square",
+          size: 79.01234567901234,
+          opacity: 1,
+        },
+      },
+      {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+        },
+        encoding: {
+          x: {
+            field: "g79X",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [-1, 7],
+            },
+            axis: null,
+          },
+          y: {
+            field: "g79Y",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 8],
+            },
+            axis: null,
+          },
+        },
+        mark: {
+          type: "square",
+          fill: null,
+          stroke: "black",
+          size: 63.20987654320987,
+          strokeWidth: 0.2,
+        },
+      },
+      {
+        data: {
+          values: [
+            {
+              cCol: 3,
+              cRow: 4,
+            },
+          ],
+        },
+        encoding: {
+          x: {
+            field: "cCol",
+            type: "quantitative",
+          },
+          y: {
+            field: "cRow",
+            type: "quantitative",
+          },
+        },
+        mark: {
+          type: "square",
+          size: 9560.493827160493,
+          fill: null,
+          stroke: "black",
+          strokeWidth: 0.5,
+        },
+      },
+    ],
+  },
+};
+
 // -----------------------------------------------------------------------------
 // Reference each of the specs with an ID that can be used in the main HTML.
 // If a new spec is added above, add its name along with a corresponding DOM id.
@@ -2919,3 +4467,12 @@ vegaEmbed("#laODMatrix1", vlLaODMatrix1).catch(console.error);
 vegaEmbed("#laODMatrix2", vlLaODMatrix2).catch(console.error);
 vegaEmbed("#laODMatrix3", vlLaODMatrix3).catch(console.error);
 vegaEmbed("#laODMatrix4", vlLaODMatrix4).catch(console.error);
+
+vegaEmbed("#laODMap1", vlLaODMap1).catch(console.error);
+vegaEmbed("#laODMap2", vlLaODMap2).catch(console.error);
+vegaEmbed("#laODMap3", vlLaODMap3).catch(console.error);
+vegaEmbed("#laODMap4", vlLaODMap4).catch(console.error);
+vegaEmbed("#laODMap5", vlLaODMap5).catch(console.error);
+vegaEmbed("#laODMap6", vlLaODMap6).catch(console.error);
+vegaEmbed("#laODMap7", vlLaODMap7).catch(console.error);
+vegaEmbed("#laODMap8", vlLaODMap8).catch(console.error);

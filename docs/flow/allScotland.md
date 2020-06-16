@@ -73,5 +73,51 @@ As an alternative, we could lose geography and show flows as an OD matrix. Here 
 
 There are a number of problems with this form of representation. Using colour encoding for a strongly skewed distribution is hard to interpret, with or without a log scale. Position of a cell in the matrix is determined by a somewhat arbitrary alphabetic ordering, so spotting and interpreting geographic clusters is challenging. We therefore turn to an alternative arrangement of the matrix cells that preserve geographic patterns.
 
+## 4. OD Maps
+
+We can reorder the cells of the OD matrix to preserve geography using our previous gridded layout:
+
+### Outgoing flows
+
+<div class="wide" id="laODMap1"></div>
+
+### Incoming flows
+
+<div class="wide" id="laODMap2"></div>
+
+We can apply the same approach to showing differences between the different job categories:
+
+### Other Middle
+
+**Outgoing:**
+
+<div class="wide" id="laODMap3"></div>
+
+**Incoming:**
+
+<div class="wide" id="laODMap4"></div>
+
+### Office Closed
+
+**Outgoing:**
+
+<div class="wide" id="laODMap5"></div>
+
+**Incoming:**
+
+<div class="wide" id="laODMap6"></div>
+
+### Other Closed
+
+**Outgoing:**
+
+<div class="wide" id="laODMap7"></div>
+
+**Incoming:**
+
+<div class="wide" id="laODMap8"></div>
+
+We see clear spatial structure in both strength of flow and differences between different job categories (_hover mose over cells to see values_). Most dominant is the much higher number of flows within LAs. To explore what is happening at a local scale we can consider just the [Glasgow and Clyde region](greaterGlasgow.md).
+
 <!-- Script containing the vis specs used above. Must be at end of document. -->
 <script src="js/allScotlandVisSpecs.js"></script>
