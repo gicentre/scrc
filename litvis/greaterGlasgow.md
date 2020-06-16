@@ -307,6 +307,31 @@ inOC =
 
 ^^^elm{v=(odMap inOC) interactive }^^^
 
+**Difference between office closure and likely opening**
+
+```elm {l=hidden}
+outDiffOC : ODConfig
+outDiffOC =
+    { outLO
+        | flowField = "diffOfCl_LiOp"
+        , scheme = "redYellowBlue"
+        , schemeRange = ( 1, 0 )
+        , schemeDiverge = True
+        , schemeDomain = Just ( -550, 550 )
+        , cScale = scLinear
+        , direction = Outgoing
+    }
+
+
+inDiffOC : ODConfig
+inDiffOC =
+    { outDiffOC | direction = Incoming }
+```
+
+^^^elm{v=(odMap outDiffOC) interactive }^^^
+
+^^^elm{v=(odMap inDiffOC) interactive }^^^
+
 ---
 
 <!-- Template code below. Do not edit. -->
