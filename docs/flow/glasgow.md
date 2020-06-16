@@ -45,5 +45,11 @@ Note the dominance of City Centre West and the obvious asymmetry of outgoing and
 
 <div class="wide" id="ggODMap6"></div>
 
+---
+
+**Jo WOOD**
+**Jason DYKES**
+_16/06/2020_
+
 <!-- Script containing the vis specs used above. Must be at end of document. -->
 <script src="js/glasgowVisSpecs.js"></script>
