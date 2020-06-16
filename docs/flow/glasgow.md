@@ -82,7 +82,7 @@ When we rearrange to see small maps of the origins of workers in a big map of al
 
 ###### EXPERIMENT
 
-##### Have a look, interact, see what you can find.<br/>Do you agree with our analysis?<br/>Do you see anything else?<br/>Be sure to write down any idea or insights?<br/>
+##### Have a look, interact, see what you can find.<br/>Do you agree with our analysis?<br/>Do you see anything else?<br/><b>Be sure to make a note of any idea or insights.</b><br/>
 
 ---
 
@@ -100,6 +100,9 @@ The most useful thing we can get from you is a set of reactions, questions, requ
  * [Log a Reaction in a Quick Google Form](https://forms.gle/Vifmxv7T9Jpg9aoi6)
 
 Go on - let us know what you think!
+
+---
+[Mapping Workplace Travel](https://gicentre.github.io/scrc/)
 
 ---
 

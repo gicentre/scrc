@@ -58,10 +58,9 @@ _Any cell count of lower than three has been replaced with zero_.
 - Flows [Across Scotland](docs/flow/allScotland.md) - _Local Authority_
 - Flows in the [Glasgow / Clyde region](docs/flow/glasgow.md) - _MSOA_
 
-
 ---
 
-**Jo WOOD**
-**Jason DYKES**
-_with lots of help from_
+**Jo WOOD**<br/>
+**Jason DYKES**<br/>
+_with lots of help from_<br/>
 **Jessica ENRIGHT**
