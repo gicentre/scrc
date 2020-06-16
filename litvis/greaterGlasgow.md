@@ -417,6 +417,13 @@ odMap odc =
         bgLabelSpec =
             asSpec [ odTemplateBorderData [], bgLabelEnc [], textMark [ maAlign haLeft ] ]
 
+        gridLineWidth =
+            if sqSize > 5 then
+                sqrt sqSize / 40
+
+            else
+                0
+
         bgCellSpec =
             case odc.border of
                 Just borderColor ->
@@ -427,7 +434,7 @@ odMap odc =
                             [ maFill ""
                             , maStroke borderColor
                             , maSize (sqSize * 0.8)
-                            , maStrokeWidth 0.05
+                            , maStrokeWidth gridLineWidth
                             ]
                         ]
 

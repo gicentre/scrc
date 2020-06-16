@@ -493,7 +493,7 @@ let vlGgODMap1 = {
           fill: null,
           stroke: "#aaa",
           size: 3.545706371191136,
-          strokeWidth: 0.05,
+          strokeWidth: 0,
         },
       },
       {
@@ -707,7 +707,7 @@ let vlGgODMap2 = {
           fill: null,
           stroke: "#aaa",
           size: 3.545706371191136,
-          strokeWidth: 0.05,
+          strokeWidth: 0,
         },
       },
       {
@@ -921,7 +921,7 @@ let vlGgODMap3 = {
           fill: null,
           stroke: "#aaa",
           size: 3.545706371191136,
-          strokeWidth: 0.05,
+          strokeWidth: 0,
         },
       },
       {
@@ -1135,7 +1135,7 @@ let vlGgODMap4 = {
           fill: null,
           stroke: "#aaa",
           size: 3.545706371191136,
-          strokeWidth: 0.05,
+          strokeWidth: 0,
         },
       },
       {
