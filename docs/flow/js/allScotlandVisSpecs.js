@@ -165,7 +165,7 @@ let vlLaFlowMap = {
           field: "dY",
         },
         strokeWidth: {
-          field: "likelyOperating",
+          field: "total",
           type: "quantitative",
           scale: {
             type: "linear",
@@ -314,6 +314,197 @@ let vlLaMap2 = {
     strokeWidth: 2,
     strokeJoin: "round",
   },
+};
+
+let vlLaGridFlowMap0 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+  },
+  background: "#f9f9fc",
+  title: {
+    text: "total",
+    offset: -40,
+    anchor: "start",
+    fontSize: 18,
+  },
+  width: 500,
+  height: 500,
+  data: {
+    url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+    format: {
+      parse: {
+        g79X: "number",
+        g79Y: "number",
+      },
+    },
+  },
+  layer: [
+    {
+      encoding: {
+        x: {
+          field: "g79X",
+          type: "quantitative",
+          scale: {
+            nice: false,
+            domain: [0, 6],
+          },
+          axis: null,
+        },
+        y: {
+          field: "g79Y",
+          type: "quantitative",
+          sort: "descending",
+          scale: {
+            nice: false,
+            domain: [0, 6],
+          },
+          axis: null,
+        },
+      },
+      mark: {
+        type: "square",
+        stroke: "white",
+        strokeWidth: 2,
+        fill: "#ddd",
+        size: 6944.444444444444,
+      },
+    },
+    {
+      encoding: {
+        x: {
+          field: "g79X",
+          type: "quantitative",
+          scale: {
+            nice: false,
+            domain: [0, 6],
+          },
+          axis: null,
+        },
+        y: {
+          field: "g79Y",
+          type: "quantitative",
+          sort: "descending",
+          scale: {
+            nice: false,
+            domain: [0, 6],
+          },
+          axis: null,
+        },
+        text: {
+          field: "regionName",
+          type: "nominal",
+        },
+      },
+      mark: {
+        type: "text",
+        fontSize: 8,
+        dy: 15,
+      },
+    },
+    {
+      data: {
+        url: "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv",
+      },
+      transform: [
+        {
+          lookup: "source",
+          from: {
+            data: {
+              url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+              format: {
+                parse: {
+                  g79X: "number",
+                  g79Y: "number",
+                },
+              },
+            },
+            key: "regionCode",
+            fields: ["g79X", "g79Y"],
+          },
+        },
+        {
+          calculate: "datum.g79X",
+          as: "oCol",
+        },
+        {
+          calculate: "datum.g79Y",
+          as: "oRow",
+        },
+        {
+          lookup: "dest",
+          from: {
+            data: {
+              url: "https://gicentre.github.io/scrc/data/grid/scotLAsGrid.csv",
+              format: {
+                parse: {
+                  g79X: "number",
+                  g79Y: "number",
+                },
+              },
+            },
+            key: "regionCode",
+            fields: ["g79X", "g79Y"],
+          },
+        },
+        {
+          calculate: "datum.g79X",
+          as: "dCol",
+        },
+        {
+          calculate: "datum.g79Y",
+          as: "dRow",
+        },
+        {
+          filter: "datum.oCol != datum.dCol || datum.oRow != datum.dRow",
+        },
+      ],
+      encoding: {
+        x: {
+          field: "oCol",
+          type: "quantitative",
+          scale: {
+            nice: false,
+            domain: [0, 6],
+          },
+          axis: null,
+        },
+        y: {
+          field: "oRow",
+          type: "quantitative",
+          sort: "descending",
+          scale: {
+            nice: false,
+            domain: [0, 6],
+          },
+          axis: null,
+        },
+        x2: {
+          field: "dCol",
+        },
+        y2: {
+          field: "dRow",
+        },
+        strokeWidth: {
+          field: "total",
+          type: "quantitative",
+          scale: {
+            type: "linear",
+            range: [0.2, 30],
+          },
+          legend: null,
+        },
+      },
+      mark: {
+        type: "rule",
+        color: "brown",
+        opacity: 0.3,
+        strokeCap: "round",
+      },
+    },
+  ],
 };
 
 let vlLaGridFlowMap1 = {
@@ -1241,7 +1432,7 @@ let vlLaGridDiffFlowMap1 = {
           field: "dY",
         },
         strokeWidth: {
-          field: "likelyOperating",
+          field: "total",
           type: "quantitative",
           scale: {
             type: "linear",
@@ -1483,7 +1674,7 @@ let vlLaGridDiffFlowMap2 = {
           field: "dY",
         },
         strokeWidth: {
-          field: "likelyOperating",
+          field: "total",
           type: "quantitative",
           scale: {
             type: "linear",
@@ -1725,7 +1916,7 @@ let vlLaGridDiffFlowMap3 = {
           field: "dY",
         },
         strokeWidth: {
-          field: "likelyOperating",
+          field: "total",
           type: "quantitative",
           scale: {
             type: "linear",
@@ -1967,7 +2158,7 @@ let vlLaGridDiffFlowMap1a = {
           field: "dY",
         },
         strokeWidth: {
-          field: "likelyOperating",
+          field: "total",
           type: "quantitative",
           scale: {
             type: "linear",
@@ -2209,7 +2400,7 @@ let vlLaGridDiffFlowMap2a = {
           field: "dY",
         },
         strokeWidth: {
-          field: "likelyOperating",
+          field: "total",
           type: "quantitative",
           scale: {
             type: "linear",
@@ -2451,7 +2642,7 @@ let vlLaGridDiffFlowMap3a = {
           field: "dY",
         },
         strokeWidth: {
-          field: "likelyOperating",
+          field: "total",
           type: "quantitative",
           scale: {
             type: "linear",
@@ -2530,6 +2721,96 @@ let vlLaGridDiffFlowMap3a = {
       },
     },
   ],
+};
+
+let vlLaODMatrix0 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+  },
+  background: "#f9f9fc",
+  title: {
+    text: "total",
+    fontSize: 18,
+  },
+  width: 400,
+  height: 400,
+  data: {
+    url: "https://gicentre.github.io/scrc/data/flows/scotLAsFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "source",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/geo/scotLACentroids.csv",
+        },
+        key: "lad17cd",
+        fields: ["lad17nm"],
+      },
+      as: ["srcName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url: "https://gicentre.github.io/scrc/data/geo/scotLACentroids.csv",
+        },
+        key: "lad17cd",
+        fields: ["lad17nm"],
+      },
+      as: ["dstName"],
+    },
+  ],
+  encoding: {
+    x: {
+      field: "srcName",
+      type: "ordinal",
+      title: "Origin",
+    },
+    y: {
+      field: "dstName",
+      type: "ordinal",
+      title: "Destination",
+    },
+    color: {
+      field: "total",
+      type: "quantitative",
+      scale: {
+        type: "symlog",
+        domain: [0, 60000],
+        scheme: "yelloworangebrown",
+      },
+      legend: {
+        tickCount: 5,
+        gradientLength: 400,
+        title: null,
+      },
+    },
+    tooltip: [
+      {
+        field: "srcName",
+        type: "nominal",
+        title: "origin",
+      },
+      {
+        field: "dstName",
+        type: "nominal",
+        title: "destination",
+      },
+      {
+        field: "total",
+        type: "nominal",
+      },
+    ],
+  },
+  mark: {
+    type: "rect",
+    stroke: "white",
+    strokeWidth: 2,
+  },
 };
 
 let vlLaODMatrix1 = {
@@ -2978,7 +3259,7 @@ let vlLaODMap1 = {
             axis: null,
           },
           color: {
-            field: "likelyOperating",
+            field: "total",
             type: "quantitative",
             scale: {
               type: "symlog",
@@ -3009,7 +3290,7 @@ let vlLaODMap1 = {
               title: "destination",
             },
             {
-              field: "likelyOperating",
+              field: "total",
               type: "nominal",
             },
           ],
@@ -3170,7 +3451,7 @@ let vlLaODMap2 = {
             axis: null,
           },
           color: {
-            field: "likelyOperating",
+            field: "total",
             type: "quantitative",
             scale: {
               type: "symlog",
@@ -3201,7 +3482,7 @@ let vlLaODMap2 = {
               title: "destination",
             },
             {
-              field: "likelyOperating",
+              field: "total",
               type: "nominal",
             },
           ],
@@ -4450,6 +4731,7 @@ vegaEmbed("#laFlowMap", vlLaFlowMap).catch(console.error);
 vegaEmbed("#laGridMap", vlLaGridMap).catch(console.error);
 vegaEmbed("#laMap2", vlLaMap2).catch(console.error);
 
+vegaEmbed("#laGridFlowMap0", vlLaGridFlowMap0).catch(console.error);
 vegaEmbed("#laGridFlowMap1", vlLaGridFlowMap1).catch(console.error);
 vegaEmbed("#laGridFlowMap2", vlLaGridFlowMap2).catch(console.error);
 vegaEmbed("#laGridFlowMap3", vlLaGridFlowMap3).catch(console.error);
@@ -4463,6 +4745,7 @@ vegaEmbed("#laGridDiffFlowMap1a", vlLaGridDiffFlowMap1a).catch(console.error);
 vegaEmbed("#laGridDiffFlowMap2a", vlLaGridDiffFlowMap2a).catch(console.error);
 vegaEmbed("#laGridDiffFlowMap3a", vlLaGridDiffFlowMap3a).catch(console.error);
 
+vegaEmbed("#laODMatrix0", vlLaODMatrix0).catch(console.error);
 vegaEmbed("#laODMatrix1", vlLaODMatrix1).catch(console.error);
 vegaEmbed("#laODMatrix2", vlLaODMatrix2).catch(console.error);
 vegaEmbed("#laODMatrix3", vlLaODMatrix3).catch(console.error);

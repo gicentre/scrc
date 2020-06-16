@@ -68,7 +68,7 @@ laMap showLegend =
 
 The problem here is that the LAs vary significantly in land area and population. Much of the interesting pattern is concentrated in smaller urban LAs.
 
-A conventional flow map could be overlain on this geography, here showing magnitude of travel-to-work connections under the 'likelyOperating' model:
+A conventional flow map could be overlain on this geography, here using line width to show total number of travel-to-work connections between home and and work LAs:
 
 ```elm {v interactive}
 laFlowMap : Spec
@@ -137,7 +137,7 @@ laFlowMap =
                 << position X2 [ pName "dX" ]
                 << position Y2 [ pName "dY" ]
                 << strokeWidth
-                    [ mName "likelyOperating"
+                    [ mName "total"
                     , mQuant
                     , mScale [ scType scLinear, scRange (raNums [ 0.2, 20 ]) ]
                     , mLegend []
@@ -172,7 +172,9 @@ If we standardise the area allocated to each LA and arrange them into a regular 
 
 ### 2.2 Flows over grid maps
 
-Here we attempt to show conventional flow lines where thickness encodes magnitude of flow for the four different work categories. Main problems are co-linear flows (because of grid layout) and failure to show within flow magnitude. But they do have the advantage of a relatively intuitive representation.
+Here we attempt to show conventional flow lines where thickness encodes magnitude of flow for the total flows and the four different work categories. Main problems are co-linear flows (because of grid layout) and failure to show within flow magnitude. But they do have the advantage of a relatively intuitive representation.
+
+^^^elm{v=(laGridFlowMap "g79X" "g79Y" "total" 7 ) interactive}^^^
 
 ^^^elm{v=(laGridFlowMap "g79X" "g79Y" "likelyOperating" 7 ) interactive}^^^
 
@@ -184,7 +186,7 @@ Here we attempt to show conventional flow lines where thickness encodes magnitud
 
 #### Difference flow maps
 
-We can colour encode by difference between work categories. For example, the difference between 'likely operating' jobs and 'office closed' jobs, helping to explore the impact of different work classifications used by the models. In the examples below, line thickness is proportional to the 'likelyOperating' flows, coloured according to how different are each of the other job categories.
+We can colour encode by difference between work categories. For example, the difference between 'likely operating' jobs and 'office closed' jobs, helping to explore the impact of different work classifications used by the models. In the examples below, line thickness is proportional to the total flows, coloured according to how different are each of the other job categories.
 
 ^^^elm{v=(laGridDiffFlowMap "g79X" "g79Y" "otherMiddle" 7 0) interactive}^^^
 
@@ -208,6 +210,8 @@ Comparing Glasgow and Edinburgh when looking at how 'other Closed' jobs differ f
 
 As an alternative, we could lose geography and show flows as an OD matrix. Here we use colour to show magnitude of the flow (on a log scale) and alphabetic position to indicate LA.
 
+^^^elm{v=(odMatrix "total") interactive}^^^
+
 ^^^elm{v=(odMatrix "likelyOperating") interactive}^^^
 
 ^^^elm{v=(odMatrix "otherMiddle") interactive}^^^
@@ -220,7 +224,7 @@ There are a number of problems with this form of representation. Using colour en
 
 ## 4. OD Maps
 
-We can reorder the cells of the OD matrix to preserve geography using our previous gridded layout:
+We can reorder the cells of the OD matrix to preserve geography using our previous gridded layout and colouring by total flows (all four work categories):
 
 ```elm {l=hidden}
 odInCfg : ODConfig
@@ -235,7 +239,7 @@ odInCfg =
     , odData = dataFromUrl (path ++ "flows/scotLAsFlows.csv") []
     , oField = "source"
     , dField = "dest"
-    , flowField = "likelyOperating"
+    , flowField = "total"
 
     --
     , direction = Incoming
@@ -619,7 +623,7 @@ laGridDiffFlowMap gx gy flowCol gSize odOffset =
                 << position X2 [ pName "dX" ]
                 << position Y2 [ pName "dY" ]
                 << strokeWidth
-                    [ mName "likelyOperating"
+                    [ mName "total"
                     , mQuant
                     , mScale [ scType scLinear, scRange (raNums [ 0.001, w / 16 ]) ]
                     , mLegend []

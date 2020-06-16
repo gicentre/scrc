@@ -11,7 +11,7 @@ In order to validate models of travel-to-work patterns we can visualize potentia
 
 The problem here is that the LAs vary significantly in land area and population. Much of the interesting pattern is concentrated in smaller urban LAs.
 
-A conventional flow map could be overlain on this geography, here showing magnitude of travel-to-work connections under the 'likelyOperating' model:
+A conventional flow map could be overlain on this geography, here using line width to show total number of travel-to-work connections between home and and work LAs:
 
 <div class="wide" id="laFlowMap"></div>
 
@@ -27,7 +27,9 @@ If we standardise the area allocated to each LA and arrange them into a regular 
 
 ### 2.2 Flows over grid maps
 
-Here we attempt to show conventional flow lines where thickness encodes magnitude of flow for the four different work categories. Main problems are co-linear flows (because of grid layout) and failure to show within flow magnitude. But they do have the advantage of a relatively intuitive representation.
+Here we attempt to show conventional flow lines where thickness encodes magnitude of flow for the total flows and the four different work categories. Main problems are co-linear flows (because of grid layout) and failure to show within flow magnitude. But they do have the advantage of a relatively intuitive representation.
+
+<div class="wide" id="laGridFlowMap0"></div>
 
 <div class="wide" id="laGridFlowMap1"></div>
 
@@ -39,7 +41,7 @@ Here we attempt to show conventional flow lines where thickness encodes magnitud
 
 #### Difference flow maps
 
-We can colour encode by difference between work categories. For example, the difference between 'likely operating' jobs and 'office closed' jobs, helping to explore the impact of different work classifications used by the models. In the examples below, line thickness is proportional to the 'likelyOperating' flows, coloured according to how different are each of the other job categories.
+We can colour encode by difference between work categories. For example, the difference between 'likely operating' jobs and 'office closed' jobs, helping to explore the impact of different work classifications used by the models. In the examples below, line thickness is proportional to the total flows, coloured according to how different are each of the other job categories.
 
 <div class="wide" id="laGridDiffFlowMap1"></div>
 
@@ -63,6 +65,8 @@ Comparing Glasgow and Edinburgh when looking at how 'other Closed' jobs differ f
 
 As an alternative, we could lose geography and show flows as an OD matrix. Here we use colour to show magnitude of the flow (on a log scale) and alphabetic position to indicate LA.
 
+<div class="wide" id="laODMatrix0"></div>
+
 <div class="wide" id="laODMatrix1"></div>
 
 <div class="wide" id="laODMatrix2"></div>
@@ -75,7 +79,7 @@ There are a number of problems with this form of representation. Using colour en
 
 ## 4. OD Maps
 
-We can reorder the cells of the OD matrix to preserve geography using our previous gridded layout:
+We can reorder the cells of the OD matrix to preserve geography using our previous gridded layout and colouring by total flows (all four work categories):
 
 ### Outgoing flows
 
