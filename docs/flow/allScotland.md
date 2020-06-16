@@ -30,9 +30,7 @@ Try to answer the following ...
 
 ###### EXPERIMENT
 
-##### What are the main differences in flow patterns between Edinburgh and Glasgow?
-
-##### What are the main destinations of those travelling from Shetland?
+##### What are the main differences in flow patterns between Edinburgh and Glasgow?<br/>What are the main destinations of those travelling from Shetland?
 
 ## 2. Grid maps.
 
@@ -48,9 +46,7 @@ Here we attempt to show conventional flow lines where thickness encodes magnitud
 
 ###### EXPERIMENT
 
-##### Can you answer any of the questions posed above more effectively with this layout?
-
-##### Which questions is it still difficult to answer with a grid map?
+##### Can you answer any of the questions posed above more effectively with this layout?<br/>Which questions is it still difficult to answer with a grid map?
 
 
 <div class="wide" id="laGridFlowMap0"></div>
@@ -150,9 +146,7 @@ Whilst it is efficient, intuitive and comprehensive, there are a number of probl
 
 It's straightforward to reorder the cells of the OD matrix to preserve geography using our previous gridded layout. We make a grid map for each origin - effectively taking any one of the columns from above and using the coloured cells to make a grid map. If we do this for each column and place all of the little maps for any origin in a larger grid map, then we have a big map showing the destinations of all workers from all origins.
 
-This is an OD Map.
-
-Here we colour by total flows (all four of our employment categories):
+This is an **OD Map**. Here we colour by total flows (all four of our employment categories):
 
 ### Outgoing flows
 
@@ -166,7 +160,7 @@ Also note that we are not using a linear scale in our colouring.
 
 ###### EXPLORE
 
-##### Use the mouse to check the numeric values. How many people travel from Shetland to Edinburgh? And from Edinburgh to Shetland?
+##### Use the mouse to check the numeric values.<br/>How many people travel from Shetland to Edinburgh?<br/>And how many from Edinburgh to Shetland?
 
 ### Incoming flows
 
@@ -219,7 +213,7 @@ When we re-arrange to show _incoming_ flows it is clear that the big differences
 
 ###### EXPLORE
 
-##### Consider the pairs of OD Maps showing differences in flows, and record some reactions. What can you see? What does this lead you to think about these flows of workers in particular roles?
+##### Consider the pairs of OD Maps showing differences in flows, and record some reactions.<br/>What can you see?<br/>What does this lead you to think about these flows of workers in particular roles?
 
 We see clear spatial structure in both strength of flow and differences between different job categories (_hover mouse over cells to see values_). Most dominant is the much higher number of flows within LAs. This suggests that we need to consider these data art higher resolution. To explore what is happening at a local scale we can consider just the [Glasgow and Clyde region](glasgow.md).
 

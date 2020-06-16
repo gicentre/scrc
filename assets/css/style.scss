@@ -33,7 +33,7 @@ $showDEXDquestion: block;
 $showDEXDtype: none;
 
 .dexd, h5, h6 {
-  font-family: Avenir; font-size:0.8em;
+  font-family: Avenir; font-size:0.9em;
 }
 
 h6 {
@@ -54,7 +54,10 @@ h5 {
   padding:3px; margin:3px; padding-right:1em;
   text-align:right;
   border:none;
+  border:#e0e0e0 solid 1px;
+  background-color:#f0f8e0;
   display:$showDEXDquestion;
+  width: 80vw;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Fjalla+One&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap");
