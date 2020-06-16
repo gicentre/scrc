@@ -1,9 +1,9 @@
-## Simple-Network-Sim
+# Simple-Network-Sim
 
 We're providing some graphics to help decision-making to support the _#simple_network_sim_ modeling.
 
 
-#### Mapping Workplace Travel
+## Mapping Workplace Travel
 
 Census data on flows between place of residence and place of work are inputs to the model, but as lockdown effects different types of employment in different ways, flows are likely to vary under different policies that occur at different times.
 
@@ -20,14 +20,14 @@ And then ...
 And of course ...
   * how can we reveal and communicate all of this effectively with graphics?
 
-#### Data Visualization Discourse
+## Data Visualization Discourse
 
 We're using visualization to establish discourse about the data and their likely effects on the models.
 
 - Flows [Across Scotland](docs/flow/allScotland.md) - _Local Authority_
 - Flows in the [Glasgow / Clyde region](docs/flow/glasgow.md) - _MSOA_
 
-##### Data
+## Data
 
 Flows are taken from the 2001 Census and acquired through UKDS - see [WICID](https://wicid.ukdataservice.ac.uk/).
 
@@ -51,5 +51,5 @@ _Any cell count of lower than three has been replaced with zero_.
 
 ---
 
-**Jo WOOD**
+**Jo WOOD**<br/>
 **Jason DYKES**
