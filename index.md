@@ -22,12 +22,18 @@ And of course ...
 
 ## Data Visualization Discourse
 
-We're using visualization to establish discourse about the data and their likely effects on the models.
+We're using visualization to establish discourse about the data, their likely effects on the models and the ways in which interactive graphics can help with this process.
 
-- Flows [Across Scotland](docs/flow/allScotland.md) - _Local Authority_
-- Flows in the [Glasgow / Clyde region](docs/flow/glasgow.md) - _MSOA_
+We'd like you to consider _two documents_ that use graphics to explore aspects of the data. Please complete the tasks where you are asked to do so, and make notes as you go - we're interested in reactions.
 
-## Data
+When you are done, we'd like you to ...
+ * [Log a Reaction in a Quick Google Form](https://forms.gle/Vifmxv7T9Jpg9aoi6)
+
+What did you see? What did you learn? What works? What doesn't?
+
+There are two documents listed below - read through in turn
+
+## The Data
 
 Flows are taken from the 2001 Census and acquired through UKDS - see [WICID](https://wicid.ukdataservice.ac.uk/).
 
@@ -47,9 +53,15 @@ The 21 _WICID_ employment sectors are combined into 4 categories:
 Outputs are appropriately protected so as not to identify individuals, households or organisations in line with UKDS conditions.
 _Any cell count of lower than three has been replaced with zero_.
 
+## The Documents
+
+- Flows [Across Scotland](docs/flow/allScotland.md) - _Local Authority_
+- Flows in the [Glasgow / Clyde region](docs/flow/glasgow.md) - _MSOA_
 
 
 ---
 
-**Jo WOOD**<br/>
+**Jo WOOD**
 **Jason DYKES**
+_with lots of help from_
+**Jessica ENRIGHT**

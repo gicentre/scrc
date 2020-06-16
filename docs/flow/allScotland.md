@@ -48,7 +48,7 @@ Here we attempt to show conventional flow lines where thickness encodes magnitud
 
 ###### EXPERIMENT
 
-##### Can you answer any of the questions posed above more effectively with this layout?<br/>Which questions is it still difficult to answer with a grid map?
+##### Can you answer any of the questions posed above more effectively with this layout?<br/>Which of questions does it remain difficult to answer with a grid map?
 
 
 <div class="wide" id="laGridFlowMap0"></div>
@@ -63,7 +63,7 @@ Here we attempt to show conventional flow lines where thickness encodes magnitud
 
 #### Difference flow maps
 
-We can colour encode by difference between categories of employment. For example, the difference between 'likely operating' jobs and 'office closed' jobs, helping to explore the impact of different work classifications that might be used in COVID modelling.
+We can colour encode by difference between categories of employment. For example, the difference between '_likelyOperating_' jobs and '_officeClosed_' jobs, helping to explore the impact of different work classifications that might be used in COVID modelling.
 
 In the examples below, line thickness is proportional to the total flows among all workers in all categories (as described by the 2001 Census). This is our 'situation normal' model.
 The flows are coloured according to how different this model is to each of the other derived categories :
