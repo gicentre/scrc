@@ -1614,5 +1614,5 @@ vegaEmbed("#ggODMap2", vlGgODMap2).catch(console.error);
 vegaEmbed("#ggODMap3", vlGgODMap3).catch(console.error);
 vegaEmbed("#ggODMap4", vlGgODMap4).catch(console.error);
 
-vegaEmbed("#ggODMap4", vlGgODMap5).catch(console.error);
-vegaEmbed("#ggODMap4", vlGgODMap6).catch(console.error);
+vegaEmbed("#ggODMap5", vlGgODMap5).catch(console.error);
+vegaEmbed("#ggODMap6", vlGgODMap6).catch(console.error);
