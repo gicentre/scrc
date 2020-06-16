@@ -313,6 +313,862 @@ let vlGgFlowMap = {
   ],
 };
 
+let vlGgODMap1 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+    header: {
+      labelFontSize: 0,
+      title: null,
+    },
+    facet: {
+      spacing: 5,
+    },
+  },
+  title: {
+    text: "Outgoing flows",
+  },
+  background: "#fdfdfd",
+  data: {
+    url:
+      "https://gicentre.github.io/scrc/data/flows/greaterGlasgowMSOAFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "origin",
+      from: {
+        data: {
+          url:
+            "https://gicentre.github.io/scrc/data/grid/greaterGlasgowGrid.csv",
+          format: {
+            parse: {
+              gridX: "number",
+              gridY: "number",
+            },
+          },
+        },
+        key: "regionCode",
+        fields: ["gridX", "gridY", "regionName"],
+      },
+      as: ["oCol", "oRow", "oName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url:
+            "https://gicentre.github.io/scrc/data/grid/greaterGlasgowGrid.csv",
+          format: {
+            parse: {
+              gridX: "number",
+              gridY: "number",
+            },
+          },
+        },
+        key: "regionCode",
+        fields: ["gridX", "gridY", "regionName"],
+      },
+      as: ["dCol", "dRow", "dName"],
+    },
+  ],
+  resolve: {
+    scale: {
+      color: "shared",
+    },
+  },
+  facet: {
+    row: {
+      field: "oRow",
+      type: "ordinal",
+    },
+    column: {
+      field: "oCol",
+      type: "ordinal",
+    },
+  },
+  spec: {
+    width: 40,
+    height: 40,
+    layer: [
+      {
+        encoding: {
+          x: {
+            field: "dCol",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+          y: {
+            field: "dRow",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+          color: {
+            field: "likelyOperating",
+            type: "quantitative",
+            scale: {
+              type: "sqrt",
+              scheme: {
+                name: "yelloworangebrown",
+                extent: [0, 1.2],
+              },
+            },
+            legend: {
+              gradientLength: 48,
+              gradientThickness: 4,
+              titleFontSize: 4,
+              labelFontSize: 4,
+              orient: "top-left",
+              direction: "horizontal",
+              offset: -4,
+            },
+          },
+          tooltip: [
+            {
+              field: "oName",
+              type: "nominal",
+              title: "origin",
+            },
+            {
+              field: "dName",
+              type: "nominal",
+              title: "destination",
+            },
+            {
+              field: "likelyOperating",
+              type: "nominal",
+            },
+          ],
+        },
+        mark: {
+          type: "square",
+          size: 4.43213296398892,
+          opacity: 1,
+        },
+      },
+      {
+        data: {
+          url:
+            "https://gicentre.github.io/scrc/data/grid/greaterGlasgowGrid.csv",
+          format: {
+            parse: {
+              gridX: "number",
+              gridY: "number",
+            },
+          },
+        },
+        encoding: {
+          x: {
+            field: "gridX",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+          y: {
+            field: "gridY",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+        },
+        mark: {
+          type: "square",
+          fill: null,
+          stroke: "#aaa",
+          size: 3.545706371191136,
+          strokeWidth: 0.05,
+        },
+      },
+      {
+        data: {
+          values: [
+            {
+              cCol: 9,
+              cRow: 9,
+            },
+          ],
+        },
+        encoding: {
+          x: {
+            field: "cCol",
+            type: "quantitative",
+          },
+          y: {
+            field: "cRow",
+            type: "quantitative",
+          },
+        },
+        mark: {
+          type: "square",
+          size: 1954.5706371191136,
+          fill: null,
+          stroke: "#aaa",
+          strokeWidth: 0.5,
+        },
+      },
+    ],
+  },
+};
+
+let vlGgODMap2 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+    header: {
+      labelFontSize: 0,
+      title: null,
+    },
+    facet: {
+      spacing: 5,
+    },
+  },
+  title: {
+    text: "Incoming flows",
+  },
+  background: "#fdfdfd",
+  data: {
+    url:
+      "https://gicentre.github.io/scrc/data/flows/greaterGlasgowMSOAFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "origin",
+      from: {
+        data: {
+          url:
+            "https://gicentre.github.io/scrc/data/grid/greaterGlasgowGrid.csv",
+          format: {
+            parse: {
+              gridX: "number",
+              gridY: "number",
+            },
+          },
+        },
+        key: "regionCode",
+        fields: ["gridX", "gridY", "regionName"],
+      },
+      as: ["oCol", "oRow", "oName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url:
+            "https://gicentre.github.io/scrc/data/grid/greaterGlasgowGrid.csv",
+          format: {
+            parse: {
+              gridX: "number",
+              gridY: "number",
+            },
+          },
+        },
+        key: "regionCode",
+        fields: ["gridX", "gridY", "regionName"],
+      },
+      as: ["dCol", "dRow", "dName"],
+    },
+  ],
+  resolve: {
+    scale: {
+      color: "shared",
+    },
+  },
+  facet: {
+    row: {
+      field: "dRow",
+      type: "ordinal",
+    },
+    column: {
+      field: "dCol",
+      type: "ordinal",
+    },
+  },
+  spec: {
+    width: 40,
+    height: 40,
+    layer: [
+      {
+        encoding: {
+          x: {
+            field: "oCol",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+          y: {
+            field: "oRow",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+          color: {
+            field: "likelyOperating",
+            type: "quantitative",
+            scale: {
+              type: "sqrt",
+              scheme: {
+                name: "yelloworangebrown",
+                extent: [0, 1.2],
+              },
+            },
+            legend: {
+              gradientLength: 48,
+              gradientThickness: 4,
+              titleFontSize: 4,
+              labelFontSize: 4,
+              orient: "top-left",
+              direction: "horizontal",
+              offset: -4,
+            },
+          },
+          tooltip: [
+            {
+              field: "oName",
+              type: "nominal",
+              title: "origin",
+            },
+            {
+              field: "dName",
+              type: "nominal",
+              title: "destination",
+            },
+            {
+              field: "likelyOperating",
+              type: "nominal",
+            },
+          ],
+        },
+        mark: {
+          type: "square",
+          size: 4.43213296398892,
+          opacity: 1,
+        },
+      },
+      {
+        data: {
+          url:
+            "https://gicentre.github.io/scrc/data/grid/greaterGlasgowGrid.csv",
+          format: {
+            parse: {
+              gridX: "number",
+              gridY: "number",
+            },
+          },
+        },
+        encoding: {
+          x: {
+            field: "gridX",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+          y: {
+            field: "gridY",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+        },
+        mark: {
+          type: "square",
+          fill: null,
+          stroke: "#aaa",
+          size: 3.545706371191136,
+          strokeWidth: 0.05,
+        },
+      },
+      {
+        data: {
+          values: [
+            {
+              cCol: 9,
+              cRow: 9,
+            },
+          ],
+        },
+        encoding: {
+          x: {
+            field: "cCol",
+            type: "quantitative",
+          },
+          y: {
+            field: "cRow",
+            type: "quantitative",
+          },
+        },
+        mark: {
+          type: "square",
+          size: 1954.5706371191136,
+          fill: null,
+          stroke: "#aaa",
+          strokeWidth: 0.5,
+        },
+      },
+    ],
+  },
+};
+
+let vlGgODMap3 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+    header: {
+      labelFontSize: 0,
+      title: null,
+    },
+    facet: {
+      spacing: 5,
+    },
+  },
+  title: {
+    text: "Outgoing flows",
+  },
+  background: "#fdfdfd",
+  data: {
+    url:
+      "https://gicentre.github.io/scrc/data/flows/greaterGlasgowMSOAFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "origin",
+      from: {
+        data: {
+          url:
+            "https://gicentre.github.io/scrc/data/grid/greaterGlasgowGrid.csv",
+          format: {
+            parse: {
+              gridX: "number",
+              gridY: "number",
+            },
+          },
+        },
+        key: "regionCode",
+        fields: ["gridX", "gridY", "regionName"],
+      },
+      as: ["oCol", "oRow", "oName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url:
+            "https://gicentre.github.io/scrc/data/grid/greaterGlasgowGrid.csv",
+          format: {
+            parse: {
+              gridX: "number",
+              gridY: "number",
+            },
+          },
+        },
+        key: "regionCode",
+        fields: ["gridX", "gridY", "regionName"],
+      },
+      as: ["dCol", "dRow", "dName"],
+    },
+  ],
+  resolve: {
+    scale: {
+      color: "shared",
+    },
+  },
+  facet: {
+    row: {
+      field: "oRow",
+      type: "ordinal",
+    },
+    column: {
+      field: "oCol",
+      type: "ordinal",
+    },
+  },
+  spec: {
+    width: 40,
+    height: 40,
+    layer: [
+      {
+        encoding: {
+          x: {
+            field: "dCol",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+          y: {
+            field: "dRow",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+          color: {
+            field: "officeClosed",
+            type: "quantitative",
+            scale: {
+              type: "sqrt",
+              scheme: {
+                name: "yelloworangebrown",
+                extent: [0, 1.2],
+              },
+            },
+            legend: {
+              gradientLength: 48,
+              gradientThickness: 4,
+              titleFontSize: 4,
+              labelFontSize: 4,
+              orient: "top-left",
+              direction: "horizontal",
+              offset: -4,
+            },
+          },
+          tooltip: [
+            {
+              field: "oName",
+              type: "nominal",
+              title: "origin",
+            },
+            {
+              field: "dName",
+              type: "nominal",
+              title: "destination",
+            },
+            {
+              field: "officeClosed",
+              type: "nominal",
+            },
+          ],
+        },
+        mark: {
+          type: "square",
+          size: 4.43213296398892,
+          opacity: 1,
+        },
+      },
+      {
+        data: {
+          url:
+            "https://gicentre.github.io/scrc/data/grid/greaterGlasgowGrid.csv",
+          format: {
+            parse: {
+              gridX: "number",
+              gridY: "number",
+            },
+          },
+        },
+        encoding: {
+          x: {
+            field: "gridX",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+          y: {
+            field: "gridY",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+        },
+        mark: {
+          type: "square",
+          fill: null,
+          stroke: "#aaa",
+          size: 3.545706371191136,
+          strokeWidth: 0.05,
+        },
+      },
+      {
+        data: {
+          values: [
+            {
+              cCol: 9,
+              cRow: 9,
+            },
+          ],
+        },
+        encoding: {
+          x: {
+            field: "cCol",
+            type: "quantitative",
+          },
+          y: {
+            field: "cRow",
+            type: "quantitative",
+          },
+        },
+        mark: {
+          type: "square",
+          size: 1954.5706371191136,
+          fill: null,
+          stroke: "#aaa",
+          strokeWidth: 0.5,
+        },
+      },
+    ],
+  },
+};
+
+let vlGgODMap4 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  config: {
+    view: {
+      stroke: "",
+    },
+    header: {
+      labelFontSize: 0,
+      title: null,
+    },
+    facet: {
+      spacing: 5,
+    },
+  },
+  title: {
+    text: "Incoming flows",
+  },
+  background: "#fdfdfd",
+  data: {
+    url:
+      "https://gicentre.github.io/scrc/data/flows/greaterGlasgowMSOAFlows.csv",
+  },
+  transform: [
+    {
+      lookup: "origin",
+      from: {
+        data: {
+          url:
+            "https://gicentre.github.io/scrc/data/grid/greaterGlasgowGrid.csv",
+          format: {
+            parse: {
+              gridX: "number",
+              gridY: "number",
+            },
+          },
+        },
+        key: "regionCode",
+        fields: ["gridX", "gridY", "regionName"],
+      },
+      as: ["oCol", "oRow", "oName"],
+    },
+    {
+      lookup: "dest",
+      from: {
+        data: {
+          url:
+            "https://gicentre.github.io/scrc/data/grid/greaterGlasgowGrid.csv",
+          format: {
+            parse: {
+              gridX: "number",
+              gridY: "number",
+            },
+          },
+        },
+        key: "regionCode",
+        fields: ["gridX", "gridY", "regionName"],
+      },
+      as: ["dCol", "dRow", "dName"],
+    },
+  ],
+  resolve: {
+    scale: {
+      color: "shared",
+    },
+  },
+  facet: {
+    row: {
+      field: "dRow",
+      type: "ordinal",
+    },
+    column: {
+      field: "dCol",
+      type: "ordinal",
+    },
+  },
+  spec: {
+    width: 40,
+    height: 40,
+    layer: [
+      {
+        encoding: {
+          x: {
+            field: "oCol",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+          y: {
+            field: "oRow",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+          color: {
+            field: "officeClosed",
+            type: "quantitative",
+            scale: {
+              type: "sqrt",
+              scheme: {
+                name: "yelloworangebrown",
+                extent: [0, 1.2],
+              },
+            },
+            legend: {
+              gradientLength: 48,
+              gradientThickness: 4,
+              titleFontSize: 4,
+              labelFontSize: 4,
+              orient: "top-left",
+              direction: "horizontal",
+              offset: -4,
+            },
+          },
+          tooltip: [
+            {
+              field: "oName",
+              type: "nominal",
+              title: "origin",
+            },
+            {
+              field: "dName",
+              type: "nominal",
+              title: "destination",
+            },
+            {
+              field: "officeClosed",
+              type: "nominal",
+            },
+          ],
+        },
+        mark: {
+          type: "square",
+          size: 4.43213296398892,
+          opacity: 1,
+        },
+      },
+      {
+        data: {
+          url:
+            "https://gicentre.github.io/scrc/data/grid/greaterGlasgowGrid.csv",
+          format: {
+            parse: {
+              gridX: "number",
+              gridY: "number",
+            },
+          },
+        },
+        encoding: {
+          x: {
+            field: "gridX",
+            type: "quantitative",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+          y: {
+            field: "gridY",
+            type: "quantitative",
+            sort: "descending",
+            scale: {
+              nice: false,
+              domain: [0, 18],
+            },
+            axis: null,
+          },
+        },
+        mark: {
+          type: "square",
+          fill: null,
+          stroke: "#aaa",
+          size: 3.545706371191136,
+          strokeWidth: 0.05,
+        },
+      },
+      {
+        data: {
+          values: [
+            {
+              cCol: 9,
+              cRow: 9,
+            },
+          ],
+        },
+        encoding: {
+          x: {
+            field: "cCol",
+            type: "quantitative",
+          },
+          y: {
+            field: "cRow",
+            type: "quantitative",
+          },
+        },
+        mark: {
+          type: "square",
+          size: 1954.5706371191136,
+          fill: null,
+          stroke: "#aaa",
+          strokeWidth: 0.5,
+        },
+      },
+    ],
+  },
+};
+
 // -----------------------------------------------------------------------------
 // Reference each of the specs with an ID that can be used in the main HTML.
 // If a new spec is added above, add its name along with a corresponding DOM id.
@@ -320,3 +1176,8 @@ let vlGgFlowMap = {
 vegaEmbed("#ggMap", vlGgMap).catch(console.error);
 vegaEmbed("#ggGridMap", vlGgGridMap).catch(console.error);
 vegaEmbed("#ggFlowMap", vlGgFlowMap).catch(console.error);
+
+vegaEmbed("#ggODMap1", vlGgODMap1).catch(console.error);
+vegaEmbed("#ggODMap2", vlGgODMap2).catch(console.error);
+vegaEmbed("#ggODMap3", vlGgODMap3).catch(console.error);
+vegaEmbed("#ggODMap4", vlGgODMap4).catch(console.error);

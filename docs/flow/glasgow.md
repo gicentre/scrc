@@ -21,5 +21,23 @@ Overlaying flow lines on the conventional geography leads to a 'hairball' with l
 
 <div class="wide" id="ggFlowMap"></div>
 
+## 3. OD Maps
+
+But potentially more promising is to use the nested grid layout to show flows as coloured grid cells.
+
+### 3.1 Likely Operating
+
+<div class="wide" id="ggODMap1"></div>
+
+<div class="wide" id="ggODMap2"></div>
+
+### 3.2 Office Closure
+
+Note the dominance of City Centre West and the obvious asymmetry of outgoing and incoming flows.
+
+<div class="wide" id="ggODMap3"></div>
+
+<div class="wide" id="ggODMap4"></div>
+
 <!-- Script containing the vis specs used above. Must be at end of document. -->
 <script src="js/glasgowVisSpecs.js"></script>
