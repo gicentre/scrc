@@ -170,7 +170,7 @@ We can see that people travel from all over to get to the major cities.
 
 ###### EXPLORE
 
-##### Compare the two maps to find a non-Island Local Authority in which worker's destinations (outgoing) are more dispersed than their origins (incoming)?
+##### Compare the two maps (Outgoing Flows and Incoming Flows, above).<br/>Find a non-Island Local Authority in which worker's destinations (outgoing) are more dispersed than their origins (incoming)?
 
 <div class="wide" id="laODMap2"></div>
 
