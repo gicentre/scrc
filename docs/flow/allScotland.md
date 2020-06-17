@@ -187,11 +187,11 @@ Now we rearrange the cells into a different configuration. In this map, each _ro
 
 We can see that people travel from all over to get to the major cities.
 
+<div class="wide" id="laODMap2"></div>
+
 ###### EXPLORE
 
-##### Compare the two maps (Outgoing Flows and Incoming Flows, above).<br/>Find a non-Island Local Authority in which worker's destinations (outgoing) are more dispersed than their origins (incoming)?
-
-<div class="wide" id="laODMap2"></div>
+##### Compare the two maps <br/>(Outgoing Flows and Incoming Flows).<br/>Find a non-Island Local Authority in which worker's destinations (outgoing) are more dispersed than their origins (incoming)?
 
 ### Other Middle - Difference between 'Other Middle' and 'Likely Operating'
 
