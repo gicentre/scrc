@@ -44,15 +44,26 @@ If we standardise the area allocated to each LA and arrange them into a regular 
 
 <div class="wide" id="laMap2"></div>
 
-### 2.2 Flows over grid maps
+### Flows over grid maps
 
 Here we attempt to show conventional flow lines where thickness encodes magnitude of flow for the total flows and the four different work categories. Main problems are co-linear flows (because of grid layout) and failure to show within-LA flow magnitudes. But they do have the advantage of a relatively intuitive representation.
+
+<div class="wide" id="laGridFlowMap0"></div>
 
 ###### EXPERIMENT
 
 ##### Can you answer any of the questions posed above more effectively with this layout?<br/>Which of questions does it remain difficult to answer with a grid map?
 
-<div class="wide" id="laGridFlowMap0"></div>
+### Flow maps for Employment Sectors
+
+We can maps flows for each of the categories of employment that we are using to differentiate between likely differences in levels of daily travel during the pandemic.
+
+|                Name | Explanation                                                                                                                                                                                             |
+| ------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **LikelyOperating** | _Industries in which workers are in key roles and so probably travelling under lockdown_                                                                                                                |
+|     **OtherMiddle** | _Those employed in industries less likely to be working under lockdown, but who may begin working as lockdown loosens. Based on Scottish ordering of when people in particular roles are able to work._ |
+|    **OfficeClosed** | _Those working in offices who are unlikely to be travelling during lockdown_                                                                                                                            |
+|     **OtherClosed** | others in employment categories who are unlikely to be travelling during lockdown, including the retail, real estate, cultural and hospitality sectors.                                                 |
 
 <div class="wide" id="laGridFlowMap1"></div>
 
@@ -62,25 +73,30 @@ Here we attempt to show conventional flow lines where thickness encodes magnitud
 
 <div class="wide" id="laGridFlowMap4"></div>
 
-#### Difference flow maps
+###### EXPLORE
+
+##### Can you describe any differences between the flows of workers in the four categories of employment?
+
+
+### Difference flow maps
+
+One thing we need to think about here is whether to use '_likelyOperating_' as a reasonable indicator of lockdown flow that can be used as an input to the COVID models. But how different are these flows to those for employees in other forms of employment?
 
 We can colour encode by difference between categories of employment. For example, the difference between '_likelyOperating_' jobs and '_officeClosed_' jobs, helping to explore the impact of different work classifications that might be used in COVID modelling.
 
-In the examples below, line thickness is proportional to the total flows among all workers in all categories (as described by the 2011 Census). This is our 'situation normal' model.
-The flows are coloured according to how different this model is to each of the other derived categories :
+In all of the examples below, line thickness is proportional to the total flows among all workers in all four categories (as described by the 2011 Census).
+<!--This is our 'situation normal' baseline.-->
 
-|                Name | Explanation                                                                                                                                                                                             |
-| ------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **LikelyOperating** | _Industries in which workers are in key roles and so probably travelling under lockdown_                                                                                                                |
-|     **OtherMiddle** | _Those employed in industries less likely to be working under lockdown, but who may begin working as lockdown loosens. Based on Scottish ordering of when people in particular roles are able to work._ |
-|    **OfficeClosed** | _Those working in offices who are unlikely to be travelling during lockdown_                                                                                                                            |
-|     **OtherClosed** | others in employment categories who are unlikely to be travelling during lockdown, including the retail, real estate, cultural and hospitality sectors.                                                 |
+<!--The flows are coloured according to how different this model is to each of the other derived categories :-->
 
-They let us see differences in work-based flows among employment categories.
+We can encode differences between '_likelyOperating_' and the three other categories of employment in the flow lines. In these maps each flow is coloured according to how different the flow for the particular employment category is to the '_likelyOperating_' baseline.
+In each case, _orange_ and _red_ shades tell us that **more** workers from the employment category that we are mapping travel than those who are '_likelyOperating_'. The _blue_ shades mean that **fewer** from this category are traveling than those in '_likelyOperating_' roles. Darker colours are bigger differences, _yellows_ mean that numbers in the two categories of job are about the same.
+
+The maps let us see differences in work-based flows among employment categories.
 
 #### Other Middle
 
-Colours show difference from likelyOperating. Darker colours are bigger differences. Orange and Red mean that **more** '_otherMiddle_' workers travel between a pair of local authorities than '_likelyOperating_' workers. Blue shades mean that **fewer** '_otherMiddle_' workers travel than those in '_likelyOperating_' roles.
+Here, _orange_ and _red_ shades mean that **more** '_otherMiddle_' workers travel between a pair of local authorities than '_likelyOperating_' workers. Blue shades mean that **fewer** '_otherMiddle_' workers travel than those in '_likelyOperating_' roles.
 
 <div class="wide" id="laGridDiffFlowMap1"></div>
 
@@ -225,7 +241,7 @@ We see clear spatial structure in both strength of flow and differences between 
 
 **Jo WOOD**<br/>
 **Jason DYKES**<br/>
-_16/06/2020_
+_17/06/2020_
 
 <!-- Script containing the vis specs used above. Must be at end of document. -->
 <script src="js/allScotlandVisSpecs.js"></script>
