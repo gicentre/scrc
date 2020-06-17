@@ -65,6 +65,8 @@ We can maps flows for each of the categories of employment that we are using to 
 |    **OfficeClosed** | _Those working in offices who are unlikely to be travelling during lockdown_                                                                                                                            |
 |     **OtherClosed** | others in employment categories who are unlikely to be travelling during lockdown, including the retail, real estate, cultural and hospitality sectors.                                                 |
 
+&nbsp;
+
 <div class="wide" id="laGridFlowMap1"></div>
 
 <div class="wide" id="laGridFlowMap2"></div>
