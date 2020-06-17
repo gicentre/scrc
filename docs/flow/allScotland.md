@@ -66,7 +66,7 @@ Here we attempt to show conventional flow lines where thickness encodes magnitud
 
 We can colour encode by difference between categories of employment. For example, the difference between '_likelyOperating_' jobs and '_officeClosed_' jobs, helping to explore the impact of different work classifications that might be used in COVID modelling.
 
-In the examples below, line thickness is proportional to the total flows among all workers in all categories (as described by the 2001 Census). This is our 'situation normal' model.
+In the examples below, line thickness is proportional to the total flows among all workers in all categories (as described by the 2011 Census). This is our 'situation normal' model.
 The flows are coloured according to how different this model is to each of the other derived categories :
 
 |                Name | Explanation                                                                                                                                                                                             |
