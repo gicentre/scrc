@@ -30,7 +30,7 @@ But this has many problems such as:
 
 To help understand the graphics, and get a sense of the flows, we'll be asking a few questions as we go along. Please take the time to try to answer them - you'll get more from the graphics if you do so. We hope you'll think about answers and record them. We'd be pleased to hear responses and reactions to the graphics and the data.
 
-For starters, try to use the flow map to answer the following questions.
+For starters, try to use the flow map to answer the questions in the green box.
 
 ###### EXPERIMENT
 
