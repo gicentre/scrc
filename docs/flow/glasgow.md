@@ -11,13 +11,17 @@ In contrast to the [all Scotland visualizations](allScotland.md), we can examine
 
 <div class="wide" id="ggMap"></div>
 
+###### EXPERIMENT
+
+##### Move the cursor over the zones in the map to identify the MSOAs and get your bearings.<br/>Can you find City Centre West?
+
 The challenge here is that we have many more regions (MSOAs) that we need to consider. As [previously](allScotland.md) we can project each MSOA into a gridded location that attempts to preserve key geographic and topologic structure. For example, the _Clyde_ should be evident, and MSOAs that are North and South of the river retain these positions.
+
+<div class="wide" id="ggGridMap"></div>
 
 ###### EXPERIMENT
 
 ##### Move the cursor over the zones in the map and the cells in the grid map to identify and relate the MSOAs.
-
-<div class="wide" id="ggGridMap"></div>
 
 ## 2. Flows
 
@@ -43,7 +47,7 @@ Many of the big flows between MSOAs are quite local, but most MSOAs send people 
 
 ###### EXPERIMENT
 
-##### Be sure to check the legend here. We are using a non-linear scale to emphasize lower values. This helps us see the pattern, but makes it difficult to estimate and compare quantities.
+##### Be sure to check the legend here. We are using a non-linear scale to emphasize lower values.<br/>This helps us see the pattern, but makes it difficult to estimate and compare quantities.
 
 Now let's consider the same data, the same cells, but re-organised to show smalls grid map of the _origins_ of those who travel to the position in the big grid map for work.
 
