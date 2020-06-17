@@ -11,7 +11,7 @@ In contrast to the [all Scotland visualizations](allScotland.md), we can examine
 
 <div class="wide" id="ggMap"></div>
 
-The challenge here is that we have many more regions (MSOAs) that we need to consider. As [previously](#allScotland.md) we can project each MSOA into a gridded location that attempts to preserve key geographic and topologic structure. For example, the _Clyde_ should be evident, and MSOAs that are North and South of the river retain these positions.
+The challenge here is that we have many more regions (MSOAs) that we need to consider. As [previously](allScotland.md) we can project each MSOA into a gridded location that attempts to preserve key geographic and topologic structure. For example, the _Clyde_ should be evident, and MSOAs that are North and South of the river retain these positions.
 
 ###### EXPERIMENT
 
@@ -28,7 +28,6 @@ Overlaying flow lines on the conventional geography leads to a 'hairball' with l
 ###### EXPERIMENT
 
 ##### Try reducing the number of flow lines by removing longer flows and flows of fewer people.<br/>Does this help you see the flow structure?<br/>Can you record some descriptions of aspects of the structure of the flows in the region that were revealed through the interaction?
-
 
 ## 3. OD Maps
 
@@ -97,11 +96,13 @@ We hope that you will have ideas and questions about all of this. You may need s
 The most useful thing we can get from you is a set of reactions, questions, requests and ideas. As we say above, these can be about the data, the designs, or this process of _Discourse Around Data_. Just be sure to log a few reactions, ideas and suggestions. Let us know what this has made you think, and we can react to move things forward.
 
 #### Rapid Reaction Logging
- * [Log a Reaction in a Quick Google Form](https://forms.gle/Vifmxv7T9Jpg9aoi6)
+
+- [Log a Reaction in a Quick Google Form](https://forms.gle/Vifmxv7T9Jpg9aoi6)
 
 Go on - let us know what you think!
 
 ---
+
 [Mapping Workplace Travel](https://gicentre.github.io/scrc/) - head back to the main document.
 
 ---
