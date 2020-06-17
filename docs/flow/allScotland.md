@@ -14,6 +14,7 @@ In order to validate models of travel-to-work patterns we can visualize potentia
 ###### EXPOSE
 
 The problem here is that the LAs vary significantly in land area and population. Much of the interesting pattern is concentrated in smaller urban LAs.
+
 <hr class="clear"/>
 
 A conventional flow map could be overlain on this geography, here using line width to show total number of travel-to-work connections between home and and work LAs:
@@ -21,10 +22,11 @@ A conventional flow map could be overlain on this geography, here using line wid
 <div class="wide" id="laFlowMap"></div>
 
 But this has many problems such as:
-* long distance flows (e.g. to/from Shetlands) having a disproportionate saliency;
-* over-plotting making (short) local flows hard to discriminate;
-* direction of flow not being encoded;
-* smaller regions of high population lead to a crowded view of flows;
+
+- long distance flows (e.g. to/from Shetlands) having a disproportionate saliency;
+- over-plotting making (short) local flows hard to discriminate;
+- direction of flow not being encoded;
+- smaller regions of high population lead to a crowded view of flows;
 
 To help understand the graphics, and get a sense of the flows, we'll be asking a few questions as we go along. Please take the time to try to answer them - you'll get more from the graphics if you do so. We hope you'll think about answers and record them. We'd be pleased to hear responses and reactions to the graphics and the data.
 
@@ -44,12 +46,11 @@ If we standardise the area allocated to each LA and arrange them into a regular 
 
 ### 2.2 Flows over grid maps
 
-Here we attempt to show conventional flow lines where thickness encodes magnitude of flow for the total flows and the four different work categories. Main problems are co-linear flows (because of grid layout) and failure to show within flow magnitude. But they do have the advantage of a relatively intuitive representation.
+Here we attempt to show conventional flow lines where thickness encodes magnitude of flow for the total flows and the four different work categories. Main problems are co-linear flows (because of grid layout) and failure to show within-LA flow magnitudes. But they do have the advantage of a relatively intuitive representation.
 
 ###### EXPERIMENT
 
 ##### Can you answer any of the questions posed above more effectively with this layout?<br/>Which of questions does it remain difficult to answer with a grid map?
-
 
 <div class="wide" id="laGridFlowMap0"></div>
 
@@ -68,12 +69,12 @@ We can colour encode by difference between categories of employment. For example
 In the examples below, line thickness is proportional to the total flows among all workers in all categories (as described by the 2001 Census). This is our 'situation normal' model.
 The flows are coloured according to how different this model is to each of the other derived categories :
 
-|Name|Explanation|
-|-:|:--|
-|**LikelyOperating**|_Industries in which workers are in key roles and so probably travelling under lockdown_|
-|**OtherMiddle**|_Those employed in industries less likely to be working under lockdown, but who may begin working as lockdown loosens. Based on Scottish ordering of when people in particular roles are able to work._|
-|**OfficeClosed**|_Those working in offices who are unlikely to be travelling during lockdown_|
-|**OtherClosed**|others in employment categories who are unlikely to be travelling during lockdown, including the retail, real estate, cultural and hospitality sectors.|
+|                Name | Explanation                                                                                                                                                                                             |
+| ------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **LikelyOperating** | _Industries in which workers are in key roles and so probably travelling under lockdown_                                                                                                                |
+|     **OtherMiddle** | _Those employed in industries less likely to be working under lockdown, but who may begin working as lockdown loosens. Based on Scottish ordering of when people in particular roles are able to work._ |
+|    **OfficeClosed** | _Those working in offices who are unlikely to be travelling during lockdown_                                                                                                                            |
+|     **OtherClosed** | others in employment categories who are unlikely to be travelling during lockdown, including the retail, real estate, cultural and hospitality sectors.                                                 |
 
 They let us see differences in work-based flows among employment categories.
 
@@ -100,7 +101,6 @@ Note the orange lines that show the significance of the flows between Falkirk, F
 
 ##### Can you describe the differences between the flows of those in<br/>'_otherClosed_' and '_likelyOperating_' roles shown here?
 
-
 ###### EXPOSE
 
 A problem with these maps is that they show flows in both directions between each pair of LAs. It is not possible to detect which direction each line represents.
@@ -112,7 +112,6 @@ One possibility is to slightly offset origin from destination locations such tha
 ###### EXPERIMENT
 
 ##### How would you describe the flows of those in '_otherMiddle_' roles **in** and **out** of Edinburgh when comapred to those in '_likelyOperating_' roles?
-
 
 <div class="wide" id="laGridDiffFlowMap2a"></div>
 
@@ -136,13 +135,13 @@ As an alternative, we could lose geography and show flows as an OD matrix. Here 
 
 <div class="wide" id="laODMatrix4"></div>
 
-This is a well-known representation as it is a compact way of showing a value for each pair of regions. So we can show all flows between _N_ regions concurrently using a structured grid of _N*N_ cells with none of the overlaps that tend to occur in flow maps.
+This is a well-known representation as it is a compact way of showing a value for each pair of regions. So we can show all flows between _N_ regions concurrently using a structured grid of _N\*N_ cells with none of the overlaps that tend to occur in flow maps.
 
 ###### EXPOSE
 
 It also lets us see the flows within LAs. These are the biggest flows and they are completely absent from the flow maps we have seen so far!
 
-Whilst it is efficient, intuitive and comprehensive, there are a number of problems with this form of representation. Using colour encoding for a strongly skewed distribution is hard to interpret, with or without a log scale. Position of a cell in the matrix is determined by a somewhat arbitrary alphabetic ordering, so spotting and interpreting geographic clusters is challenging. We therefore turn to an alternative arrangement of the same set of _N*N_ matrix cells. In this re-arrangement we can preserve geographic patterns.
+Whilst it is efficient, intuitive and comprehensive, there are a number of problems with this form of representation. Using colour encoding for a strongly skewed distribution is hard to interpret, with or without a log scale. Position of a cell in the matrix is determined by a somewhat arbitrary alphabetic ordering, so spotting and interpreting geographic clusters is challenging. We therefore turn to an alternative arrangement of the same set of _N\*N_ matrix cells. In this re-arrangement we can preserve geographic patterns.
 
 ## 4. OD Maps
 
@@ -175,7 +174,6 @@ We can see that people travel from all over to get to the major cities.
 ##### Compare the two maps (Outgoing Flows and Incoming Flows, above).<br/>Find a non-Island Local Authority in which worker's destinations (outgoing) are more dispersed than their origins (incoming)?
 
 <div class="wide" id="laODMap2"></div>
-
 
 ### Other Middle - Difference between 'Other Middle' and 'Likely Operating'
 
@@ -220,6 +218,7 @@ When we re-arrange to show _incoming_ flows it is clear that the big differences
 We see clear spatial structure in both strength of flow and differences between different job categories (_hover mouse over cells to see values_). Most dominant is the much higher number of flows within LAs. This suggests that we need to consider these data at higher resolution. To explore what is happening at a local scale we can focus in on the [Glasgow and Clyde region](glasgow.md).
 
 ---
+
 [Mapping Workplace Travel](https://gicentre.github.io/scrc/) - head back to the main document.
 
 ---
