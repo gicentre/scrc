@@ -147,7 +147,7 @@ Whilst it is efficient, intuitive and comprehensive, there are a number of probl
 
 It's straightforward to reorder the cells of the OD matrix to preserve geography using our previous gridded layout. We make a grid map for each origin - effectively taking any one of the columns from above and using the coloured cells to make a grid map. If we do this for each column and place all of the little maps for any origin in a larger grid map, then we have a big map showing the destinations of all workers from all origins.
 
-This is an **OD Map**. Here we colour by total flows (all four of our employment categories):
+This is an [OD Map](https://openaccess.city.ac.uk/id/eprint/537/). Here we colour by total flows (all four of our employment categories):
 
 ### Outgoing flows
 
