@@ -62,7 +62,9 @@ _Any cell count of lower than three has been replaced with zero_.
 
 ---
 
-**Jo WOOD**<br/>
-**Jason DYKES**<br/>
-_with lots of help from_<br/>
-**Jessica ENRIGHT**
+## Team
+
+- [Jo Wood](https://www.gicentre.net/jwo), giCentre, City, University of London (github: [jwolondon](https://github.com/jwolondon); twitter [@jwoLondon](https://twitter.com/jwoLondon))
+- [Jason Dykes](https://www.gicentre.net/jsndyks), giCentre, City, University of London (github: [jsndyks](https://github.com/jsndyks); twitter [@jsndyks](https://twitter.com/jsndyks))
+
+* _with lots of help from_ [Jessica ENRIGHT](https://www.gla.ac.uk/schools/computing/staff/jessicaenright/), University of Glasgow
