@@ -1,6 +1,6 @@
 # Simple-Network-Sim
 
-We're providing some graphics to help decision-making to support the _#simple_network_sim_ modeling.
+We're providing some graphics to help decision-making to support the _#simple_network_sim_ modelling.
 
 ## Mapping Workplace Travel
 
@@ -37,7 +37,7 @@ The two documents are **listed below** - read through _in turn_, _interact_ when
 
 ## The Data
 
-Flows are taken from the 2001 Census and acquired through UKDS - see [WICID](https://wicid.ukdataservice.ac.uk/).
+Flows are taken from the 2011 Census and acquired through UKDS - see [WICID](https://wicid.ukdataservice.ac.uk/).
 
 |    Table number | **WU06BUK_la**                                              |
 | --------------: | :---------------------------------------------------------- |
