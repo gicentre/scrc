@@ -1,0 +1,700 @@
+<!DOCTYPE html><html><head>
+      <title>questions</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/jsndyks/.atom/packages/markdown-preview-enhanced-with-litvis/node_modules/mume-with-litvis/dependencies/katex/katex.min.css">
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="simple-network-sim-visualization">Simple Network Sim - Visualization</h1>
+
+<style type="text/css">
+hr {clear:both}
+.hr0 {clear:both; height:0px; border:1px dashed #f0f0f0; color:#fff; margin-left:3em; margin-right:3em}
+.clear {clear:both}
+.img {float:right; padding-right:1em; padding-left:2em; padding-bottom:1em}
+table {border:none}
+</style>
+<hr>
+<p>Here I take <em>two questions</em> that have come from discussions with the Simple Network Sim folks and use them to show how we apply <em>visualization</em> to begin to answer them, and perhaps other related questions.</p>
+<div class="img">
+<p><img src="img/snsVIS.v5.pic.00051977.png" alt></p>
+</div>
+<p>As part of this process, I have put together a (flakey, buggy, incomplete) DATA SKETCH.</p>
+<p>It&apos;s a rapid combination of data, knowledge and functionality.<br>
+It shows a series of possibilities for interacting with <em>inputs</em> and <em>outputs</em> used in <em>simple_network_sim</em>.</p>
+<p>It&apos;s intended to share and express knowledge, and prompt ideas, initially in relation to two key question that visualization might help with.<br>
+We hope that it will develop dialogue about data and design.</p>
+<p>It&apos;s is INCOMPLETE, INCONSISTENT and UNRELIABLE.<br>
+It should only be used in close cooperation with <em>Prof. JASON DYKES</em>.</p>
+<p><strong>PLEASE CHECK ANY FINDINGS WITH AN ADDITIONAL SOURCE.</strong></p>
+<hr>
+<h2 class="mume-header" id="question-1-output">QUESTION 1 - OUTPUT</h2>
+
+<blockquote>
+<p>Origin <strong>FG</strong> :<br>
+model outputs have priority maybe,<br>
+e.g. being able to show the time series of people in each healthboard and disease state, through time. At least for myself this is the main thing I need visualization on.</p>
+</blockquote>
+<blockquote>
+<p><strong><em>How do the numbers of people in each health state vary geographically over time?</em></strong></p>
+</blockquote>
+<p>At the moment I have access to <a href="https://github.com/ScottishCovidResponse/simple_network_sim/tree/master/sample_output_files">sample output files</a> for <em>NHS Boards</em> in Scotland.</p>
+<table>
+<thead>
+<tr>
+<th>Sample Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/sample-1591198608.png" alt></td>
+</tr>
+<tr>
+<td>Click for <a href="img/sample-1591198608.png">bigger pic</a></td>
+</tr>
+</tbody>
+</table>
+<p>The model produces data for <em>age groups</em> (3 in the current data set) and <em>states</em> through which the disease progresses as shown in the <a href="https://github.com/ScottishCovidResponse/simple_network_sim/blob/master/model_overview_simple_network_sim.md">Model Overview</a></p>
+<div class="img">
+![](https://github.com/ScottishCovidResponse/simple_network_sim/raw/master/assets/colourfulCompartments.png&quot; width=400 /&gt;
+</div>
+<ul>
+<li><strong>S</strong>: susceptible</li>
+<li><strong>E</strong>: exposed, but not yet infectious</li>
+<li><strong>A</strong>: asymptomatic infectious individuals</li>
+<li><strong>I</strong>: symptomatic infectious individuals</li>
+<li><strong>H</strong>: hospitalised individuals</li>
+<li><strong>R</strong>: recovered (assumed immune)</li>
+<li><strong>D</strong>: dead</li>
+</ul>
+<h4 class="mume-header" id="visual-output">Visual Output</h4>
+
+<p>We can outputs for all <em>groups</em> and all <em>states</em> in their spatial contexts with a <em>Grid Map</em>. This layout attempts to maintain some of the original geography while giving each area equal space for graphics. This enables us to consider spatial relationships and variations between outputs and processes.</p>
+<table>
+<thead>
+<tr>
+<th>Geographic Map</th>
+<th>Grid Map</th>
+<th>Model Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/snsVIS.v5.pic.00939105.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.00892947.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.01031323.png" alt></td>
+</tr>
+</tbody>
+</table>
+<p>We can scale each graphic in different ways, <em>globally</em> to see absolute numbers, <em>regionally</em> as in the original to compare patterns across regions in relative terms, <em>by state</em> so that we can compare patterns and peaks in each health state. This is important as the numbers vary by orders of magnitude across <em>regions</em> and <em>states</em>. Sometimes we need to think about absolutes, at other times we need to think about relative numbers to inform decisions and make valid decisions.</p>
+<table>
+<thead>
+<tr>
+<th>Global Scale</th>
+<th>Region Scaling</th>
+<th>State Scaling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/snsVIS.v5.pic.01031323.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.01182164.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.01176921.png" alt></td>
+</tr>
+</tbody>
+</table>
+<p>We also have data for three different age groups, here they are shown separately with region scaling. Thicker lines are used for older groups.</p>
+<table>
+<thead>
+<tr>
+<th>aged &lt;18</th>
+<th>aged 18-70</th>
+<th>aged &gt;70</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/snsVIS.v5.pic.01493461.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.01509604.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.01512746.png" alt></td>
+</tr>
+</tbody>
+</table>
+<p>It&apos;s tough to see things spatially when we are looking at all times concurrently, so we may need to check the outputs for one moment in time.</p>
+<p>Here we have numbers for each age group for one health state - <em>Recovered</em> - at three times in the sequence, as shown by the little dots in each graph. Scalings are global here.</p>
+<table>
+<thead>
+<tr>
+<th>t = early</th>
+<th>t = mid</th>
+<th>t = late</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/snsVIS.v5.pic.01943404.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.01947435.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.01950464.png" alt></td>
+</tr>
+</tbody>
+</table>
+<p>Of course, with so many options for groups, states of health and scaling, we really need interactive software to help us work out what is going on.</p>
+<h4 class="mume-header" id="data-sketch">Data Sketch</h4>
+
+<p>The <em>Data Sketch</em> shows how this might work, and can be used to check models and establish some preliminary ideas about outputs and their spatio-temporal characteristics.</p>
+<p>It runs in <strong><em>Processing 3</em></strong>, and will be available shortly on the giCentre GitHub repo.</p>
+<p>You can see how this might all work in a short video that gives some ideas as to current functionality and how it might be used and developed.</p>
+<table>
+<thead>
+<tr>
+<th>Video on Vimeo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://vimeo.com/435490241"><img src="img/snsVS.v5.vimeo.Q1.png" alt></a></td>
+</tr>
+<tr>
+<td><a href="https://vimeo.com/435490241">https://vimeo.com/435490241</a><br>password : <strong>snsVIS</strong></td>
+</tr>
+</tbody>
+</table>
+<hr class="hr0">
+<h4 class="mume-header" id="back-to-the-question">(Back to) The Question?</h4>
+
+<blockquote>
+<p><strong><em>How do the numbers of people in each health state vary geographically over time?</em></strong></p>
+</blockquote>
+<p>Well, there are no clear spatial patterns in what are extremely regular temporal patterns in the sample outputs.</p>
+<p>But hopefully the visualization gives us a sense of the complexity and variation that we can expect, and the kinds of functionality we might use to begin to explore and understand it.</p>
+<p>As model outputs develop, it&apos;s likely that this kind of interactive spatio-temporal visualization will help us understand them.</p>
+<hr>
+<h2 class="mume-header" id="question-2-input">QUESTION 2 - INPUT</h2>
+
+<blockquote>
+<p>Origin <strong>JE</strong> :<br>
+how different are the networks used as inputs if we make different assumptions about which sectors of the workforce are travelling to work under different lockdown scenarios?</p>
+</blockquote>
+<blockquote>
+<p><strong><em>Does it make a difference which types of workers we include in the INPUT NETWORK?</em></strong><br>
+<strong><em>How does this vary with space and scale?</em></strong></p>
+</blockquote>
+<h6 class="mume-header" id="nhs-boards">NHS Boards</h6>
+
+<p>Each of these maps show daily flows between NHS Boards for those travelling to work. We used curved lines to show flow direction - the curved end is the destination of the flow. So we can see irregular ellipses where flows are stronger in one direction than the other.</p>
+<p>The first two maps are different projections of the dame data. The third shows the flows in and out of Lothian (LTH) with the LTH-&gt;GLA flow being the biggest between board flow.<br>
+The fourth shows internal flows (those traveling to work within NHS Health Boards) with Edinburgh (LTH) and Glasgow having the most within NHS Board commuters. These internal flows use are scaled in the same way as the region-region flows, with width representing the number of people travelling to work within each local authority.</p>
+<table>
+<thead>
+<tr>
+<th>Flow Map<br>All Flows</th>
+<th>Grid Map<br>All Flows</th>
+<th>Lothian Flows<br>(LOT)</th>
+<th>Grid Map<br>with Internal Flows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/snsVIS.v5.pic.00014768.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.00003440.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.00678101.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.00699815.png" alt></td>
+</tr>
+</tbody>
+</table>
+<hr class="hr0">
+<h6 class="mume-header" id="local-authorities">Local Authorities</h6>
+
+<p>We have flow data by <em>employment sector</em> for <em>Local Authorities</em> and have done more work at this level.</p>
+<p>Let&apos;s look at all daily trips to work ...</p>
+<table>
+<thead>
+<tr>
+<th>All Daily Travel</th>
+<th>All Daily Travel - Flows of &gt; 128 people</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/snsVIS.v5.pic.01613640.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.01637772.png" alt></td>
+</tr>
+<tr>
+<td>All trips to work, with line widths representing number of daily flows.</td>
+<td>The smaller flows may be important, but let&apos;s filter them out for now.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>All Daily Travel</th>
+<th>All Daily Travel - Grid Map</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/snsVIS.v5.pic.01643172.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.01692557.png" alt></td>
+</tr>
+<tr>
+<td>We re-project on to the grid map, which retains the essence of the original geography, but gives us equal space for each LA.</td>
+<td>This gives us the room to show the internal flows the width of each vertical line is proportional to the number of people travelling to work within each LA, using the same scale as we use for the flows between local authorities.</td>
+</tr>
+</tbody>
+</table>
+<p>The key question that we&apos;re interested in is whether or not it makes a difference if we consider different flow networks as <em>input</em> into the simulation model. We use the census, which provides data relating to daily travel to work. If we make different assumptions about who is moving, and thus how many people are moving between each area for which we have data, then the model will produce different outputs. The census gives us data about numbers of people who move between areas per employment sector. We have aggregated these into 4 groups for analysis :</p>
+<ul>
+<li><strong>Likely Operating</strong> - workers in sectors that are Likely to be operating during Lockdown</li>
+<li><strong>Maybe</strong> - workers in sectors that May be operating during Lockdown</li>
+<li><strong>Closed (office)</strong> - workers in sectors that are Closed during Lockdown (office)</li>
+<li><strong>Closed (other)</strong> - workers in sectors that are Closed during Lockdown (not office)</li>
+</ul>
+<p>We also have the total figures for <strong>All</strong> workers.</p>
+<p>Let&apos;s look at daily flows within (<em>vertical lines</em>) and between (<em>curved lines</em>)  Local Authorities. In each map the grey flows show the total - <em>All</em> daily trips to work as recorded in the census.</p>
+<table>
+<thead>
+<tr>
+<th>Likely Operating</th>
+<th>Maybe</th>
+<th>Closed (office)</th>
+<th>Closed (other)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/snsVIS.v5.pic.00055539.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.00261667.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.00063728.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.00068009.png" alt></td>
+</tr>
+</tbody>
+</table>
+<p>It&apos;s a complex picture, even when we cut it down to the larger daily flows, but we can see differences that strongly suggest that the way we model the input network with employment types may have effect.</p>
+<p>Let&apos;s look at <em>differences</em> in the number of people travelling to work each day.</p>
+<p>One thing we can look at is the difference between categories. For example, are there big differences between the numbers in <em>Closed Office</em> and <em>Likely Operating</em>.<br>
+This simple difference shows positive numbers in red and negatives in blue. The mass of blue shows us that the biggest differences are for internal flows (which is where most of the movement is, as we have seen) and that in most cases there are fewer people in the <em>Closed Office</em> sectors that in <em>Likely Operating</em>. But the <em>red</em> flows are very spatially focussed - on <em>Edinburgh City</em>, where many of flows in to the city contain more people in the <em>Likely Operating</em> sectors than in <em>Closed Office</em>. These are not large numbers, comprising of differences of hundreds rather than thousands of people, around 5-10% of all flows, but the phenomenon is peculiar to Edinburgh.</p>
+<p>The differences between the roles moving in and out of Aberdeen are also noticeable.</p>
+<table>
+<thead>
+<tr>
+<th>Closed Office - Likely Operating</th>
+<th>Closed Office - Likely Operating<br>Edinburgh City only</th>
+<th>Geographic Projection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/snsVIS.v5.pic.00176123.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.00153794.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.00216352.png" alt></td>
+</tr>
+</tbody>
+</table>
+<p>The absolute numbers may be interesting, but looking at the differences between the proportions we might expect in the <em>Likely Operating</em> category given the sizes of flows in <em>All</em> provides useful insights. We can use a <em>signed CHI statistic</em> for this. We look at the overall numbers in <em>All</em> and <em>Likely Operating</em> and use the <em>All</em>  proportions to calculate <em>expectations</em> for <em>Likely Operating</em>. The assumption here is that we might expect to have fewer people travelling under lockdown, but the numbers might reduce by the same proportions across the board. We compare the numbers expected under this proportional assumption to the <em>observed</em> numbers in <em>Likely Operating</em> and scale by the <em>expectation</em> - thereby favouring proportionate deviations from large flows over small ones. This lets us see where, and how, the use of <em>Likely Operating</em> as an input differs from using <em>All</em>. If there is spatial structure to the differences, then this is likely to be important in the simulation modelling.</p>
+<table>
+<thead>
+<tr>
+<th>Signed CHI statistic<br>Larger Differences</th>
+<th>Larger Differences<br>Glasgow highlighted</th>
+<th>Signed CHI statistic<br>All flows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/snsVIS.v5.pic.00871828.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.01322489.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.02063236.png" alt></td>
+</tr>
+</tbody>
+</table>
+<p>Here we see patterns that show <em>Likely Operating</em> flows to be very different from <em>All</em>, with clear spatial structure. <em>Aberdeen</em>, <em>Edinburgh</em> and <em>Glasgow</em> are the focus of <em>Likely Operating</em> flows that are <em>smaller</em> than we might expect given the numbers in <em>All</em>. Flows <em>out</em> of <em>Edinburgh</em>, <em>between</em> <em>Aberdeen</em>, and <em>north</em> and <em>east</em> <em>from</em> <em>Glasgow</em> are smaller than we expect under the proportions that we see in <em>All</em>. Flows <em>west</em> <em>from</em> <em>Glasgow</em> and particularly <em>into</em> <em>Argyll &amp; Bute</em> are consistently greater in <em>Likely Operating</em> than we might expect given <em>All</em>. These are not <em>big</em> numbers, but they do show clear spatial differences between the <em>Likely Operating</em> and <em>All</em> flows.</p>
+<p>Geographic trends in differences between <em>All</em> daily trips and <em>Likely Operating</em> are particularly clear in the second Grid Map with Glasgow selected. <em>Blue</em> to the north and east means fewer trips under <em>Likely Operating</em> than under the <em>All</em> input network, <em>red</em> to the west means more.</p>
+<p>Looking at all flows suggests that these patterns persist when smaller differences between <em>All</em> daily flows and <em>Likely Operating</em> are considered.</p>
+<p>The grid maps are a little unfamiliar, so let&apos;s consider <strong>two more views</strong>.</p>
+<p>The patterns persist if we check the geographic projection, with the <em>lower than expected</em> numbers for flows <em>north-west</em> out of the central valley and the <em>larger than expected</em> flows <em>east</em> dominating.</p>
+<p>Each OD map shows a map of destinations from the location at which the map is positioned. If there were no spatial effects then we would expect red and blue cells to be randomly distributed. But the clear patterns show spatial structure in the differences between <em>Likely Operating</em> and <em>All</em>, meaning that it is likely that there will be spatial effects in the model outputs depending upon which of these flow networks is used to model spatial interaction.</p>
+<table>
+<thead>
+<tr>
+<th>Geographic Projection<br>Central Valley Highlighted</th>
+<th>OD Map<br>No Highlights</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/snsVIS.v5.pic.00319890.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.00397783.png" alt></td>
+</tr>
+<tr>
+<td><em>Blue</em> lines show fewer trips west from the highlighted Central Valley under the <em>Likely Operating</em> input network, and also Aberdeen City in the north-west</td>
+<td>OD map shows maps of destinations for all (circular) origins. Clusters of read and blue show clear spatial structure in differences between <em>All</em> and <em>Likely Operating</em>.</td>
+</tr>
+</tbody>
+</table>
+<h4 class="mume-header" id="data-sketch-1">Data Sketch</h4>
+
+<p>Of course, we need to consider all of these graphics, and others, quickly as we assess the data, with controls and interactions to specify what we see and how we see it. The <em>Data Sketch</em> shows how this might work.</p>
+<p>This second short video gives some ideas as to current functionality for assessing inputs and shows how it might be used and developed.</p>
+<table>
+<thead>
+<tr>
+<th>Video on Vimeo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://vimeo.com/435735366"><img src="img/snsVS.v5.movie.Q2.jpg" alt></a></td>
+</tr>
+<tr>
+<td><a href="https://vimeo.com/435735366">https://vimeo.com/435735366</a><br>password : <strong>snsVIS</strong></td>
+</tr>
+</tbody>
+</table>
+<hr class="hr0">
+<h4 class="mume-header" id="back-to-the-question-1">(Back to) The Question?</h4>
+
+<blockquote>
+<p><strong><em>Does it make a difference which types of workers we include in the INPUT NETWORK?</em></strong><br>
+<strong><em>How does this vary with space and scale?</em></strong></p>
+</blockquote>
+<p>Briefly, <strong>YES</strong>, even at this large scale (Local Authority).<br>
+Preliminary work at MSOA level suggests pronounced differences in daily travel between employment sectors and so the input network will be sensitive to this (<em>see below</em>).</p>
+<p>We should experiment with inputs to see effects on model outputs.<br>
+Interactive visualization may help!</p>
+<hr>
+<h4 class="mume-header" id="preliminary-work-on-with-the-question">Preliminary Work - (on with) The Question?</h4>
+
+<h6 class="mume-header" id="msoas-glasgow-and-strathcylde">MSOAs - Glasgow and Strathcylde</h6>
+
+<p>Data are likely to be available at <em>Data Zone</em> level, and we may be modelling at much finer resolution. We have looked at <em>MSOAs</em> in <em>Glasgow and Strathcylde</em> to get a sense of the variation at this scale. <em>MSOAs</em> are a little bigger than <em>Data Zones</em>.</p>
+<table>
+<thead>
+<tr>
+<th>Geographic Projection</th>
+<th>Grid Map</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/snsVIS.v5.pic.00152923.png" alt></td>
+<td><img src="img/snsVIS.v5.pic.00146689.png" alt></td>
+</tr>
+<tr>
+<td>Largest flows between MSOAs</td>
+<td>Largest flows between MSOAs</td>
+</tr>
+</tbody>
+</table>
+<p>We can calculate differences between the numbers of trips observed in <em>Likely Operating</em> and those <em>expected</em> under the assumption that proportions are in line with <em>All</em> flows.</p>
+<p>These simple difference maps show origins of those who travel to each destination (so these are <em>DO Maps</em>!). There is definite spatial structure at this scale. Flows in to the City Centre and some other areas south east of the Clyde are consistently <em>blue</em> , meaning that we have <em>fewer</em> people and <em>smaller flows</em> into these destinations than we would expect.<br>
+But there are also destinations that have many <em>red</em> lines converging on them. These are the areas in which we have relatively more trips under <em>Likely Operating</em> than we would expect under the proportions predicted by the flows that we see in <em>All</em> .</p>
+<p>Absolute differences are in the 20s, 40s, 60s for each pair of MSOAs, but the <em>blue</em> and <em>red</em> spatial structure shows that there are geographic differences in the flows associated with different employment sectors.</p>
+<table>
+<thead>
+<tr>
+<th>Flow Map - Largest FLows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/snsVIS.v5.pic.00158131.png" alt></td>
+</tr>
+<tr>
+<td>Largest flows between MSOAs shown as a flow map in which particular destinations have very clear signatures of flows that are greater (<em>red</em>) or less (<em>blue</em>) than predicted by <em>All</em> flows.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>DO Map - All Flows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/snsVIS.v5.pic.00054812.png" alt></td>
+</tr>
+<tr>
+<td>All flows between MSOAs are shown in maps of the origins of flows arriving at each each destination. The focussed coloured maps show that the big differences are in certain destinations, and the consistently <em>red</em> (greater numbers) or <em>blue</em> (lower numbers) nature of these maps means that flows from all sources are consistently under-or over predicted.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Preliminary analysis suggests that the effects are more significant at higher resolution.</strong><br>
+<strong>Analysis summary to come ...</strong></p>
+<hr>
+<p><strong>Jason DYKES</strong><br>
+<em>5th July 2020</em><br>
+<em>6th July 2020</em></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
