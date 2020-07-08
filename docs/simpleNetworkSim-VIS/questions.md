@@ -52,17 +52,16 @@ At the moment I have access to [sample output files](https://github.com/Scottish
 
 The model produces data for _age groups_ (3 in the current data set) and _states_ through which the disease progresses as shown in the [Model Overview](https://github.com/ScottishCovidResponse/simple_network_sim/blob/master/model_overview_simple_network_sim.md)
 
-<div class="img">
-![](https://github.com/ScottishCovidResponse/simple_network_sim/raw/master/assets/colourfulCompartments.png" width=400 />
-</div>
-
-* **S**: susceptible
-* **E**: exposed, but not yet infectious
-* **A**: asymptomatic infectious individuals
-* **I**: symptomatic infectious individuals
-* **H**: hospitalised individuals
-* **R**: recovered (assumed immune)
-* **D**: dead
+|Disease Progression Model|
+|--|
+|![](https://github.com/ScottishCovidResponse/simple_network_sim/raw/master/assets/colourfulCompartments.png)|
+* **S**: susceptible|
+* **E**: exposed, but not yet infectious |
+* **A**: asymptomatic infectious individuals|
+* **I**: symptomatic infectious individuals|
+* **H**: hospitalised individuals|
+* **R**: recovered (assumed immune)|
+* **D**: dead |
 
 #### Visual Output
 

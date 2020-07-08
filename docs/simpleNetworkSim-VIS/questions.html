@@ -313,16 +313,39 @@ e.g. being able to show the time series of people in each healthboard and diseas
 </tbody>
 </table>
 <p>The model produces data for <em>age groups</em> (3 in the current data set) and <em>states</em> through which the disease progresses as shown in the <a href="https://github.com/ScottishCovidResponse/simple_network_sim/blob/master/model_overview_simple_network_sim.md">Model Overview</a></p>
-<p><img src="https://github.com/ScottishCovidResponse/simple_network_sim/raw/master/assets/colourfulCompartments.png" alt></p>
-<ul>
-<li><strong>S</strong>: susceptible</li>
-<li><strong>E</strong>: exposed, but not yet infectious</li>
-<li><strong>A</strong>: asymptomatic infectious individuals</li>
-<li><strong>I</strong>: symptomatic infectious individuals</li>
-<li><strong>H</strong>: hospitalised individuals</li>
-<li><strong>R</strong>: recovered (assumed immune)</li>
-<li><strong>D</strong>: dead</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Disease Progression Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://github.com/ScottishCovidResponse/simple_network_sim/raw/master/assets/colourfulCompartments.png" alt></td>
+</tr>
+<tr>
+<td>* <strong>S</strong>: susceptible</td>
+</tr>
+<tr>
+<td>* <strong>E</strong>: exposed, but not yet infectious</td>
+</tr>
+<tr>
+<td>* <strong>A</strong>: asymptomatic infectious individuals</td>
+</tr>
+<tr>
+<td>* <strong>I</strong>: symptomatic infectious individuals</td>
+</tr>
+<tr>
+<td>* <strong>H</strong>: hospitalised individuals</td>
+</tr>
+<tr>
+<td>* <strong>R</strong>: recovered (assumed immune)</td>
+</tr>
+<tr>
+<td>* <strong>D</strong>: dead</td>
+</tr>
+</tbody>
+</table>
 <h4 class="mume-header" id="visual-output">Visual Output</h4>
 
 <p>We can outputs for all <em>groups</em> and all <em>states</em> in their spatial contexts with a <em>Grid Map</em>. This layout attempts to maintain some of the original geography while giving each area equal space for graphics. This enables us to consider spatial relationships and variations between outputs and processes.</p>
