@@ -46,8 +46,8 @@ _**Now**, we have volunteer capacity but little time in the COVID emergency, so 
 
 > **D** - 58,800 numbers
  * 200 time steps
- * 14 NHS Boards
- * 7 states
+ * 14 NHS Boards (regions)
+ * 7 health states 
  * 3 age groups
 
  > **K** - important to know that ...
