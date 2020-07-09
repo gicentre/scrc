@@ -42,7 +42,7 @@ _**Now**, we have volunteer capacity but little time in the COVID emergency, so 
 
 #### simple_network_sim output
 
-> **Q** - How do the numbers of people in each health state vary geographically over time?
+> **Q** - **How do the numbers of people in each health state vary geographically over time?**
 
 > **D** - 58,800 numbers
  * 200 time steps
@@ -50,12 +50,12 @@ _**Now**, we have volunteer capacity but little time in the COVID emergency, so 
  * 7 states
  * 3 age groups
 
- > **K** - know that ...
+ > **K** - important to know that ...
 
  * geographic units vary in size
- * numbers vary by orders of magnitude
+ * numbers in outputs (by state) vary by orders of magnitude
  * states are related in a network
- * no explicit (quantified) uncertainty
+ * no explicit (quantified) uncertainty 
 
 > **V** - visualization to see or compare any useful subset(s) of these numbers :
 
