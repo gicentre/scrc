@@ -55,7 +55,7 @@ _**Now**, we have volunteer capacity but little time in the COVID emergency, so 
  * geographic units vary in size
  * numbers in outputs (by state) vary by orders of magnitude
  * states are related in a network
- * no explicit (quantified) uncertainty 
+ * no explicit (quantified) uncertainty
 
 > **V** - visualization to see or compare any useful subset(s) of these numbers :
 
@@ -97,7 +97,10 @@ _Rapid, intuitive, consistent real time interactions to navigate through all (po
 
 #####As model outputs develop, it's likely that this kind of interactive spatio-temporal visualization will help us understand them.
 
+#### More Details
 
+More details and more graphics relating to this example are available .
+ * https://gicentre.github.io/scrc/docs/simpleNetworkSim-VIS/questions.html
 
 ---
 **Jason DYKES**
