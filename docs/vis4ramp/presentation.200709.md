@@ -69,7 +69,7 @@ _Use algorithms, design patterns and knowledge of perception & cognition to deve
   * compare states for age group over time
   * _etc._
 
-|Design Prototype|
+|Design Ideas|
 |-|
 |![](img/snsVIS.v5.pic.T152.GLA.png)|
 
@@ -83,7 +83,7 @@ _Use algorithms, design patterns and knowledge of perception & cognition to deve
   * change speed
   * annotate / record
 
-|Design Prototype|
+|Interactive Design Prototype|
 |-|
 |![](img/snsVIS.v5.animation.v3.gif)|
 
