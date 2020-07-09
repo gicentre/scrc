@@ -71,7 +71,7 @@ _Use algorithms, design patterns and knowledge of perception & cognition to deve
 
 |[pic1 - States in space, time and process (map)](img/snsVIS.v5.pic.T151.GLA.map.png)|
 |-|
-|![img/snsVIS.v5.pic.T151.GLA.map.png](img/snsVIS.v5.pic.T151.GLA.map.png)
+|![](img/snsVIS.v5.pic.T151.GLA.map.png)|
 
 |[pic2 - States in space, time and process (grid)](img/snsVIS.v5.pic.T147.GLA.grd.png)
 |-|
