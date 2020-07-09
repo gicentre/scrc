@@ -69,13 +69,15 @@ _Use algorithms, design patterns and knowledge of perception & cognition to deve
   * compare states for age group over time
   * _etc._
 
-|Design Ideas|
-|-|
-|![](img/snsVIS.v5.pic.T152.GLA.png)|
+|Design Ideas|||
+|-|-|-|
+|![](img/snsVIS.v5.pic.T151.GLA.map.png)|![](img/snsVIS.v5.pic.T147.GLA.grd.png)|![](img/snsVIS.v5.pic.T147.GLA.flw.png)
 
 
 
-> **I** - interact to
+> **I** - interact to get what you need
+
+_Rapid, intuitive, consistent real time interactions to navigate through all (possible, useful) views of the data to ..._
 
   * get specifics
   * change encoding - layout, emphasis, scaling
