@@ -69,10 +69,17 @@ _Use algorithms, design patterns and knowledge of perception & cognition to deve
   * compare states for age group over time
   * _etc._
 
-|Design Ideas|||
-|-|-|-|
-|![](img/snsVIS.v5.pic.T151.GLA.map.png)|![](img/snsVIS.v5.pic.T147.GLA.grd.png)|![](img/snsVIS.v5.pic.T147.GLA.flw.png)
+|[pic1 - States in space, time and process (map)](img/snsVIS.v5.pic.T151.GLA.map.png)|
+|-|
+|![img/snsVIS.v5.pic.T151.GLA.map.png](img/snsVIS.v5.pic.T151.GLA.map.png)
 
+|[pic2 - States in space, time and process (grid)](img/snsVIS.v5.pic.T147.GLA.grd.png)
+|-|
+|![img/snsVIS.v5.pic.T147.GLA.grd.png](img/snsVIS.v5.pic.T147.GLA.grd.png)
+
+|[pic3 - States in process with input flows (grid)](img/snsVIS.v5.pic.T147.GLA.flw.png)|
+|-|
+|![img/snsVIS.v5.pic.T147.GLA.flw.png](img/snsVIS.v5.pic.T147.GLA.flw.png)
 
 
 > **I** - interact to get what you need
