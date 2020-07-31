@@ -4,7 +4,7 @@
 hr {clear:both}
 .hr0 {clear:both; height:0px; border:1px dashed #f0f0f0; color:#fff; margin-left:3em; margin-right:3em}
 .clear {clear:both}
-.img {float:right; padding-right:1em; padding-left:2em; padding-bottom:1em; width:400px}
+.img {float:right; padding-right:1em; padding-left:2em; padding-bottom:1em; width:300px}
 table {border:none}
 </style>
 
