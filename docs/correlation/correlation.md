@@ -33,7 +33,8 @@ Any informed analysis would account for this context, and graphics that support 
 
 So, here are the relationships in their spatial contexts - line width is proportional to strength of association.
 
-
+I think that's the same _connection_ and _width_ encoding as the chord diagram, but _position_ is now mapped to **geography** (_which is important_) when it was mapped to an **arbitrary** (?) position around a circle (_which might deceive as any patterns are likely to be reliant upon this ordering_).
+ 
 Wow, that's a mess.
 
 ---
