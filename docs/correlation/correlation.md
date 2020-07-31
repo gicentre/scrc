@@ -171,7 +171,10 @@ And the designer’s task is ...
 > the revelation of the complex
 _(Tufte, 2001, p191)_
 
-This takes some skill, experimentation and explanation.
+This takes some skill, experimentation, explanation, reflection ... and in my view discourse.
+
+There are no absolute answers in my view.
+Which is why we need to communicate about, and explain, our candidates.
 
 ---
 
