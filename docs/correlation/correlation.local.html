@@ -282,20 +282,20 @@ table {border:none}
 
 <p>Surely as we are dealing with spatial processes, we need spatial encodings to understand how these processes operate over space at different scales and distances. They may even be directional or affected by geographic features - such as boundaries (mountains, valleys, sea, etc.).</p>
 <p>Any informed analysis would account for this context, and graphics that support this analysis should do so too.</p>
-<p>So, here are the relationships in their spatial contexts - line width is proportional to strength of association.</p>
 <div class="img">
 <p><img src="img/scrc.NHSBoard.correlation.map.flow.bi.png" alt></p>
 </div>
+<p>So, here are the relationships in their spatial contexts - line width is proportional to strength of association.</p>
 <p>Wow, that&apos;s a mess.</p>
 <hr>
 <h4 class="mume-header" id="remove-redundancy">Remove Redundancy</h4>
 
 <p>In fairness I am showing bi-directional flows here, so there is twice the information we need.</p>
-<p>Let&apos;s cut that out.<br>
-Here we see unidirectional flows.</p>
 <div class="img">
 <p><img src="img/scrc.NHSBoard.correlation.map.flow.uni.png" alt></p>
 </div>
+<p>Let&apos;s cut that out.<br>
+Here we see unidirectional flows.</p>
 <p>But it&apos;s still very difficult to see any differences in flow widths because of the occlusion, overlaps and because there is so little difference in the correlations.</p>
 <hr>
 <h4 class="mume-header" id="rescale-to-reveal">Rescale to Reveal</h4>
@@ -304,35 +304,36 @@ Here we see unidirectional flows.</p>
 <blockquote>
 <p>The representation of numbers as physically measured on the surface of the graphic itself, should be directly proportional to the numerical quantities represented.</p>
 </blockquote>
-<p>Here we are re-scaling line widths from 08.-1.0 rather than from the full 0-1 range.</p>
 <div class="img">
 <p><img src="img/scrc.NHSBoard.correlation80.map.flow.uni.png" alt></p>
 </div>
+<p>Here we are re-scaling line widths from 08.-1.0 rather than from the full 0-1 range.</p>
 <p>But at least we can see a little variation - we might begin to see where the undetectable variation is, even if we can&apos;t estimate or compare the quantities.</p>
 <hr>
 <h4 class="mume-header" id="make-space-to-reduce-occlusion">Make Space to Reduce Occlusion</h4>
 
-<p>I&apos;d transform this to a semi-spatial grid. This lays the NHS boards out to retain some aspects of distance, topology and direction. NHR boards that are further north tend to be at the top, those that are further east tend to be over on the right. Those that are neighbours tend to be next to each other.</p>
-<p>Importantly it uses gaps to represent and remind us about real geographical barriers, such as large stretches of water. We can learn this shape and relate it to the geography of Scotland.</p>
 <div class="img">
 <p><img src="img/scrc.NHSBoard.grid.png" alt></p>
 </div>
-<p>Let&apos;s add those unidirectional flows.</p>
+<p>I&apos;d transform this to a semi-spatial grid. This lays the NHS boards out to retain some aspects of distance, topology and direction. NHR boards that are further north tend to be at the top, those that are further east tend to be over on the right. Those that are neighbours tend to be next to each other.</p>
+<p>Importantly it uses gaps to represent and remind us about real geographical barriers, such as large stretches of water. We can learn this shape and relate it to the geography of Scotland.</p>
+<div style="clear:both"></div>
 <div class="img">
 <p><img src="img/scrc.NHSBoard.correlation80.grid.flow.uni.png" alt></p>
 </div>
+<p>Let&apos;s add those unidirectional flows.</p>
 <p>We still have a mess, much like the <em>chord diagram</em>, with slightly thinner lines from Shetland? Maybe?</p>
 <hr>
 <h4 class="mume-header" id="re-encode-to-reveal-structure">Re-Encode to Reveal Structure</h4>
 
 <p>So let&apos;s use an alternative representation of flows -<br>
 a matrix. Let&apos;s use colour encoding to show the correlation and position to show the geography.</p>
-<p>Here, each map is positioned at the transformed location of a NHS Board. And each mini-map is a map of the correlation between this board and all others.</p>
-<p>The circle shows the board that is the focus of the map  - and it&apos;s always dark brown as all boards have a correlation of 1 with themselves.</p>
-<p>This layout enables us to see how correlations vary spatially.</p>
 <div class="img">
 <p><img src="img/scrc.NHSBoard.correlation80.grid.OD.png" alt></p>
 </div>
+<p>Here, each map is positioned at the transformed location of a NHS Board. And each mini-map is a map of the correlation between this board and all others.</p>
+<p>The circle shows the board that is the focus of the map  - and it&apos;s always dark brown as all boards have a correlation of 1 with themselves.</p>
+<p>This layout enables us to see how correlations vary spatially.</p>
 <p>Now we can see something interesting. The light colours in Shetland (top right) mean that the correlations are consistently low. The map in the Western Isles (top left) shows strong correlation with Orkney, which may have similar geographic characteristics, but weaker correlations with Shetland and the Mainland.</p>
 <p>There are subtle spatial patterns too - Glasgow (mid left) is more like regions that are closer to is than those that are distant. Spatial autocorrelation at play.</p>
 <p>We can also see that Borders (bottom right), and particularly Dumfries &amp; Galloway (bottom) are correlated with one another, but less correlated with other NHS Boards. They have different profiles to the rest of Scotland. Correlations with one another are 0.99, with other parts of Scotland range from 0.92-0.98.</p>
