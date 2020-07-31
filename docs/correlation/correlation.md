@@ -4,7 +4,7 @@
 hr {clear:both}
 .hr0 {clear:both; height:0px; border:1px dashed #f0f0f0; color:#fff; margin-left:3em; margin-right:3em}
 .clear {clear:both}
-.img {float:right; padding-right:1em; padding-left:2em; padding-bottom:1em}
+.img {float:right; padding-right:1em; padding-left:2em; padding-bottom:1em;}
 table {border:none}
 </style>
 
@@ -30,10 +30,12 @@ So, here are the relationships in their spatial contexts - line width is proport
 
 <div class="img">
 
-![](img/scrc.LA.correlation.map.flow.bi.png)
+![](img/scrc.NHSBoard.correlation.map.flow.bi.png)
 </div>
 
 Wow, that's a mess.
+
+---
 
 #### Remove Redundancy
 
@@ -44,10 +46,12 @@ Here we see unidirectional flows.
 
 <div class="img">
 
-![](img/scrc.LA.correlation.map.flow.uni.png)
+![](img/scrc.NHSBoard.correlation.map.flow.uni.png)
 </div>
 
 But it's still very difficult to see any differences in flow widths because of the occlusion, overlaps and because there is so little difference in the correlations.
+
+---
 
 #### Rescale to Reveal
 
@@ -59,7 +63,7 @@ Here we are re-scaling line widths from 08.-1.0 rather than from the full 0-1 ra
 
 <div class="img">
 
-![](img/scrc.LA.correlation80.map.flow.uni.png)
+![](img/scrc.NHSBoard.correlation80.map.flow.uni.png)
 </div>
 
 But at least we can see a little variation - we might begin to see where the undetectable variation is, even if we can't estimate or compare the quantities.
@@ -74,7 +78,14 @@ Importantly it uses gaps to represent and remind us about real geographical barr
 
 <div class="img">
 
-![](img/scrc.LA.correlation80.grid.flow.uni.png)
+![](img/scrc.NHSBoard.grid.png)
+</div>
+
+Let's add those unidirectional flows.
+
+<div class="img">
+
+![](img/scrc.NHSBoard.correlation80.grid.flow.uni.png)
 </div>
 
 We still have a mess, much like the _chord diagram_, with slightly thinner lines from Shetland? Maybe?
@@ -94,7 +105,7 @@ This layout enables us to see how correlations vary spatially.
 
 <div class="img">
 
-![](img/scrc.LA.correlation80.grid.OD.png)
+![](img/scrc.NHSBoard.correlation80.grid.OD.png)
 </div>
 
 Now we can see something interesting. The light colours in Shetland (top right) mean that the correlations are consistently low. The map in the Western Isles (top left) shows strong correlation with Orkney, which may have similar geographic characteristics, but weaker correlations with Shetland and the Mainland.
@@ -103,7 +114,9 @@ There are subtle spatial patterns too - Glasgow (mid left) is more like regions 
 
 We can also see that Borders (bottom right), and particularly Dumfries & Galloway (bottom) are correlated with one another, but less correlated with other NHS Boards. They have different profiles to the rest of Scotland. Correlations with one another are 0.99, with other parts of Scotland range from 0.92-0.98.
 
-#### Tufte Reality Check
+---
+
+#### Take a Tufte (Design) Reality Check
 
 But remember, we are looking at very small differences in these correlation coefficients.
 
@@ -111,7 +124,7 @@ Let's comply with Tufte's principle of graphical integrity, while remembering th
 
 <div class="img">
 
-![](img/scrc.LA.correlation.grid.OD.png)
+![](img/scrc.NHSBoard.correlation.grid.OD.png)
 </div>
 
 This really emphasizes the _very small differences_ in the correlation coefficients.
@@ -120,7 +133,7 @@ We can no longer detect the differences between Borders and Dumfries & Galloway 
 
 ---
 
-#### The Importance of Considered Visualization Design and Visualization Exposition
+#### Message - The Importance of Considered Visualization Design and Visualization Exposition
 
 One of the reasons for writing this is that we need to be thoughtful about design and clear about design decisions and intention. We need to be transparent about what the plots that we produce enable us to see and what they hide. Those who use the plots need to be informed and cautions in interpreting them.
 
