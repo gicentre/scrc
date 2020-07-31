@@ -34,7 +34,7 @@ Any informed analysis would account for this context, and graphics that support 
 So, here are the relationships in their spatial contexts - line width is proportional to strength of association.
 
 I think that's the same _connection_ and _width_ encoding as the chord diagram, but _position_ is now mapped to **geography** (_which is important_) when it was mapped to an **arbitrary** (?) position around a circle (_which might deceive as any patterns are likely to be reliant upon this ordering_).
- 
+
 Wow, that's a mess.
 
 ---
@@ -51,7 +51,7 @@ In fairness I am showing bi-directional flows here, so there is twice the inform
 Let's cut that out.
 Here we see unidirectional flows.
 
-But it's still very difficult to see any differences in flow widths because of the occlusion, overlaps and because there is so little difference in the correlations.
+But it's still very difficult to see any differences in flow widths because of the occlusion, overlaps and because there is so little difference in the magnitudes of the correlations.
 
 ---
 
@@ -120,6 +120,9 @@ Now we can see something interesting. The light colours in Shetland (top right) 
 There are subtle spatial patterns too - Glasgow (mid left) is more like regions that are closer to is than those that are distant. Spatial autocorrelation at play.
 
 We can also see that Borders (bottom right), and particularly Dumfries & Galloway (bottom) are correlated with one another, but less correlated with other NHS Boards. They have different profiles to the rest of Scotland. Correlations with one another are 0.99, with other parts of Scotland range from 0.92-0.98.
+
+**Are these subtle spatial differences in correlation important**
+Well as a visualization designer I don't know. But I can show somebody who is able to answer this question that they are there. And maybe use this as a means to discuss other things that we might show and that they might want to see.
 
 ---
 
