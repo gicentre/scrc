@@ -4,7 +4,7 @@
 hr {clear:both}
 .hr0 {clear:both; height:0px; border:1px dashed #f0f0f0; color:#fff; margin-left:3em; margin-right:3em}
 .clear {clear:both}
-.img {float:right; padding-right:1em; padding-left:2em; padding-bottom:1em; width:300px}
+.img {float:left; padding-right:3em; padding-left:2em; padding-bottom:1em; width:300px}
 table {border:none}
 </style>
 
@@ -83,7 +83,7 @@ I'd transform this to a semi-spatial grid. This lays the NHS boards out to retai
 
 Importantly it uses gaps to represent and remind us about real geographical barriers, such as large stretches of water. We can learn this shape and relate it to the geography of Scotland.
 
-<div style="clear:both"></div>
+<div style="clear:both">&nbsp;</div>
 
 <div class="img">
 
