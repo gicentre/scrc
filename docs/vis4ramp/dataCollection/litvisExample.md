@@ -29,11 +29,11 @@ Checking how "_representative_" (approximately) Glasgow's population is to every
 
 {|aim)}
 
-{(originated|}
+<!-- {(originated|}
 
 From [meeting with _Richard Reeve_ 29/01/2021](https://github.com/aidans/ramp/blob/main/notes/README.md)
 
-{|originated)}
+{|originated)} -->
 
 {(description|}
 
