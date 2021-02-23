@@ -7,6 +7,10 @@ labels:
     paired:
       htmlTemplate: <div class="originated"><fieldset><legend>Originated</legend>{{children}}</fieldset></div>
 
+  - name: question
+    paired:
+      htmlTemplate: <div class="question"><fieldset><legend>Question</legend>{{children}}</fieldset></div>
+
   - name: description
     paired:
       htmlTemplate: <div class="description"><fieldset><legend>Description</legend>{{children}}</fieldset></div>
@@ -39,6 +43,11 @@ rules:
       label: originated
     minimumOccurrences: 1
     maximumOccurrences: 1
+
+  - description: Narrative must always contain a question
+    selector:
+      label: question
+    minimumOccurrences: 1
 
   - description: Narrative must always contain at least (annotated) one example.
     selector:

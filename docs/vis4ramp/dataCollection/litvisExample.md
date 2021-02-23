@@ -21,6 +21,8 @@ import VegaLite exposing (..)
 
 ## Kullback–Leibler Divergence Maps!
 
+Write in here and add links and stuff
+
 {(aim|}
 
 Checking how "_representative_" (approximately) Glasgow's population is to everywhere else.
@@ -39,6 +41,12 @@ Design discourse here ...
 
 {|description)}
 
+{(question|}
+
+This is designed to address this question.
+
+{|question)}
+
 {(limitations|}
 
 Any problems or reactions here ...
@@ -47,7 +55,7 @@ Any problems or reactions here ...
 
 {(example|}
 
-<img src="https://raw.githubusercontent.com/aidans/ramp/main/notes/Screenshot%202021-01-30%20at%2011.51.43.png?token=AAODZZVBVJWF3Y6JN4XMGNDAGTB4O" />
+<img src="https://github.com/aidans/ramp/blob/main/notes/Screenshot%202021-01-30%20at%2011.51.43.png" />
 
 {(reaction|}
 **Jason** says ...
