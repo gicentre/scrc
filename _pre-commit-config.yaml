@@ -1,0 +1,5 @@
+# Was .pre-commit-config.yaml
+repo: https://github.com/gicentre/scrc/
+  rev: v1.21.0
+  hooks:
+  -  id: check-yaml
