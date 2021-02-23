@@ -1,4 +1,4 @@
-# Was .pre-commit-config.yaml
+# Was .pre-commit-config.yaml - uninstaklled with 'pre-commit uninstall'
 repo: https://github.com/gicentre/scrc/
   rev: v1.21.0
   hooks:
