@@ -633,7 +633,7 @@ laGridDiffFlowMap gx gy flowCol gSize odOffset =
                     , mQuant
                     , mScale
                         [ scScheme "redYellowBlue" [ 1, 0 ]
-                        , scDomainMid 0
+                        , scDomain (doMid 0)
                         , scDomain (doNums [ -7000, 7000 ])
                         ]
                     , mLegend
@@ -893,7 +893,7 @@ odMap odc =
 
         diverging =
             if odc.schemeDiverge then
-                [ scDomainMid 0 ]
+                [ scDomain (doMid 0) ]
 
             else
                 []
