@@ -1,0 +1,1 @@
+Scottish Health Board boundaries simplified (via MapShaper) from original source at https://data.gov.uk/dataset/27d0fe5f-79bb-4116-aec9-a8e565ff756a/nhs-health-boards under Open Government Licence: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
