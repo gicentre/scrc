@@ -110,7 +110,7 @@ laFlowMap =
         -- Flow lines
         odTrans =
             transform
-                -- Find row/col values for both origins and desintations of each flow count
+                -- Find row/col values for both origins and destinations of each flow count
                 << lookup "source" centroidData "lad17cd" (luFields [ "cx", "cy" ])
                 << calculateAs "datum.cx" "oX"
                 << calculateAs "datum.cy" "oY"
@@ -162,7 +162,7 @@ laFlowMap =
 
 But this has many problems such as long distance flows (e.g. to/from Shetlands) having a disproportionate saliency and smaller regions of high population leading to crowded view of flows.
 
-## 2. Grid maps.
+## 2. Grid maps
 
 If we standardise the area allocated to each LA and arrange them into a regular grid, we open up some interesting design options. Assigning each LA to a grid cell with a position that preserves the most important geography [is challenging](https://openaccess.city.ac.uk/id/eprint/15167/), but the example below attempts to keep island LAs separate, while preserving key topological and geographic relationships.
 
@@ -361,7 +361,7 @@ inDiffOtClCfg =
 
 ^^^elm{v=(odMap inDiffOtClCfg) interactive }^^^
 
-We see clear spatial structure in both strength of flow and differences between different job categories (_hover mose over cells to see values_). Most dominant is the much higher number of flows within LAs. To explore what is happening at a local scale we can consider just the [Glasgow and Clyde region](greaterGlasgow.md).
+We see clear spatial structure in both strength of flow and differences between different job categories (_hover mouse over cells to see values_). Most dominant is the much higher number of flows within LAs. To explore what is happening at a local scale we can consider just the [Glasgow and Clyde region](greaterGlasgow.md).
 
 ---
 
@@ -481,7 +481,7 @@ laGridFlowMap gx gy flowCol gSize =
         -- Flow lines
         odTrans =
             transform
-                -- Find row/col values for both origins and desintations of each flow count
+                -- Find row/col values for both origins and destinations of each flow count
                 << lookup "source" gridData "regionCode" (luFields [ gx, gy ])
                 << calculateAs ("datum." ++ gx) "oCol"
                 << calculateAs ("datum." ++ gy) "oRow"
@@ -589,7 +589,7 @@ laGridDiffFlowMap gx gy flowCol gSize odOffset =
         -- Flow lines
         odTrans =
             transform
-                -- Find row/col values for both origins and desintations of each flow count
+                -- Find row/col values for both origins and destinations of each flow count
                 << lookup "source" gridData "regionCode" (luFields [ gx, gy ])
                 << calculateAs ("datum." ++ gx) "oCol"
                 << calculateAs ("datum." ++ gy) "oRow"
@@ -747,7 +747,7 @@ type alias ODConfig =
     --
     , bgMap : String -- Background colour of entire OD map.
     , scheme : String -- Colour scheme to encode cell values.
-    , schemeDomain : Maybe ( Float, Float ) -- Optional domain limits, useful for symetric diverging schemes.
+    , schemeDomain : Maybe ( Float, Float ) -- Optional domain limits, useful for symmetric diverging schemes.
     , schemeRange : ( Float, Float ) -- Range  of  colour scheme to use. e.g. full range: (0,1)
     , schemeDiverge : Bool -- Diverge from 0 if True.
     , cScale : Scale -- Type of colour scale (commonly scLinear or scSymLog).
