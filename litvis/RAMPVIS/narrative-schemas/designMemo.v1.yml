@@ -1,0 +1,63 @@
+labels:
+  - name: direction
+    paired:
+      htmlTemplate: <div class="direction"><fieldset><legend>Direction - did something Change, Shift, Pivot?</legend>{{children}}</fieldset></div>
+
+  - name: reaction
+    paired:
+      htmlTemplate: <div class="reaction"><fieldset><legend>Reaction - did something Surprise?</legend>{{children}}</fieldset></div>
+
+  - name: traction
+    paired:
+      htmlTemplate: <div class="traction"><fieldset><legend>Traction - did something Resonate?</legend>{{children}}</fieldset></div>
+
+  - name: memoStart
+    paired:
+      htmlTemplate: <div class="memoStart"><fieldset><legend>MemoStart - Resonance?</legend>{{children}}</fieldset></div>
+
+  - name: memoEnd
+    paired:
+      htmlTemplate: <div class="memoEnd"><fieldset><legend>MemoEnd - Resonance?</legend>{{children}}</fieldset></div>
+
+rules:
+  - description: Narrative can contain 0 or more directions.
+    selector:
+      label: direction
+
+  - description: Narrative can contain 0 or more reactions.
+    selector:
+      label: reaction
+
+  - description: Narrative can contain 0 or more tractions.
+    selector:
+      label: traction
+
+  - description: Narrative must always contain just one pre-meeting reflective statement.
+    selector:
+      label: memoStart
+    minimumOccurrences: 1
+    maximumOccurrences: 1
+
+  - description: Narrative must always contain at least one post-meetimg reflective statement.
+    selector:
+      label: memoEnd
+    minimumOccurrences: 1
+    maximumOccurrences: 1
+
+styling:
+  css: |
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    legend {
+      font-size:0.9em; font-style: italic;
+    }
+
+    .memoStart fieldset, .memoEnd fieldset {
+      background: #f3f3f3;
+    }
+
+    .direction,.reaction,.traction,.memoStart,.memoEnd {
+      margin-top: 1em;
+    }

@@ -1,0 +1,387 @@
+<!DOCTYPE html><html><head>
+      <title>210205.RAMPVIS.proposal</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/jsndyks/.atom/packages/markdown-preview-enhanced-with-litvis/node_modules/mume-with-litvis/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h2 class="mume-header" id="rampvis-vis4ramp-reflective-epidemiological-modelling-design-study-paper-proposal">RAMPVIS / VIS4RAMP - Reflective Epidemiological Modelling Design Study Paper Proposal</h2>
+
+<h5 class="mume-header" id="jason-dykes-210205">Jason DYKES : 210205</h5>
+
+<hr style="background-color:#fff ;height:0px; border:dashed 1px #e0e0e0">
+<p>There has been a lot of talk about papers and learnings and the like.</p>
+<p>My ambition is to write a paper that draws upon a range of experiences through our various interactions <em>with the modelling folks</em> during the funded RAMPVIS effort.</p>
+<p>I&apos;d like to follow a methodological approach that I have been involved in developing and that has been applied very persuasively and impressively in <em>Jen Rogers</em> InfoVis paper from the <em>Utah Visualization Design Lab</em>.</p>
+<p>They use an interpretivist perspective that offers &quot;<em>opportunities for researchers to contribute knowledge that extends beyond visualization idioms and software</em>&quot; and supports &quot;<em>diverse range of knowledge contributions</em>&quot;.</p>
+<p>In their <em>EvoBio Design Study</em> paper (Rogers et al., 2020) they show how those doing applied visualization design work might go about &quot;<em>using design study to acquire a more diverse range of knowledge, including knowledge about the visualization design process as well as about people&#x2019;s relationship with data and technology more broadly</em>.&quot;</p>
+<p>Their approach is based upon three <em>Criteria for Rigour in Design Study</em> - that approaches should be :</p>
+<ol>
+<li>
+<p><strong>abundant</strong> - in terms of data collection and perspectives.<br>
+So multiple engagements, modellers and designers would be helpful here.<br>
+Data collection might involve a range of artefacts, perhaps including ...</p>
+<ul>
+<li>discussion - zulip, email, etc</li>
+<li>annotated meeting notes</li>
+<li>presentations &amp; position statements</li>
+<li>sketches</li>
+<li>papers &amp; drafts</li>
+<li>designs, design prototypes, design exposition and design discussion</li>
+<li>reflective memos</li>
+<li>etc.</li>
+</ul>
+</li>
+<li>
+<p><strong>reflexive</strong> - accounting for the role of the researcher in the research and the effects of the research context on the researcher is important here.<br>
+We are encouraged to embrace &#x201C;<em>explicit and thoughtful self-awareness of a researcher&#x2019;s own role in a study</em>&#x201D;<br>
+The research needs to be supported by systematic reflection with regular documented ...</p>
+<ul>
+<li><em>reflection in-action</em> - e.g. reflective memo-ing, including reflexive practice (reflection on self), and</li>
+<li><em>reflection on-action</em> - e.g. revisiting experiences, perhaps through ...</li>
+</ul>
+</li>
+<li>
+<p><strong>transparent</strong> - in terms of the description of processes and presentation of annotated artefacts in a manner that ...</p>
+<ul>
+<li>allows us to <em>record</em> artefacts</li>
+<li>supports ands encourages <em>reflection</em></li>
+<li>enables us to <em>report</em> any claims by linking evidence (supporting the <em>generation</em>, <em>presentation</em> and <em>checking</em> of any claims made)</li>
+<li>encourages <em>scrutiny</em></li>
+</ul>
+</li>
+</ol>
+<p>If you are interested, I really recommend reading the paper - it&apos;s a pleasure! Here&apos;s <a href="https://staff.city.ac.uk/~jad7/rampvis/rogers2020insights.210205.pdf">a version that I have annotated with some highlights on bits that I found useful and interesting for thinking about RAMPVIS</a>.</p>
+<p>It&apos;s a great read, particularly when read in conjunction with the interactive <a href="https://vdl.sci.utah.edu/trrrace/"><strong>trrrace</strong></a> system, developed to achieve much of the above:  <a href="https://vdl.sci.utah.edu/trrrace/">https://vdl.sci.utah.edu/trrrace/</a></p>
+<p>Here&apos;s the full reference and project Web page.</p>
+<blockquote>
+<p><strong>Rogers, J., Patton, A. H., Harmon, L., Lex, A., &amp; Meyer, M. (2020)</strong>. Insights From Experiments With Rigor in an EvoBio Design Study. <em>IEEE Transactions on Visualization and Computer Graphics</em>. <a href="https://vdl.sci.utah.edu/publications/2020_infovis_insights/">https://vdl.sci.utah.edu/publications/2020_infovis_insights/</a></p>
+</blockquote>
+<p>The <a href="https://youtu.be/0lIJarVNxcM">InfoVis Talk Video</a> makes the key points really well.</p>
+<p>Now, this work is inherently methodological and it&apos;s based upon a single interaction and I am not sure whether the <em>paper-within-a-paper</em> model is one that we would want to adopt. But the idea of presenting evidence in a coherent manner that supports thinking and judgments about the plausibility of knowledge claims seems a good one to me. It&apos;s my ambition to achieve this kind of thing in RAMPVIS.</p>
+<p>Some early thinking (<em>this is a non-exhaustive list of ideas generated during the EuroVIS paper writing</em>) about this suggests that we may have something to say on :</p>
+<ul>
+<li>use of visualization in epidemiological modeling</li>
+<li>design by immersion (see Hall et al., 2020) in lockdown (or the online workplace/workspace)</li>
+<li>visualization design in a pandemic</li>
+<li>specific approaches to COVID vis design</li>
+</ul>
+<p>But recording our experiences, collating and annotating evidence and reflecting upon this (and other ideas as they arise) could result in some useful contributions with potentially persuasive evidence and a strong methodology to back it up.</p>
+<hr>
+<h4 class="mume-header" id="suggestions-recommendations">Suggestions / Recommendations</h4>
+
+<p>There are some things to aim for based on direct recommendations and evident best practice in Rogers et al. (2020) ...</p>
+<ol>
+<li><em>establish systematic reflective practices</em> from the outset - these should include reflexive notes, reflective transcriptions, and artifact curation</li>
+<li><em>build and maintain a trace</em> of diverse research artifacts; and</li>
+<li>when making claims, <em>argue for rigor from evidence</em>, not just methods</li>
+<li><em>engage critically and reflectively</em> with research artifacts and experiences - look for things that changed, shifted, and surprised. Plan time for this!</li>
+<li>memo - &quot;<em>before and after meetings and during pivot- point moments in the research process</em>&quot;</li>
+<li>include of <em>direct links</em> to research artifacts in resesarch papers to transparently provide an abundance of evidence
+<ul>
+<li>see <a href="https://vdl.sci.utah.edu/trrrace/"><strong>trrrace</strong></a>, but we can think of other approaches that allow us to <em>record</em>, <em>reflect</em> and <em>report</em> too.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4 class="mume-header" id="things-to-decide">Things to Decide</h4>
+
+<p>This is just a start and there are various decisions to be made here - and I have done some thinking about this and will do some more. I&apos;m happy to chat and hear suggestions too as we begin to develop answers!</p>
+<p>But, among other things ...</p>
+<ul>
+<li>how do we record record (what kind of artefacts? where are they logged? what are the metadata? do we log existing artefacts - if so, how?) - this is <em>tech</em> plus <em>process</em></li>
+<li>when is the focus - what is the timeline?</li>
+<li>how do we deal with individuals and anonymity?</li>
+<li>how do we deal with artefacts that have already been recorded (volunteering phase)?</li>
+<li>how do we deal with meeting recording and transcription?</li>
+<li>how to we structure <em>reflection in-action</em> - what kinds of memos?</li>
+<li>how does this activity relate to (use? differentiate itself from? sit alongside?) the EuroVIS submission?</li>
+<li>are we dealing with the future (funded activity), the past (volunteering activity) or both?</li>
+<li>who is in (and what does that mean) - how wide or narrow is the range of experiences?</li>
+</ul>
+<hr>
+<h4 class="mume-header" id="guidance">Guidance</h4>
+
+<p>The good news is that we have a fair bit of experience, and some nice technologies that may help out as we try to figure this out. And Rogers et al. (2020) provide some pretty helpful guidelines that might help us answer some of these questions. I would like to try to adhere to these :</p>
+<ol>
+<li>take reflective notes before and after interviews (interactions) with domain collaborators</li>
+<li>include reflexive considerations in your field notes (memos, etc.)</li>
+<li>audio-record interviews (screen record meetings) and analyze them via reflective transcription - soon after the interview</li>
+<li>revisit and reinterpret early notes and sketches (during ongoing <em>reflection in-action</em>)</li>
+</ol>
+<p>Further reading and thinking about the paper might reveal more.</p>
+<hr>
+<p>Evidently there is more to come, and I am trying to fit my working week into four days to spend Fridays reading, thinking, planning and hopefully working with RAMPVIS colleagues to develop a methodology and an actionable set of recommendations. The intention is to enable us to make some plausible and diverse contributions that &quot;<em>that extend beyond visualization idioms and software</em>&quot; and that will be useful to the VIS research community.</p>
+<p>I&apos;ll circulate more next Friday.<br>
+Happy to hear reactions - public, private, here, anywhere.</p>
+<p><strong>Jason</strong> - <em>21/02/05</em></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

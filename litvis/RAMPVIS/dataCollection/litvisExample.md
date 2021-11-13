@@ -2,7 +2,7 @@
 id: litvis
 
 narrative-schemas:
-  - ../narrative-schemas/design.yml
+  - ../narrative-schemas/designDataCapture.yml
 
 # elm:
 #   dependencies:
@@ -55,7 +55,8 @@ Any problems or reactions here ...
 
 {(example|}
 
-<img src="https://github.com/aidans/ramp/blob/main/notes/Screenshot%202021-01-30%20at%2011.51.43.png" />
+<!---img src="https://github.com/aidans/ramp/blob/main/notes/Screenshot%202021-01-30%20at%2011.51.43.png" /--->
+<img width="400" src="./img/kldODMap.210129.png"/>
 
 {(reaction|}
 **Jason** says ...

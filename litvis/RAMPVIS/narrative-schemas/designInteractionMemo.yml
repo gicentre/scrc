@@ -1,0 +1,90 @@
+labels:
+  - name: memoMeta
+    paired:
+      htmlTemplate: <div class="memoMeta"><fieldset><legend>Memo Meta Information</legend>{{children}}</fieldset></div><hr style="margin-left:8em;margin-right:8em;margin-top:2em; margin-bottom:3em;color:#f8f8f8;height:0px;border:dashed 1px"/>
+
+  - name: memoWho
+    paired:
+      htmlTemplate: <div class="memoWho"><legendSide>WHO - was involved?&nbsp;&nbsp;</legendSide>{{children}}</div>
+  - name: memoWhere
+    paired:
+      htmlTemplate: <div class="memoWhere"><legendSide>WHERE - or how did the interaction take place?&nbsp;&nbsp;</legendSide>{{children}}</div>
+
+  - name: memoWhen
+    paired:
+      htmlTemplate: <div class="memoWhen"><legendSide>WHEN - did this take interaction place?&nbsp;&nbsp;</legendSide>{{children}}</div>
+
+  - name: direction
+    paired:
+      htmlTemplate: <div class="direction"><fieldset><legend>Direction - did something Change, Shift, Pivot?</legend>{{children}}</fieldset></div>
+
+  - name: reaction
+    paired:
+      htmlTemplate: <div class="reaction"><fieldset><legend>Reaction - did something Surprise?</legend>{{children}}</fieldset></div>
+
+  - name: traction
+    paired:
+      htmlTemplate: <div class="traction"><fieldset><legend>Traction - did something Stick, or Resonate?</legend>{{children}}</fieldset></div>
+
+  - name: memoStart
+    paired:
+      htmlTemplate: <div class="memoStart"><fieldset><legend>MemoStart - Reflection on Self? Objectives, Expectations, Presumptions</legend>{{children}}</fieldset></div>
+
+  - name: memoEnd
+    paired:
+      htmlTemplate: <div class="memoEnd"><fieldset><legend>MemoEnd - Reflection on Action? What did you make of the above?</legend>{{children}}</fieldset></div>
+
+# Rules to come!
+
+# rules:
+#  - description: Narrative must always contain just one metaData item.
+#     selector:
+#       label: memoMeta
+#     minimumOccurrences: 1
+#     maximumOccurrences: 1
+
+styling:
+  css: |
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding:0.5em;
+      padding-top:1em;
+      padding-bottom:0px;
+      color:#666;
+    }
+    legend {
+      font-size:0.9em; font-style: italic;
+      margin:2px; padding:2px;
+    }
+    legendSide {
+      font-size:0.8em; font-weight: bold;
+      margin:2px; padding:2px;
+    }
+
+    .memoMeta fieldset {
+      background: #f3f3ff;
+      font-family:avenir;
+    }
+
+    .memoWho, .memoWhere, .memoWhen {
+      font-size:0.8em;
+      font-family:avenir;
+      margin:2px; padding:2px;
+    }
+
+    .memoStart fieldset, .memoEnd fieldset {
+      background: #f3f3f3;
+    }
+
+    .direction,.reaction,.traction,.memoStart,.memoEnd {
+      margin-top: 1em;
+      padding-top:1em;
+      margin-bottom: 1em;
+      margin-left:2em;
+      font-family:avenir;
+    }
+
+    .memoStart {
+      margin-top:3em; font-size:90%; font-family:avenir
+    }
